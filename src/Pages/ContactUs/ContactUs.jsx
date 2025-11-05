@@ -1,22 +1,21 @@
 import React from "react";
-import Header from "./Sections/Header";
+import Header from "../../Components/PrimaryHeader";
 import Touch from "./Sections/Touch";
-import Footer from "./Sections/Footer";
+import Footer from "../../Components/Footer";
 import FooterData from "../../Components/FooterData";
 import ContactData from "./Sections/ContactData";
-import Head from "../../assets/Contactpage/PNG/ContactHead.png"
+import PrimaryHeader from "../../Components/PrimaryHeader";
+import Head from "../../assets/Contactpage/PNG/ContactHead.png";
 
 const ContactUs = () => {
   return (
     <div className="">
-      <Header title="Contact Us" backgroundImage={Head} />
-      <div className=" px-0 rounded-[70px] py-10 bg-bg -my-14">
+      <PrimaryHeader title="Contact Us" backgroundImage={Head} />
+      <div className=" px-0 rounded-[50px] md:rounded-[70px] py-10 bg-bg -my-14">
         <ContactData />
         <Touch />
       </div>
-      <Footer>
-        <FooterData />
-      </Footer>
+      <Footer/>
     </div>
   );
 };

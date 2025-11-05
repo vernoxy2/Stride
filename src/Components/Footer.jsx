@@ -1,6 +1,6 @@
 import React from 'react'
-import FooterData from "../../../Components/FooterData";
-import FooterImg from "../../../assets/Contactpage/PNG/Footer.png"
+import FooterData from "./FooterData";
+import FooterImg from "../assets/Contactpage/PNG/Footer.png"
 
 const Footer = ({height = "600px", backgroundImage = FooterImg}) => {
 const style = {
