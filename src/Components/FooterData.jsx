@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/SVG/NavLogo.svg";
+import Logo from "../assets/NavLogo.svg";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { IoCallOutline, IoLogoFacebook } from "react-icons/io5";
 import { FaSquareFacebook, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";

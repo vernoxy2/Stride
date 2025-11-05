@@ -1,6 +1,6 @@
-import React, { use, useState } from "react";
+import React, {  useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import nevlogo from "../assets/SVG/NavLogo.svg";
+import nevlogo from "../assets/NavLogo.svg";
 import { Menu, X } from "lucide-react"; // icons for mobile menu toggle
 
 const navLinks = [
@@ -17,14 +17,14 @@ const Navbar = () => {
   return (
     <nav className="md:absolute top-5 left-0 w-full z-50">
       <div className="container p-1.5 w-11/12 flex justify-between items-center  bg-white rounded-full">
-        <div className="flex items-center gap-20">
+        <div className="flex items-center gap-5  lg:gap-20">
           {/* Logo */}
           <div>
             <img src={nevlogo} alt="" className="ml-4"/>
           </div>
 
           {/* Desktop Links */}
-          <ul className="hidden md:flex space-x-8">
+          <ul className="hidden md:flex space-x-6 lg:space-x-8">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.url; // ✅ Check if link matches current page
               return (
@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* Button */}
         <div className="hidden md:block">
           <button className="bg-secondary text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
-            Get Started
+            Get In Touch
           </button>
         </div>
 
@@ -84,9 +84,9 @@ const Navbar = () => {
               );
             })}
             <li>
-              <button className="bg-blue-700 text-white px-5 py-2 rounded-xl hover:bg-blue-800 transition-colors">
-                Get Started
-              </button>
+              <button className="bg-secondary text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
+            Get In Touch
+          </button>
             </li>
           </ul>
         </div>

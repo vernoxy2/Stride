@@ -1,9 +1,19 @@
 import React from 'react'
+import FooterData from "../../../Components/FooterData";
+import FooterImg from "../../../assets/Contactpage/PNG/Footer.png"
 
-const Footer = ({children}) => {
+const Footer = ({height = "600px", backgroundImage = FooterImg}) => {
+const style = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    minHeight: height,
+  };
+
   return (
-    <section className='bg-secondary  relative -z-10'>
-      {children}
+    <section style={style} className='bg-secondary relative -z-10'>
+      <FooterData />
     </section>
   )
 }

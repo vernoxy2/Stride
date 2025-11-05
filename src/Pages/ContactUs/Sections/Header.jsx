@@ -1,14 +1,24 @@
-import React from 'react'
+import React from "react";
 
-const Header = () => {
+const PrimaryHeader = ({ title, backgroundImage, height = "600px" }) => {
+  const style = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    minHeight: height,
+  };
+
   return (
-    <section className='py-0 bg-secondary'>
-      <div className='py-10 md:py-20 space-y-5 md:space-y-10 flex justify-center items-center'>
-        <h1 className='text-white font-bold'>Contact Us</h1>
+    <section
+      style={style}
+      className="py-0 bg-secondary flex items-center justify-center"
+    >
+      <div className="text-center">
+        <h1 className="text-white font-bold">{title}</h1>
       </div>
-      <div className='pb-14 bg-secondary'></div>
     </section>
-  )
-}
+  );
+};
 
-export default Header
+export default PrimaryHeader;
