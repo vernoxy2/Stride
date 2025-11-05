@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="md:absolute top-5 left-0 w-full z-50">
       <div className="container p-1.5 w-11/12 flex justify-between items-center  bg-white rounded-full">
-        <div className="flex items-center gap-5  lg:gap-20">
+        <div className="flex items-center gap-8  lg:gap-20">
           {/* Logo */}
           <div>
             <img src={nevlogo} alt="" className="ml-4"/>

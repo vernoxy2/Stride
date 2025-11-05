@@ -8,7 +8,7 @@ const Touch = () => {
         <div className="rounded-3xl space-y-5">
           <h1 className="text-stride font-bold">Get In Touch</h1>
           <form action="" className="space-y-5">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <input
               type="text"
               placeholder="Frist Name"
