@@ -55,7 +55,7 @@ const FooterData = () => {
     <section className="container pb-0">
       <div className="bg-bg container p-8 md:p-12 rounded-[35px] space-y-2">
         {/* 1st row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-2">
           {/* 1st column */}
           <div className="flex flex-col justify-between gap-5">
             <img src={Logo} alt="Logo" className="w-3/6" />
@@ -65,16 +65,16 @@ const FooterData = () => {
             </p>
           </div>
           {/* 2nd column */}
-          <div className="hidden lg:block border-x-2 border-stride/20"></div>
+          <div className="hidden xl:block border-x-2 border-stride/20"></div>
           {/* 3rd column */}
           <div className="flex flex-col lg:px-4">
-            <h2 className="font-bold text-stride">Contact Us</h2>
+            <h2 className=" text-stride">Contact Us</h2>
             <ul>
               {contactdata.map((item) => (
                 <li key={item.id} className="flex items-center gap-4 py-2">
-                  <div className="text-stride  text-4xl lg:text-5xl">{item.icon}</div>
+                  <div className="text-stride text-4xl lg:text-5xl">{item.icon}</div>
                   <div className="-space-y-1">
-                    <p className="text-stride camlecase font-bold">{item.title}</p>
+                    <p className="text-stride camlecase ">{item.title}</p>
                     <p>{item.info}</p>
                   </div>
                 </li>

@@ -4,13 +4,13 @@
 
 @layer base {
   section {
-    @apply py-10 md:py-20 space-y-5 md:space-y-10;
+    @apply py-10 md:py-20 space-y-5 md:space-y-10 font-helvetica;
   }
   p {
-    @apply text-lg md:text-xl lg:text-2xl text-secondary;
+    @apply text-lg md:text-xl lg:text-2xl text-secondary font-helvetica;
   }
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-4xl md:text-5xl lg:text-6xl text-stride font-helvetica font-[800px];
   }
   h2 {
     @apply text-2xl lg:text-3xl;
