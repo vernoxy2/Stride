@@ -6,12 +6,16 @@ import Commitment from "./Sections/Commitment";
 import PeopalSay from "./Sections/PeopalSay";
 import Enquiry from "./Sections/Enquiry";
 import Footer from "../../Components/Footer";
+import PrimaryHeader from "../../Components/PrimaryHeader";
+import Head from '../../assets/HomePage/PNG/Head.png';
+
 
 const Home = () => {
   return (
     <div>
       {/* Home Page */}
-      <Header />
+      {/* <Header /> */}
+      <PrimaryHeader title="Welcome to Stride Realty" backgroundImage={Head} />
       <div className=" px-0 rounded-[70px]  bg-bg -my-14 py-28">
       <WhoWeAre />
       <SelectProject />
