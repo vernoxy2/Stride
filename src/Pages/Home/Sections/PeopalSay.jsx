@@ -55,11 +55,13 @@ const PeopleSay = () => {
 
   return (
     <section className="bg-gradient-to-b from-stride/30 to-transparent">
-      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-12 px-2 relative">
+      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-40 px-2 relative">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="px-4 flex flex-col items-center">
-              <h2 className="font-medium text-stride mb-4">{testimonial.text}</h2>
+              <h2 className="font-medium text-stride mb-4">
+                {testimonial.text}
+              </h2>
               <p className="font-medium">{testimonial.name}</p>
               <hr className="w-1/2 my-2 border-gray-300 mx-auto" />
               <p className="text-sm font-normal">{testimonial.role}</p>

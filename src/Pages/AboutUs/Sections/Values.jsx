@@ -64,7 +64,7 @@ const valuesList = [
 
 const Values = () => {
   return (
-    <section className="">
+    <section className="bg-bg">
       <div className="container space-y-10">
         <TitleBox title="Our Values" className="border-[#D9D9D9]" />
         <h1>
