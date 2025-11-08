@@ -1,7 +1,7 @@
 import React from "react";
 
 import TitleBox from "../../../Components/TitleBox";
-import Countdown from "./countdown";
+import Countdown from "./Countdown";
 
 const WhoWeAre = () => {
   return (
