@@ -31,7 +31,7 @@ const Navbar = () => {
                 <li key={link.id}>
                   <Link
                     to={link.url}
-                    className={`text-lg font-semibold transition-colors duration-300 ${
+                    className={`text-xl font-medium transition-colors duration-300 ${
                       isActive
                         ? "text-stride border-b-2 border-stride pb-[01px]"
                         : "text-secondary hover:text-stride"

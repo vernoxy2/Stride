@@ -38,7 +38,7 @@ const ContactData = () => {
           >
             <div className="text-stride text-5xl group-hover:-  translate-y-1 duration-300">{item.icon}</div>
             <div>
-              <h2 className="text-stride font-bold ">{item.title}</h2>
+              <h2 className="text-stride ">{item.title}</h2>
               <p className="camlecase">{item.info}</p>
             </div>
             <button className="w-full lg:w-10/12 mx-auto bg-secondary hover:bg-stride duration-300 transition-colors rounded-3xl text-white py-1.5 text-lg">

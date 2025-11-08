@@ -15,7 +15,7 @@ const PrimaryHeader = ({ title, backgroundImage, height = "600px" }) => {
       className="py-0 bg-secondary flex items-center justify-center"
     >
       <div className="text-center">
-        <h1 className="text-white font-bold">{title}</h1>
+        <h1 className="text-white ">{title}</h1>
       </div>
     </section>
   );

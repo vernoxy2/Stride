@@ -6,6 +6,7 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import Projects from "./Pages/Projects/Projects";
 import Navbar from "./Components/Navbar";
 
+
 const App = () => {
   return (
     <BrowserRouter  >

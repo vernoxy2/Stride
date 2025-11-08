@@ -13,11 +13,11 @@ const countdown = () => {
             />
             <div className="absolute top-0 bg-bg px-20 lg:px-32 py-7 lg:py-10 rounded-ee-3xl "></div>
           </div>
-          <div className="grid grid-cols-2 gap-8 rounded-3xl">
-            <div className="bg-secondary/20 rounded-3xl h-full"></div>
-            <div className="bg-secondary/20 rounded-3xl h-full"></div>
-            <div className="bg-secondary/20 rounded-3xl h-full"></div>
-            <div className="bg-secondary/20 rounded-3xl h-fit flex items-center justify-center overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-3xl">
+            <div className="bg-secondary/20 rounded-3xl h-20"></div>
+            <div className="bg-secondary/20 rounded-3xl h-20"></div>
+            <div className="bg-secondary/20 rounded-3xl h-20"></div>
+            <div className="bg-secondary/20 rounded-3xl h-20 lg:flex items-center justify-center overflow-hidden hidden ">
               <img
                 src={weare1}
                 alt=""

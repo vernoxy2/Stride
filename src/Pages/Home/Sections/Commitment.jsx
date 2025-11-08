@@ -31,14 +31,14 @@ const Commitment = () => {
     <section>
       <div className="container grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
         {/* 1st column */}
-        <div className="relative h-full w-full">
+        <div className="relative min-h-[400px] h-full w-full">
           {/* Video background */}
           <video
             src={video}
             autoPlay
             loop
             muted
-            className="absolute inset-0 w-full h-full rounded-3xl object-cover"
+            className="absolute inset-0 w-full  h-full rounded-3xl object-cover"
           />
 
           {/* Overlay div */}
