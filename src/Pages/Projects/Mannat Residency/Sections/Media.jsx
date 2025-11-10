@@ -34,12 +34,12 @@ const Media = () => {
   return (
     <div className="space-y-4 md:space-y-8">
       <h1 className="container ">Media</h1>
-      <div>
+      <div className="container px-0">
         <Slider {...settings}>
           {Images.map((item, index) => (
             <motion.div
               key={index}
-              className="py-12 px-8"
+              className="py-12 px-8 "
               animate={{
                 opacity: index === currentSlide ? 1 : 0.3,
                 scale: index === currentSlide ? 1.1 : 1,

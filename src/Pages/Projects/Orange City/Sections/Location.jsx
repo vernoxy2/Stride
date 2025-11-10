@@ -2,7 +2,7 @@ import React from "react";
 import Compass from "../../../../assets/ProjectPage/OrangeCity/SVG/compass.svg";
 import Logo from "../../../../assets/OrangeLogo.svg";
 import PrimaryButton from "../../../../Components/PrimaryButton";
-import AProjectBy from "../../../../assets/ProjectPage/svg/AProjectBy.svg";
+// import AProjectBy from "../../../../assets/ProjectPage/svg/AProjectBy.svg";
 import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
 
 const Location = () => {
@@ -34,11 +34,11 @@ const Location = () => {
             {/* Left Section */}
             <div className="flex flex-col items-center space-y-2">
               <p className="text-stride text-center">A Project By</p>
-              <img
+              {/* <img
                 src={AProjectBy}
                 alt="A Project By"
                 className=" object-contain"
-              />
+              /> */}
             </div>
 
             {/* Divider */}

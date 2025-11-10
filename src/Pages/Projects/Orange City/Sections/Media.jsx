@@ -37,7 +37,7 @@ const Media = () => {
   return (
     <div className="space-y-4 md:space-y-8">
       <h1 className="container ">Media</h1>
-      <div>
+      <div  className="container px-0">
         <Slider {...settings}>
           {Images.map((item, index) => (
             <motion.div
