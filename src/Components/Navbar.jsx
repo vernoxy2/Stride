@@ -58,7 +58,7 @@ const Navbar = () => {
 
                   {/* Dropdown Menu */}
                   {link.submenu && dropdownOpen === link.id && (
-                    <ul className="absolute left-0 top-full m-1 bg-white shadow-lg rounded-xl w-48 py-2">
+                    <ul className="absolute left-0 top-full m-1 bg-white shadow-lg rounded-xl w-48 py-2 ">
                       {link.submenu.map((sub) => (
                         <li key={sub.id}>
                           <Link
@@ -79,7 +79,7 @@ const Navbar = () => {
 
         {/* Desktop Button */}
         <div className="hidden md:block">
-          <button className="bg-secondary text-white px-5 py-1.5 rounded-full hover:bg-stride transition-colors">
+          <button className="bg-secondary text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
             Get In Touch
           </button>
         </div>
