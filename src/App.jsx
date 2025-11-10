@@ -6,16 +6,49 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import Projects from "./Pages/Projects/Projects";
 import Navbar from "./Components/Navbar";
 
+// Define all pages for project sub-routes
+import MannatResidency from "./Pages/Projects/Mannat Residency/MannatResidency";
+import OrangeCity from "./Pages/Projects/Orange City/OrangeCity";
+import StrideReality from "./Pages/Projects/Stride Reality/StrideReality";
+
+
+// Optional: Map navLinks to route components
+const navLinks = [
+  { id: 1, title: "Home", url: "/", component: <Home /> },
+  { id: 2, title: "About Us", url: "/about", component: <AboutUs /> },
+  {
+    id: 3,
+    title: "Projects",
+    url: "/projects/stride_reality",
+    component: <StrideReality />,
+    submenu: [
+      { id: 31, title: "Stride Reality", url: "/projects/stride_reality", component: <StrideReality /> },
+      { id: 32, title: "Orange City", url: "/projects/orange_city", component: <OrangeCity /> },
+      { id: 33, title: "Mannat Residency", url: "/projects/mannat_residency", component: <MannatResidency /> },
+    ],
+  },
+  { id: 4, title: "Contact Us", url: "/contact", component: <ContactUs /> },
+];
 
 const App = () => {
   return (
-    <BrowserRouter  >
-    <Navbar/>
-      <Routes >
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/projects" element={<Projects />} />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        {navLinks.map((link) => {
+          const routes = [
+            <Route key={link.id} path={link.url} element={link.component} />,
+          ];
+
+          // Add submenu routes if available
+          if (link.submenu) {
+            link.submenu.forEach((sub) => {
+              routes.push(<Route key={sub.id} path={sub.url} element={sub.component} />);
+            });
+          }
+
+          return routes;
+        })}
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   section {
     @apply py-10 md:py-20 space-y-5 md:space-y-10 font-helvetica;
@@ -23,3 +22,5 @@
     @apply text-secondary bg-[#f0f0f0] text-lg rounded-3xl p-4 w-full focus:ring-2 focus:ring-stride focus:outline-none;
   }
 }
+
+
