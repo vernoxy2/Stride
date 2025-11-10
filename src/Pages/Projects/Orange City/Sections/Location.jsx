@@ -3,7 +3,7 @@ import Compass from "../../../../assets/ProjectPage/OrangeCity/SVG/compass.svg";
 import Logo from "../../../../assets/OrangeLogo.svg";
 import PrimaryButton from "../../../../Components/PrimaryButton";
 // import AProjectBy from "../../../../assets/ProjectPage/svg/AProjectBy.svg";
-import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
+// import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
 
 const Location = () => {
   return (
@@ -49,11 +49,11 @@ const Location = () => {
               <p className="text-stride text-center">
                 Architect & Structure :<br /> MEP Consultant
               </p>
-              <img
+              {/* <img
                 src={Architect}
                 alt="Architect"
                 className=" object-contain"
-              />
+              /> */}
             </div>
           </div>
         </div>
