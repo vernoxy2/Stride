@@ -5,7 +5,7 @@ import Foot from "../../../assets/ProjectPage/OrangeCity/PNG/OrangeCityFooter.pn
 import Footer from "../../../Components/Footer";
 import Features from "./Sections/Features";
 import ProDescription from "./Sections/ProDescription";
-import Amenities from "./Sections/Amenities";
+import Amenities from "../Mannat Residency/Sections/Amenities";
 import Media from "./Sections/Media";
 import Location from "./Sections/Location";
 
