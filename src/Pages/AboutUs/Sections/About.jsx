@@ -2,6 +2,8 @@ import React from "react";
 import TitleBox from "../../../Components/TitleBox";
 import AboutImg from "../../../assets/AboutPage/PNG/AboutUs.png";
 import icon1 from "../../../assets/AboutPage/SVG/Projects.svg";
+import icon2 from "../../../assets/AboutPage/SVG/Property.svg";
+import icon3 from "../../../assets/AboutPage/SVG/Cost.svg";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -13,13 +15,13 @@ const AboutCounter = [
     title: "Projects in development",
   },
   {
-    img: icon1,
+    img: icon2,
     number: 18,
     suffix: "m+",
     title: "Square Feet of property",
   },
   {
-    img: icon1,
+    img: icon3,
     number: 2.5,
     suffix: "b+",
     title: "Total Projects cost",
