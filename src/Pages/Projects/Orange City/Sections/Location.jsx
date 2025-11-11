@@ -2,8 +2,8 @@ import React from "react";
 import Compass from "../../../../assets/ProjectPage/OrangeCity/SVG/compass.svg";
 import Logo from "../../../../assets/OrangeLogo.svg";
 import PrimaryButton from "../../../../Components/PrimaryButton";
-// import AProjectBy from "../../../../assets/ProjectPage/svg/AProjectBy.svg";
-// import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
+import AProjectBy from "../../../../assets/ProjectPage/SVG/AProjectBy.svg"
+import Architect from "../../../../assets/ProjectPage/SVG/Architect.svg";
 
 const Location = () => {
   return (
@@ -34,11 +34,11 @@ const Location = () => {
             {/* Left Section */}
             <div className="flex flex-col items-center space-y-2">
               <p className="text-stride text-center">A Project By</p>
-              {/* <img
+              <img
                 src={AProjectBy}
                 alt="A Project By"
                 className=" object-contain"
-              /> */}
+              />
             </div>
 
             {/* Divider */}
@@ -49,11 +49,11 @@ const Location = () => {
               <p className="text-stride text-center">
                 Architect & Structure :<br /> MEP Consultant
               </p>
-              {/* <img
+              <img
                 src={Architect}
                 alt="Architect"
                 className=" object-contain"
-              /> */}
+              />
             </div>
           </div>
         </div>
