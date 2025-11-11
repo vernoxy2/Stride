@@ -2,17 +2,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 
-import Media1 from "../../../../assets/ProjectPage/Mannat/Media/Media1.png";
-import Media2 from "../../../../assets/ProjectPage/Mannat/Media/Media2.png";
-import Media3 from "../../../../assets/ProjectPage/Mannat/Media/Media3.png";
-import Media4 from "../../../../assets/ProjectPage/Mannat/Media/Media4.png";
+const PrimaryMedia = ({ data = [] }) => {
+const [currentSlide, setCurrentSlide] = useState(0);
 
-const Images = [Media1, Media2, Media3, Media4, ];
-
-const Media = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const settings = {
+    const settings = {
     centerMode: true,
     infinite: true,
     centerPadding: "0px",
@@ -30,16 +23,15 @@ const Media = () => {
       { breakpoint: 640, settings: { slidesToShow: 1 } },
     ],
   };
-
   return (
     <div className="space-y-4 md:space-y-8">
-      <h1 className="container ">Media</h1>
+      <h1 className="container">Media</h1>
       <div className="container px-0">
         <Slider {...settings}>
-          {Images.map((item, index) => (
+          {data.map((item, index) => (
             <motion.div
               key={index}
-              className="py-12 px-8 "
+              className="py-12 px-8"
               animate={{
                 opacity: index === currentSlide ? 1 : 0.3,
                 scale: index === currentSlide ? 1.1 : 1,
@@ -56,7 +48,7 @@ const Media = () => {
         </Slider>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Media;
+export default PrimaryMedia
