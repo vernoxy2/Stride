@@ -1,7 +1,7 @@
 // Feature Icons
 import Flooring from "../../assets/ProjectPage/Mannat/Features/layers.svg";
 import Construction from "../../assets/ProjectPage/Mannat/Features/Construction.svg";
-import Kitchen from "../../assets/ProjectPage/Mannat/Features/Kitchen.svg";
+import Kitchen from "../../assets/ProjectPage/Mannat/Features/kitchen.svg";
 import Window from "../../assets/ProjectPage/Mannat/Features/window.svg";
 import Doors from "../../assets/ProjectPage/Mannat/Features/doors.svg";
 import Plumbing from "../../assets/ProjectPage/Mannat/Features/Plumbing.svg";
