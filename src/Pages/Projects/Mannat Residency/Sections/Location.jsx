@@ -3,7 +3,7 @@ import Compass from "../../../../assets/ProjectPage/OrangeCity/SVG/compass.svg";
 import Logo from "../../../../assets/MannatLogo.svg";
 import PrimaryButton from "../../../../Components/PrimaryButton";
 import AProjectBy from "../../../../assets/ProjectPage/SVG/AProjectBy.svg"
-import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
+import Architect from "../../../../assets/ProjectPage/SVG/Architect.svg";
 
 const Location = () => {
   return (
