@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryButton from "../../../Components/PrimaryButton";
 
 const Touch = () => {
   return (
@@ -36,9 +37,7 @@ const Touch = () => {
               placeholder="Message"
               className=""
             ></textarea>
-            <button className="w-full mx-auto bg-secondary rounded-3xl text-white py-1.5 text-lg">
-              Submit
-            </button>
+            <PrimaryButton>Submit</PrimaryButton>
           </form>
         </div>
 

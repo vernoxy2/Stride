@@ -2,6 +2,7 @@ import React from "react";
 import EnquiryBg from "../../../assets/HomePage/PNG/Enquiry.png";
 import EnquiryBgImg from "../../../assets/HomePage/SVG/EnquiryBgImg.svg";
 import TitleBox from "../../../Components/TitleBox";
+import PrimaryButton from "../../../Components/PrimaryButton";
 
 const Enquiry = () => {
   return (
@@ -37,9 +38,7 @@ const Enquiry = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <p className="md:font-light" >We’re happy to connect! <br /> Required fields are marked</p>
 
-          <button className="w-full bg-secondary hover:bg-stride duration-300 transition-colors rounded-3xl text-white py-1.5 text-lg">
-            Submit
-          </button>
+          <PrimaryButton> Get a Call Back</PrimaryButton>
           </div>
         </form>
         {/* Background */}

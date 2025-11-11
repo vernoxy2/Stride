@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import Title from "../../../assets/HomePage/PNG/Says.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // using react-icons for arrows
 
 // Custom Next Arrow
@@ -54,8 +55,8 @@ const PeopleSay = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-stride/30 to-transparent">
-      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-40 px-2 relative">
+    <section className="bg-gradient-to-b from-stride/30 to-transparent relative mt-24">
+      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-32 px-2 relative">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="px-4 flex flex-col items-center">
@@ -69,6 +70,10 @@ const PeopleSay = () => {
           ))}
         </Slider>
       </div>
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 border-[12px] border-bg rounded-full">
+        <img src={Title} alt="" className="mx-auto" />
+      </div>
+      
     </section>
   );
 };

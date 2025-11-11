@@ -18,7 +18,7 @@ const Home = () => {
       <Header />
       <div className=" px-0 rounded-[70px]  bg-bg -my-14 py-28">
       <WhoWeAre />
-      {/* <SelectProject /> */}
+      <SelectProject />
       <Commitment />
       <PeopalSay />
       <Enquiry />

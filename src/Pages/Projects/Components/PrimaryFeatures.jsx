@@ -27,23 +27,52 @@ const PrimaryFeatures = ({
       )}
 
       {/* Feature List */}
-      <div className="container px-0 flex overflow-x-scroll">
+      {/* <div className="container px-0 flex flex-nowrap overflow-scroll  ">
         {data.map((item) => (
           <div
             key={item.id}
-            className="p-4 flex flex-col items-start justify-start gap-3"
+            className="p-4 flex  items-start justify-around gap-3 border border-stride"
           >
-            <div className="flex items-center gap-4">
-              <div className="rounded-full border border-[#d9d9d9] p-4 flex-shrink-0">
-                <img src={item.img} alt={item.title} className="w-12 md:w-16" />
+            <div className="flex items-center gap-4 ">
+              <div className="rounded-full border border-[#d9d9d9] p-6 flex-shrink-0">
+                <img src={item.img} alt={item.title} className="w-10 md:w-12" />
               </div>
               <div>
                 <p className="text-stride text-lg md:text-xl">{item.title}</p>
-                <p className="text-gray-700 text-base md:text-lg">{item.desc}</p>
+                <p className="text-gray-700 text-base md:text-lg">
+                  {item.desc}
+                </p>
               </div>
             </div>
           </div>
         ))}
+      </div> */}
+
+      <div className="overflow-hidden container px-0">
+        <div className="flex whitespace-nowrap animate-scroll">
+          {[...data, ...data].map((item, index) => (
+            <div
+              key={index}
+              className="p-4 flex items-start justify-around gap-3"
+            >
+              <div className="flex items-center gap-4 pe-10 ">
+                <div className="rounded-full border border-[#d9d9d9] p-6 flex-shrink-0">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-10 md:w-12"
+                  />
+                </div>
+                <div>
+                  <p className="text-stride text-lg md:text-xl">{item.title}</p>
+                  <p className="text-gray-700 text-base md:text-lg">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Project Image */}

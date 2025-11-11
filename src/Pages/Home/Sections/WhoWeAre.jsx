@@ -1,5 +1,6 @@
 import React from "react";
-
+import Vision from "../../../assets/HomePage/SVG/money.svg";
+import Mission from "../../../assets/HomePage/SVG/mission.svg";
 import TitleBox from "../../../Components/TitleBox";
 import Countdown from "./Countdown";
 
@@ -17,14 +18,14 @@ const WhoWeAre = () => {
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-5">
-                <h2 className="text-stride">Our Vision</h2>
+                <h2 className="text-stride flex items-center gap-3"><span><img src={Vision} alt="" /></span>Our Vision</h2>
                 <p className="lg:text-xl">
                   To build a future where technology and creativity unite to
                   shape a better world.
                 </p>
               </div>
               <div className="space-y-5">
-                <h2 className="text-stride">Our Mission</h2>
+                <h2 className="text-stride flex items-center gap-3"><span><img src={Mission} alt="" /></span>Our Mission</h2>
                 <p className="lg:text-xl">
                   Creating impact through excellence, integrity, and
                   collaborative client growth.

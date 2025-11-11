@@ -9,25 +9,15 @@ const PrimaryAmenities = ({ data = [] }) => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-center 
-              bg-gradient-to-b from-[#D9D9D9] to-transparent  
-              rounded-t-3xl pb-16 gap-2 
-              group 
-              hover:from-stride hover:to-transparent 
-              transition-all duration-300 
-              transform hover:-translate-y-3"
+            className="flex flex-col items-center bg-gradient-to-b from-[#D9D9D9] to-transparent rounded-t-3xl pb-16 gap-2 group hover:from-stride hover:to-transparent transition-all duration-300 transform hover:-translate-y-3"
           >
             <div
-              className="bg-secondary w-fit p-4 rounded-full -mt-14 
-                group-hover:bg-stride 
-                duration-300 
-                border-8 border-bg 
-                transition-colors"
+              className="bg-secondary w-fit p-4 rounded-full -mt-14 group-hover:bg-stride duration-300 border-8 border-bg transition-colors"
             >
               <img src={item.img} alt={item.title} className="mx-auto" />
             </div>
 
-            <h2 className="text-secondary group-hover:text-white transition-colors">
+            <h2 className="text-secondary group-hover:text-white transition-colors w-[80%] text-center">
               {item.title}
             </h2>
           </div>

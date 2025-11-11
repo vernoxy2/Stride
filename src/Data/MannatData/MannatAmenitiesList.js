@@ -1,24 +1,46 @@
-import Bus from "../../assets/ProjectPage/OrangeCity/SVG/bus.svg";
+import checkpoint from "../../assets/ProjectPage/Mannat/Amenities/checkpoint.svg";
+import check from "../../assets/ProjectPage/Mannat/Amenities/check.svg";
+import CCTV from "../../assets/ProjectPage/Mannat/Amenities/CCTV.svg";
+import grass from "../../assets/ProjectPage/Mannat/Amenities/grass.svg";
+import trimming from "../../assets/ProjectPage/Mannat/Amenities/trimming.svg";
+import bench from "../../assets/ProjectPage/Mannat/Amenities/bench.svg";
+import playground from "../../assets/ProjectPage/Mannat/Amenities/playground.svg";
 
 export const MannatAmenitiesList = [
   {
     id: 1,
-    img: Bus,
-    title: "Drop of zone",
+    img: checkpoint,
+    title: "Entry Gate",
   },
   {
     id: 2,
-    img: Bus,
-    title: "Drop of zone",
+    img: check,
+    title: "Security Cabin",
   },
   {
     id: 3,
-    img: Bus,
-    title: "Drop of zone",
+    img: CCTV,
+    title: "CCTV Cameras",
   },
   {
     id: 4,
-    img: Bus,
-    title: "Drop of zone",
+    img: grass,
+    title: "Landscaping Area",
   },
+  {
+    id: 5,
+    img: trimming,
+    title: "Garden Area",
+  },
+  {
+    id: 6,
+    img: bench,
+    title: "Senior Citizen Sitting",
+  },
+  {
+    id: 7,
+    img: playground,
+    title: "Kids Play Area",
+  },
+ 
 ];
