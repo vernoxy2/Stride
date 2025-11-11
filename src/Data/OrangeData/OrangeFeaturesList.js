@@ -1,5 +1,5 @@
 import Flooring from "../../assets/ProjectPage/OrangeCity/Features/Flooring.svg";
-import Kitchen from "../../assets/ProjectPage/OrangeCity/Features/Kitchen.svg";
+import Kitchen from "../../assets/ProjectPage/OrangeCity/Features/kitchen.svg";
 import Doors from "../../assets/ProjectPage/OrangeCity/Features/doors.svg";
 import Windows from "../../assets/ProjectPage/OrangeCity/Features/window.svg";
 import Electrification from "../../assets/ProjectPage/OrangeCity/Features/Electrification.svg";
