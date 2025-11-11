@@ -2,8 +2,8 @@ import React from "react";
 import Compass from "../../../../assets/ProjectPage/OrangeCity/SVG/compass.svg";
 import Logo from "../../../../assets/MannatLogo.svg";
 import PrimaryButton from "../../../../Components/PrimaryButton";
-// import AProjectBy from "../../../../assets/ProjectPage/svg/AProjectBy.svg";
-// import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
+import AProjectBy from "../../../../assets/ProjectPage/SVG/AProjectBy.svg"
+import Architect from "../../../../assets/ProjectPage/svg/Architect.svg";
 
 const Location = () => {
   return (
@@ -31,28 +31,28 @@ const Location = () => {
           <PrimaryButton>Get Directions</PrimaryButton>
           <div className="flex justify-around items-center p-4">
             {/* Left Section */}
-            <div className="flex flex-col items-center space-y-2">
-              <p className="text-stride text-center">A Project By</p>
-              {/* <img
+            <div className="flex flex-col items-start space-y-2">
+              <p className="text-stride ">A Project By</p>
+              <img
                 src={AProjectBy}
                 alt="A Project By"
                 className=" object-contain"
-              /> */}
+              />
             </div>
 
             {/* Divider */}
             <div className="w-px bg-stride h-48"></div>
 
             {/* Right Section */}
-            <div className="flex flex-col items-center space-y-2">
-              <p className="text-stride text-center">
+            <div className="flex flex-col items-start space-y-2">
+              <p className="text-stride ">
                 Architect & Structure :<br /> MEP Consultant
               </p>
-              {/* <img
+              <img
                 src={Architect}
                 alt="Architect"
                 className=" object-contain"
-              /> */}
+              />
             </div>
           </div>
         </div>
