@@ -5,7 +5,7 @@ import Windows from "../../assets/ProjectPage/OrangeCity/Features/window.svg";
 import Electrification from "../../assets/ProjectPage/OrangeCity/Features/Electrification.svg";
 import Toilet from "../../assets/ProjectPage/OrangeCity/Features/BathroomToilet.svg";
 import WaterSupply from "../../assets/ProjectPage/OrangeCity/Features/WaterSupply.svg";
-import Texture from "../../assets/ProjectPage/OrangeCity/Features/walls.svg";
+import Texture from "../../assets/ProjectPage/OrangeCity/Features/Walls.svg";
 import CCTV from "../../assets/ProjectPage/OrangeCity/Features/CCTV.svg";
 import BalconyRailing from "../../assets/ProjectPage/OrangeCity/Features/BalconyRailing.svg";
 import TerraceFinishing from "../../assets/ProjectPage/OrangeCity/Features/TerraceFinishing.svg";
