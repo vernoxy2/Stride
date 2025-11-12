@@ -40,12 +40,12 @@ const About = () => {
       {/* About */}
       <div className="container xl:px-0 2xl:px-24 space-y-5 md:space-y-10">
         {/* Title */}
-        <div className=" xl:px-5">
+        <div className="xl:px-24 2xl:px-0">
           <TitleBox title="About Us" className="border-[#D9D9D9]" />
         </div>
 
         {/* Text */}
-        <div className="xl:px-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="xl:px-24 2xl:px-0  grid grid-cols-1 lg:grid-cols-2 gap-8">
           <h1 className="leading-">
             Creating the <br /> future, one idea <br /> at a time.
           </h1>
