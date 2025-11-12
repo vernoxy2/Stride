@@ -4,6 +4,7 @@ import icon1 from "../../../assets/HomePage/SVG/Commitment/icon1.svg";
 import icon2 from "../../../assets/HomePage/SVG/Commitment/icon2.svg";
 import icon3 from "../../../assets/HomePage/SVG/Commitment/icon3.svg";
 import video from "../../../assets/HomePage/Video/6615304-uhd_3840_2160_25fps.mp4";
+import { CornerClip } from "../../../Components/CornerClip";
 
 const commitmentItems = [
   {
@@ -45,12 +46,15 @@ const Commitment = () => {
           <div className="absolute -bottom-10 -left-10 h-56 w-56 rounded-full bg-white/70 flex items-center justify-center text-center">
             <h1 className="text-3xl font-bold">4.9</h1>
           </div>
-          <div
-            className="absolute top-0 right-0 px-20 lg:px-32 py-7 lg:py-10 bg-bg rounded-se-3xl rounded-es-3xl 
-before:absolute before:top-0 before:left-[-82px] before:h-full before:w-[82px] before:bg-transparent 
-before:clip-path-[path('M0_0_Q0,30_30,30_L0,30_Z')] before:rounded-se-3xl before:border before:border-secondary"
-          >
-            {/* <h1 className="text-3xl font-bold">4.9</h1> */}
+          {/* Corner clip */}
+          <div className="absolute right-0 bg-bg px-20 lg:px-28 h-20 rounded-es-3xl">
+            <CornerClip
+            className="rotate-180"
+              positions={[
+                { top: 0, left: -24 },
+                { bottom: -24, right: 0 },
+              ]}
+            />
           </div>
         </div>
 

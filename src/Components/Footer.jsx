@@ -12,7 +12,7 @@ const Footer = ({ height = "600px", backgroundImage = FooterImg }) => {
   };
 
   return (
-    <section style={style} className="bg-secondary py-20 before:-z-10 relative before:absolute before:content-[''] before:h-10 before:top-0 before:left-0 before:bg-white">
+    <section style={style} className="bg-secondary pb-8 before:-z-10 relative before:absolute before:content-[''] before:h-10 before:top-0 before:left-0 before:bg-white">
       <h1 className="text-white text-center container mt-5">
         Where your dream home <br className="hidden md:block" /> becomes reality
       </h1>

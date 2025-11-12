@@ -70,12 +70,31 @@ const About = () => {
           className=" w-full rounded-3xl relative bg-center bg-no-repeat bg-cover backdrop-blur-sm"
         >
           <div className=" rounded-3xl grid grid-cols-1 md:grid-cols-2  w-full">
-            <div className="relative">
-              <div className="absolute top-0 left-0 bg-bg px-14 md:px-28 py-5 lg:py-8 rounded-br-3xl"></div>
+            {/* Gradient */}
+            <div className="relative w-fit bg-white px-20 lg:px-28 h-20 rounded-ee-3xl">
+              {[
+                { top: 0, right: -24 },
+                { bottom: -24, left: 0 },
+              ].map((pos, idx) => (
+                <div
+                  key={idx}
+                  className="absolute w-[24px] h-[24px] bg-white rotate-90"
+                  style={{
+                    top: pos.top,
+                    right: pos.right,
+                    bottom: pos.bottom,
+                    left: pos.left,
+                    clipPath: 'path("M0 0Q0,24 24,24 L 0 24 Z")',
+                  }}
+                />
+              ))}
             </div>
 
             {/* Counter section */}
-            <div ref={ref} className="pt-40 grid grid-cols-1 md:grid-cols-2 gap-3 p-2 ">
+            <div
+              ref={ref}
+              className="pt-40 grid grid-cols-1 md:grid-cols-2 gap-3 p-2 "
+            >
               <div></div>
 
               {AboutCounter.map((item, index) => (

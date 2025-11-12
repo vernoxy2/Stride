@@ -3,6 +3,7 @@ import EnquiryBg from "../../../assets/HomePage/PNG/Enquiry.png";
 import EnquiryBgImg from "../../../assets/HomePage/SVG/EnquiryBgImg.svg";
 import TitleBox from "../../../Components/TitleBox";
 import PrimaryButton from "../../../Components/PrimaryButton";
+import { CornerClip } from "../../../Components/CornerClip";
 
 const Enquiry = () => {
   return (
@@ -36,19 +37,29 @@ const Enquiry = () => {
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <p className="md:font-light" >We’re happy to connect! <br /> Required fields are marked</p>
+            <p className="md:font-light">
+              We’re happy to connect! <br /> Required fields are marked
+            </p>
 
-          <PrimaryButton> Get a Call Back</PrimaryButton>
+            <PrimaryButton> Get a Call Back</PrimaryButton>
           </div>
         </form>
         {/* Background */}
         <div className="absolute inset-0 rounded-xl -z-10 flex lg:justify-between justify-end">
-          <img src={EnquiryBgImg} alt="" className="h-full hidden lg:block"/>
-          <img src={EnquiryBgImg} alt="" className="h-full -scale-x-100"/>
+          <img src={EnquiryBgImg} alt="" className="h-full hidden lg:block" />
+          <img src={EnquiryBgImg} alt="" className="h-full -scale-x-100" />
         </div>
       </section>
       {/* Overlay with rounded corners */}
-      <div className="absolute p-6 md:p-12 px-20 md:px-40 bg-white bottom-0 left-0 rounded-se-3xl rounded-es-3xl"></div>
+      <div className="absolute left-0 bottom-0 bg-bg px-20 lg:px-28 h-20 rounded-se-3xl">
+        <CornerClip
+        className="rotate-0"
+          positions={[
+            { top: -24, left: 0 },
+            { bottom: 0, right: -24 },
+          ]}
+        />
+      </div>
     </section>
   );
 };

@@ -5,6 +5,7 @@ import PrimaryHeader from "../../Components/PrimaryHeader";
 import PeopleSay from "../Home/Sections/PeopalSay";
 import Values from "./Sections/Values";
 import About from "./Sections/About";
+import CurvedImage from "../../Components/CurvedImage.JSX";
 
 const AboutUs = () => {
   return (
@@ -15,6 +16,7 @@ const AboutUs = () => {
                    before:absolute before:h-12 before:w-full before:bg-white before:-top-12 before:content-[''] before:rounded-t-[33px] before:md:rounded-t-[66px]
                    after:absolute after:h-12 after:w-full after:bg-white after:-bottom-12 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >
+        {/* <CurvedImage /> */}
         <About />
         <Values />
         <PeopleSay />

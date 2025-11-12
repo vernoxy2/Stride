@@ -55,7 +55,7 @@ const PeopleSay = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-stride/30 to-transparent relative mt-24">
+    <div className="bg-gradient-to-b from-stride/30 to-transparent relative mt-28">
       <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-32 px-8 relative">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
@@ -70,7 +70,7 @@ const PeopleSay = () => {
           ))}
         </Slider>
       </div>
-      <div className="absolute -top-28 left-1/2 -translate-x-1/2 border-[12px] border-bg rounded-full">
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 border-[12px] border-white rounded-full">
         <img src={Title} alt="" className="mx-auto" />
       </div>
       
