@@ -16,10 +16,10 @@
     @apply text-2xl lg:text-3xl;
   }
   input {
-    @apply text-secondary bg-[#f0f0f0] text-lg rounded-full p-4 w-full focus:ring-2 focus:ring-stride focus:outline-none;
+    @apply text-secondary bg-[#f0f0f0] text-lg rounded-full p-5 px-6 w-full focus:ring-2 focus:ring-stride focus:outline-none;
   }
   textarea {
-    @apply text-secondary bg-[#f0f0f0] text-lg rounded-3xl p-4 w-full focus:ring-2 focus:ring-stride focus:outline-none;
+    @apply text-secondary bg-[#f0f0f0] text-lg rounded-3xl p-5 px-6 w-full focus:ring-2 focus:ring-stride focus:outline-none;
   }
 }
 
