@@ -1,47 +1,42 @@
 import React from "react";
 import PrimaryButton from "../../../Components/PrimaryButton";
+import OrangeCity from "../../../assets/Contactpage/SVG/OrangeCity.svg";
+import Mannat from "../../../assets/Contactpage/SVG/Mannat.svg";
 
 const Touch = () => {
   return (
-    <section className="container">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* 1st column */}
+    <div className="container">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Left Column - Contact Form */}
         <div className="rounded-3xl space-y-5">
           <h1 className="text-stride font-medium">Get In Touch</h1>
-          <form action="" className="space-y-5">
+
+          <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <input
-              type="text"
-              placeholder="Frist Name"
-              className=""
-              required
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              className=""
-              required
-            />
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
             </div>
-            <input
-              type="email"
-              placeholder="Email"
-              className=""
-              required
-            />
-            <textarea
-              name=""
-              id=""
-              cols="20"
-              rows="10"
-              placeholder="Message"
-              className=""
-            ></textarea>
+
+            <input type="email" placeholder="Email" required />
+            <textarea cols="20" rows="6" placeholder="Message"></textarea>
+
             <PrimaryButton>Submit</PrimaryButton>
+
+            <div className="md:grid grid-cols-1 md:grid-cols-2 gap-5 hidden pt-16">
+              <div
+                style={{ backgroundImage: `url(${Mannat})` }}
+                className="bg-cover bg-center bg-no-repeat w-full h-full min-h-[80px] rounded-full"
+              ></div>
+
+              <div
+                style={{ backgroundImage: `url(${OrangeCity})` }}
+                className="bg-cover bg-center bg-no-repeat w-full h-full min-h-[80px] rounded-full"
+              ></div>
+            </div>
           </form>
         </div>
 
-        {/* 2nd column (Google Map) */}
+        {/* Right Column - Google Map */}
         <div className="w-full min-h-[400px] h-full">
           <iframe
             title="Google Map - Garden City Ankleshwar"
@@ -49,14 +44,14 @@ const Touch = () => {
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             className="rounded-3xl"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

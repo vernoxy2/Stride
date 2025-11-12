@@ -1,13 +1,14 @@
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 
-const PrimaryButton = ({ children }) => {
+const PrimaryButton = ({ children, className = "", ...props }) => {
   return (
-    <button className="bg-secondary text-xl text-white rounded-3xl p-2 px-5 flex items-center justify-center group hover:bg-stride duration-700 transition-colors">
-      {children}
-      <div className="">
-        <BsArrowRightShort className="ml-2 bg-white rounded-3xl text-secondary text-2xl group-hover:-rotate-45 duration-700 h-full w-full" />
-      </div>
+    <button
+      {...props}
+      className={`bg-secondary text-white text-xl flex gap-2 items-center justify-center rounded-full p-1 w-fit hover:bg-stride group duration-500 transition-colors ${className}`}
+    >
+      <span className="text-white px-4">{children}</span>
+      <BsArrowRightShort className="text-secondary bg-white text-5xl rounded-full p-1 group-hover:-rotate-45 duration-500" />
     </button>
   );
 };

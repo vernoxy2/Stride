@@ -33,10 +33,10 @@ const ProOverview = () => {
             <img src={item.img} alt="" className="object-cover" />
           </div>
           <div className="space-y-4">
-         <div className="relative w-full h-[2px] bg-[#d9d9d9] before:content-[''] before:absolute before:top-0 before:left-0 before:w-[20%] before:h-full before:bg-stride before:transition-all before:duration-1000 before:ease-in-out group-hover:before:w-full"></div>
+            <div className="relative w-full rounded-3xl h-[2px] bg-[#d9d9d9] before:content-[''] before:absolute before:top-0 before:left-0 before:w-[20%] before:h-full before:bg-stride before:transition-all before:duration-1000 before:ease-in-out group-hover:before:w-full before:rounded-3xl"></div>
 
             <p className="camlecase text-secondary">{item.text}</p>
-         <div className="relative w-[25%] h-[2px] bg-stride"></div>
+            <div className="relative w-[25%] h-[2px] bg-stride"></div>
           </div>
         </div>
       ))}

@@ -33,8 +33,8 @@ const MannatResidency = () => {
 
       <section
         className="bg-bg relative
-                   before:absolute before:h-10 before:w-full before:bg-bg before:-top-10 before:content-[''] before:rounded-t-[66px]
-                   after:absolute after:h-10 after:w-full after:bg-bg after:-bottom-10 after:content-[''] after:rounded-b-[66px] after:z-[1]"
+                   before:absolute before:h-16 before:w-full before:bg-bg before:-top-16 before:content-[''] before:rounded-t-[66px]
+                   after:absolute after:h-16 after:w-full after:bg-bg after:-bottom-16 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >
         <PrimaryFeatures
           data={MannatFeaturesList}
