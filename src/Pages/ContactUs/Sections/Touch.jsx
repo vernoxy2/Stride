@@ -18,7 +18,7 @@ const Touch = () => {
             </div>
 
             <input type="email" placeholder="Email" required />
-            <textarea cols="20" rows="6" placeholder="Message"></textarea>
+            <textarea cols="20" rows="6" placeholder="Message" required></textarea>
 
             <PrimaryButton>Submit</PrimaryButton>
 

@@ -64,13 +64,13 @@ const valuesList = [
 
 const Values = () => {
   return (
-    <section className="bg-bg">
+    <div className="">
       <div className="container space-y-10">
         <TitleBox title="Our Values" className="border-[#D9D9D9]" />
         <h1>
           Where quality <br /> meets perfection
         </h1>
-        <div className="pt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-6">
+        <div className="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-6">
           {valuesList.map((item) => (
             <div
               key={item.id}
@@ -80,7 +80,7 @@ const Values = () => {
                 <img src={item.img} alt="" className="object-cover" />
               </div>
               <div className="space-y-4">
-                <hr className="bg-[#D9D9D9] h-[1.5px] rounded-2xl"/>
+                <hr className="bg-[#B7B7B7] h-[2px] rounded-2xl"/>
                 <h2 className="text-stride">{item.title}</h2>
                 <p className="camlecase font-[100px]">{item.desc}</p>
               </div>
@@ -88,7 +88,7 @@ const Values = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -36,9 +36,9 @@ const About = () => {
   });
 
   return (
-    <section className="bg-bg">
+    <div className="">
       {/* About */}
-      <section className="container xl:px-0 2xl:px-24">
+      <div className="container xl:px-0 2xl:px-24 space-y-5 md:space-y-10">
         {/* Title */}
         <div className=" xl:px-5">
           <TitleBox title="About Us" className="border-[#D9D9D9]" />
@@ -107,8 +107,8 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
-    </section>
+      </div>
+    </div>
   );
 };
 

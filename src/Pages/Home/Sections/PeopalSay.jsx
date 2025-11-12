@@ -7,10 +7,10 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // using react-icons
 const NextArrow = ({ onClick }) => {
   return (
     <div
-      className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
+      className="absolute -right-8 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
       onClick={onClick}
     >
-      <FaArrowRight className="text-stride text-2xl bg-white rounded-full p-2 shadow-lg hover:bg-gray-200" />
+      <FaArrowRight className="text-stride text-4xl bg-white rounded-full p-2 shadow-lg hover:bg-gray-200" />
     </div>
   );
 };
@@ -19,10 +19,10 @@ const NextArrow = ({ onClick }) => {
 const PrevArrow = ({ onClick }) => {
   return (
     <div
-      className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
+      className="absolute -left-8 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
       onClick={onClick}
     >
-      <FaArrowLeft className="text-stride text-2xl bg-white rounded-full p-2 shadow-lg hover:bg-gray-200" />
+      <FaArrowLeft className="text-stride text-4xl bg-white rounded-full p-2 shadow-lg hover:bg-gray-200" />
     </div>
   );
 };
@@ -55,11 +55,11 @@ const PeopleSay = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-stride/30 to-transparent relative mt-24">
-      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-32 px-2 relative">
+    <div className="bg-gradient-to-b from-stride/30 to-transparent relative mt-24">
+      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-32 px-8 relative">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="px-4 flex flex-col items-center">
+            <div key={index} className="px-4 flex flex-col items-center w-[50%]  ">
               <h2 className="font-medium text-stride mb-4">
                 {testimonial.text}
               </h2>
@@ -70,11 +70,11 @@ const PeopleSay = () => {
           ))}
         </Slider>
       </div>
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 border-[12px] border-bg rounded-full">
+      <div className="absolute -top-28 left-1/2 -translate-x-1/2 border-[12px] border-bg rounded-full">
         <img src={Title} alt="" className="mx-auto" />
       </div>
       
-    </section>
+    </div>
   );
 };
 
