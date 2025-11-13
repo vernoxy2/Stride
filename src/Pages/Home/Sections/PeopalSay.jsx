@@ -56,8 +56,8 @@ const PeopleSay = () => {
 
   return (
     <div className="bg-gradient-to-b from-stride/30 to-transparent relative mt-28">
-      <div className="flex flex-col w-full max-w-2xl text-center container mx-auto py-32 px-8 relative">
-        <Slider {...settings}>
+      <div data-aos="zoom-in" className="flex flex-col w-full max-w-2xl text-center container mx-auto py-32 px-8 relative">
+        <Slider  {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="px-4 flex flex-col items-center w-[50%]  ">
               <h2 className="font-medium text-stride mb-4">

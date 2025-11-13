@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import AboutUs from "./Pages/AboutUs/AboutUs";
@@ -10,6 +10,12 @@ import Navbar from "./Components/Navbar";
 import MannatResidency from "./Pages/Projects/Mannat Residency/MannatResidency";
 import OrangeCity from "./Pages/Projects/Orange City/OrangeCity";
 import StrideReality from "./Pages/Projects/Stride Reality/StrideReality";
+
+// Animation Library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { tr } from "framer-motion/client";
+
 
 
 // Optional: Map navLinks to route components
@@ -31,6 +37,17 @@ const navLinks = [
 ];
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: true,
+      delay: 200
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

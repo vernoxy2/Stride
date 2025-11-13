@@ -32,7 +32,7 @@ const About = () => {
   // Track when the counter section enters view
   const { ref, inView } = useInView({
     triggerOnce: true, // run only once
-    threshold: 0.2, // 20% of the section visible
+    threshold: 0.5, // 20% of the section visible
   });
 
   return (
@@ -45,9 +45,9 @@ const About = () => {
         </div>
 
         {/* Text */}
-        <div className="xl:px-24 2xl:px-0  grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <h1 className="leading-">
-            Creating the <br /> future, one idea <br /> at a time.
+        <div data-aos="fade-up" className="xl:px-24 2xl:px-0  grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <h1 className="md:w-[60%] lg:w-full">
+            Creating the <br className="sm:hidden lg:block" /> future, one idea <br className="sm:hidden xl:block" /> at a time.
           </h1>
 
           <div className=" flex flex-col gap-2 justify-between ">
@@ -66,6 +66,7 @@ const About = () => {
 
         {/* Image + Counter */}
         <div
+        data-aos="fade-up"
           style={{ backgroundImage: `url(${AboutImg})` }}
           className=" w-full rounded-3xl relative bg-center bg-no-repeat bg-cover backdrop-blur-sm"
         >

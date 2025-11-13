@@ -18,8 +18,8 @@ export default {
         secondary: "#1B2E3C",
         bg: "#F9F9F9",
       },
-      fontFamily: {
-        helvetica: ['"Helvetica Neue"', "sans-serif"],
+       fontFamily: {
+        helvetica: ['HelveticaNeue', 'sans-serif'],
       },
       keyframes: {
         marquee: {

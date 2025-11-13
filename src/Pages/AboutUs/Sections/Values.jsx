@@ -67,16 +67,17 @@ const Values = () => {
     <div className="">
       <div className="container space-y-10">
         <TitleBox title="Our Values" className="border-[#D9D9D9]" />
-        <h1>
+        <h1 data-aos="fade-up">
           Where quality <br /> meets perfection
         </h1>
         <div className="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 md:gap-6">
           {valuesList.map((item) => (
             <div
               key={item.id}
-              className="bg-   pb-14 flex flex-col justify-around gap-2 lg:gap-4 "
+              data-aos="fade-up"
+              className="pb-14 flex flex-col justify-around gap-2 lg:gap-4 "
             >
-              <div className="w-full h-16 flex items-center justify-start ">
+              <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="w-fit h-16 flex items-center justify-start ">
                 <img src={item.img} alt="" className="object-cover" />
               </div>
               <div className="space-y-4">

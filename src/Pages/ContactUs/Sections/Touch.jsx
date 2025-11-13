@@ -9,7 +9,7 @@ const Touch = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column - Contact Form */}
         <div className="rounded-3xl space-y-5">
-          <h1 className="text-stride font-medium">Get In Touch</h1>
+          <h1  className="text-stride font-helvetica ">Get In Touch</h1>
 
           <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -22,17 +22,24 @@ const Touch = () => {
 
             <PrimaryButton>Submit</PrimaryButton>
 
-            <div className="md:grid grid-cols-1 md:grid-cols-2 gap-5 hidden pt-16">
-              <div
-                style={{ backgroundImage: `url(${Mannat})` }}
-                className="bg-cover bg-center bg-no-repeat w-full h-full min-h-[80px] rounded-full"
-              ></div>
+           <div className="md:grid grid-cols-1 md:grid-cols-2 gap-5 pt-16">
+  <div
+    data-aos="fade-right"
+    style={{
+      backgroundImage: `url(${Mannat})`,
+    }}
+    className="w-full h-[90px] bg-cover bg-center bg-no-repeat rounded-full"
+  ></div>
 
-              <div
-                style={{ backgroundImage: `url(${OrangeCity})` }}
-                className="bg-cover bg-center bg-no-repeat w-full h-full min-h-[80px] rounded-full"
-              ></div>
-            </div>
+  <div
+    data-aos="fade-left"
+    style={{
+      backgroundImage: `url(${OrangeCity})`,
+    }}
+    className="w-full h-[90px] bg-cover bg-center bg-no-repeat rounded-full"
+  ></div>
+</div>
+
           </form>
         </div>
 

@@ -41,11 +41,11 @@ const countdown = () => {
           />
         </div> */}
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-3xl">
-        <div className="bg-secondary/20 rounded-3xl h-full"></div>
-        <div className="bg-secondary/20 rounded-3xl h-full"></div>
-        <div className="bg-secondary/20 rounded-3xl h-full"></div>
-        <div className="bg-secondary/20 rounded-3xl h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-3xl">
+        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
+        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
+        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
+        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full">
           {/* <img
             src={weare1}
             alt=""

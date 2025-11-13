@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/NavLogo.svg";
 import { CiLocationOn, CiMail } from "react-icons/ci";
-import { IoCallOutline, IoLogoFacebook } from "react-icons/io5";
+import { IoCallOutline } from "react-icons/io5";
 import { FaSquareFacebook, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 
@@ -11,18 +11,22 @@ const contactdata = [
     icon: <CiLocationOn />,
     title: "Location",
     info: "Survey No-612, Opposite Garden City, Ankleshwar.",
+    link: "https://www.google.com/maps/place/Stride+Reality/@22.9823253,73.0878417,17z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d22.9823253!4d73.0878417",
+
   },
   {
     id: 2,
     icon: <IoCallOutline />,
     title: "Phone",
     info: "+91 81550 04443",
+    link: "tel:+918155004443",
   },
   {
     id: 3,
     icon: <CiMail />,
     title: "Email",
     info: "k2T0o@example.com",
+    link: "mailto:k2T0o@example.com",
   },
 ];
 
@@ -52,7 +56,7 @@ const Socialdata = [
 
 const FooterData = () => {
   return (
-    <section className="container pb-0">
+    <section data-aos="fade-up" className="container py-0 overflow-hidden">
       <div className="bg-bg container p-8 md:p-12 rounded-[35px] space-y-2">
         {/* 1st row */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-2">
@@ -67,11 +71,11 @@ const FooterData = () => {
           {/* 2nd column */}
           <div className="hidden xl:block border-x-2 border-stride/20"></div>
           {/* 3rd column */}
-          <div className="flex flex-col lg:px-4">
-            <h2 className=" text-stride">Contact Us</h2>
+          <div className="flex flex-col gap-3 lg:px-4">
+            <h2 className=" text-stride font-bold">Contact Us</h2>
             <ul>
               {contactdata.map((item) => (
-                <li key={item.id} className="flex items-center gap-4 py-2">
+                <li key={item.id} className="flex items-start gap-3 py-1">
                   <div className="text-stride text-4xl lg:text-5xl">{item.icon}</div>
                   <div className="-space-y-1">
                     <p className="text-stride camlecase ">{item.title}</p>
