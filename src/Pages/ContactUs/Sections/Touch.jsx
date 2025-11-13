@@ -9,7 +9,7 @@ const Touch = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Column - Contact Form */}
         <div className="rounded-3xl space-y-5">
-          <h1  className="text-stride font-helvetica ">Get In Touch</h1>
+          <h1 className="text-stride font-helvetica ">Get In Touch</h1>
 
           <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -18,28 +18,32 @@ const Touch = () => {
             </div>
 
             <input type="email" placeholder="Email" required />
-            <textarea cols="20" rows="6" placeholder="Message" required></textarea>
+            <textarea
+              cols="20"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
 
             <PrimaryButton>Submit</PrimaryButton>
 
-           <div className="md:grid grid-cols-1 md:grid-cols-2 gap-5 pt-16">
-  <div
-    data-aos="fade-right"
-    style={{
-      backgroundImage: `url(${Mannat})`,
-    }}
-    className="w-full h-[90px] bg-cover bg-center bg-no-repeat rounded-full"
-  ></div>
+            <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-5 pt-16">
+              <div
+                data-aos="fade-right"
+                style={{
+                  backgroundImage: `url(${Mannat})`,
+                }}
+                className="w-full h-[90px] bg-cover bg-center bg-no-repeat rounded-full"
+              ></div>
 
-  <div
-    data-aos="fade-left"
-    style={{
-      backgroundImage: `url(${OrangeCity})`,
-    }}
-    className="w-full h-[90px] bg-cover bg-center bg-no-repeat rounded-full"
-  ></div>
-</div>
-
+              <div
+                data-aos="fade-left"
+                style={{
+                  backgroundImage: `url(${OrangeCity})`,
+                }}
+                className="w-full h-[90px] bg-cover bg-center bg-no-repeat rounded-full"
+              ></div>
+            </div>
           </form>
         </div>
 
