@@ -5,7 +5,6 @@ import PrimaryHeader from "../../Components/PrimaryHeader";
 import PeopleSay from "../Home/Sections/PeopalSay";
 import Values from "./Sections/Values";
 import About from "./Sections/About";
-import CurvedImage from "../../Components/CurvedImage.JSX";
 
 const AboutUs = () => {
   return (
