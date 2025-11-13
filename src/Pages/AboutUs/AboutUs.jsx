@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import Head from "../../assets/AboutPage/PNG/AboutHead.png";
+import Foot from "../../assets/AboutPage/PNG/AboutFoot.png";
 import PrimaryHeader from "../../Components/PrimaryHeader";
 import PeopleSay from "../Home/Sections/PeopalSay";
 import Values from "./Sections/Values";
@@ -20,7 +21,7 @@ const AboutUs = () => {
         <Values />
         <PeopleSay />
       </section>
-      <Footer />
+      <Footer backgroundImage={Foot} />
     </div>
   );
 };

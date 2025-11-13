@@ -51,7 +51,7 @@ const About = () => {
           </h1>
 
           <div className=" flex flex-col gap-2 justify-between ">
-            <p>
+            <p className="font-bold">
               Fill out the form, and our team will contact you soon with more
               information.
             </p>
@@ -107,7 +107,7 @@ const About = () => {
                     <img src={item.img} alt="" />
                   </div>
                   <div>
-                    <h1 className="text-6xl md:text-5xl xl:text-6xl">
+                    <h1 className="text-6xl md:text-5xl xl:text-6xl font-bold">
                       {inView ? (
                         <CountUp
                           start={0}

@@ -82,7 +82,7 @@ const Values = () => {
               </div>
               <div className="space-y-4">
                 <hr className="bg-[#B7B7B7] h-[2px] rounded-2xl"/>
-                <h2 className="text-stride">{item.title}</h2>
+                <h2 className="text-stride font-bold">{item.title}</h2>
                 <p className="camlecase font-[100px]">{item.desc}</p>
               </div>
             </div>
