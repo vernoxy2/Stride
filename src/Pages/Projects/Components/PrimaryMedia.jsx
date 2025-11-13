@@ -25,7 +25,7 @@ const [currentSlide, setCurrentSlide] = useState(0);
   };
   return (
     <div className="space-y-4 md:space-y-8">
-      <h1 className="container">Media</h1>
+      <h1 data-aos="fade-up" className="container">Media</h1>
       <div className="container px-0">
         <Slider {...settings}>
           {data.map((item, index) => (

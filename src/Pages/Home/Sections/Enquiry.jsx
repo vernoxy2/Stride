@@ -38,10 +38,12 @@ const Enquiry = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <p className="md:font-light">
-              We’re happy to connect! <br /> Required fields are marked
+              We’re happy to connect! Required fields are marked
             </p>
-
+            <div className="flex justify-end h-fit">
             <PrimaryButton> Get a Call Back</PrimaryButton>
+
+            </div>
           </div>
         </form>
         {/* Background */}
@@ -53,7 +55,7 @@ const Enquiry = () => {
       {/* Overlay with rounded corners */}
       <div className="absolute left-0 bottom-0 bg-bg px-20 lg:px-28 h-20 rounded-se-3xl">
         <CornerClip
-        className="rotate-0"
+          className="rotate-0"
           positions={[
             { top: -24, left: 0 },
             { bottom: 0, right: -24 },

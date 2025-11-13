@@ -9,16 +9,16 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
     <div className="container space-y-5 md:space-y-10">
       {/* Location Map heading */}
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img src={Compass} alt="Compass Icon" className="pointer-events-none" />
+        <div data-aos="fade" className="flex items-center gap-3">
+          <img  src={Compass} alt="Compass Icon" className="pointer-events-none hidden sm:block" />
           <h1>Location Map</h1>
         </div>
         <div>
-          <img src={logo} alt="Logo" className="h-32 pointer-events-none" />
+          <img data-aos="zoom-in" src={logo} alt="Logo" className="sm:h-28 pointer-events-none" />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Location Details */}
         <div className="border-[2px] border-[#d9d9d9] rounded-3xl p-5 lg:p-10 space-y-3 md:space-y-6">
           <div className="space-y-1.5 md:space-y-3">
@@ -30,29 +30,29 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
 
           <PrimaryButton>Get Directions</PrimaryButton>
 
-          <div className="flex justify-around items-center p-4">
+          <div className="flex justify-around items-center p-4 w-[110%] sm:w-[100%]">
             {/* Left Section */}
             <div className="flex flex-col items-start space-y-2">
               <p className="text-stride">A Project By</p>
               <img
                 src={AProjectBy}
                 alt="A Project By"
-                className="object-contain"
+                className="object-cover h-12 sm:h-28"
               />
             </div>
 
             {/* Divider */}
-            <div className="w-px bg-stride h-48"></div>
+            <div className="w-px bg-stride h-32 sm:h-48"></div>
 
             {/* Right Section */}
             <div className="flex flex-col items-start space-y-2">
               <p className="text-stride">
-                Architect & Structure :<br /> MEP Consultant
+                Architect & Structure :<br className="sm:hidden" /> MEP Consultant
               </p>
               <img
                 src={Architect}
                 alt="Architect"
-                className="object-contain"
+                className="object-cover h-12 sm:h-28"
               />
             </div>
           </div>

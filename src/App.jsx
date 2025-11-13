@@ -14,7 +14,6 @@ import StrideReality from "./Pages/Projects/Stride Reality/StrideReality";
 // Animation Library
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { tr } from "framer-motion/client";
 
 
 
@@ -44,7 +43,8 @@ const App = () => {
       easing: 'ease-in-out',
       once: true,
       mirror: true,
-      delay: 200
+      delay: 200,
+      offset: 200
     });
   }, []);
 

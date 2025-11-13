@@ -61,7 +61,7 @@ const MapSrc =
           logo={Logo}
           locationDetails={
             <>
-              <span className="text-stride">Orange City</span> opposite Vastu
+              <span className="text-stride font-bold">Orange City</span> opposite Vastu
               Vila, <br className="hidden xl:block" /> Hasot Road, Ankleshwar
             </>
           }

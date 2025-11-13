@@ -10,7 +10,7 @@ const PrimaryFeatures = ({
   return (
     <div className="space-y-8 md:space-y-12">
       {/* Project Location */}
-      <div className="container flex gap-3 items-start text-xl md:text-5xl">
+      <div data-aos="fade" className="container flex gap-3 items-start text-xl md:text-5xl">
         <CiLocationOn className="text-stride mt-1" />
         <p>
           <span className="text-stride">{projectName}</span>
@@ -20,13 +20,13 @@ const PrimaryFeatures = ({
 
       {/* Title */}
       {data.length > 0 && (
-        <div className="container space-y-8 md:space-y-12">
+        <div data-aos="fade-up" className="container space-y-8 md:space-y-12">
           <h1>Specifications</h1>
           <hr className="h-[1.5px] bg-[#d9d9d9]" />
         </div>
       )}
 
-      <div className="overflow-hidden container px-0">
+      {/* <div data-aos="fade-left" className="overflow-hidden container px-0">
         <div className="flex whitespace-nowrap animate-marquee">
           {[...data, ...data].map((item, index) => (
             <div
@@ -51,17 +51,14 @@ const PrimaryFeatures = ({
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* try */}
-      <div className="overflow-hidden container px-0">
-        <div className="flex flex-nowrap animate-marquee">
+      <div data-aos="fade-left" className="overflow-hidden container px-0">
+        <div className="flex flex-nowrap animate-scroll">
           {[...data, ...data].map((item, index) => (
-            <div
-              key={index}
-              className="p-2 mx-2 flex-shrink-0 w-[28%]"
-            >
-              <div className="flex items-center gap-4 ">
+            <div key={index} className="p-2 mx-2 flex-shrink-0 w-[28%]">
+              <div className="flex items-center gap-4">
                 <div className="rounded-full border border-[#d9d9d9] p-6 flex-shrink-0">
                   <img
                     src={item.img}
@@ -83,7 +80,7 @@ const PrimaryFeatures = ({
 
       {/* Project Image */}
       {image && (
-        <div className="container">
+        <div data-aos="fade" className="container">
           <img
             src={image}
             alt={projectName}

@@ -42,5 +42,10 @@ export const MannatAmenitiesList = [
     img: playground,
     title: "Kids Play Area",
   },
+  {
+    id: 8,
+    img: playground,
+    title: "Kids Play Area",
+  },
  
 ];

@@ -60,9 +60,9 @@ const MannatResidency = () => {
           logo={Logo}
           locationDetails={
             <>
-              <span className="text-stride">Mannat Residency,</span> <br />
-              Behind Decent Hotel, <br />
-              Nr. GIDC Bus Station, <br />
+              <span className="text-stride font-bold">Mannat Residency,</span> <br />
+              Behind Decent Hotel, <br className="sm:hidden lg:block" />
+              Nr. GIDC Bus Station, <br  className="hidden lg:block" />
               Ankleshwar, Gujarat.
             </>
           }
