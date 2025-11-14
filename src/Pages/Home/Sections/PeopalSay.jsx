@@ -1,9 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import Title from "../../../assets/HomePage/PNG/Says.png";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // using react-icons for arrows
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Comma from "../../../assets/HomePage/SVG/Comma.svg";
 
-const CornerClip = ({ positions, className = '' }) => {
+const CornerClip = ({ positions, className = "" }) => {
   return (
     <>
       {positions.map((pos, idx) => (
@@ -30,7 +31,7 @@ const NextArrow = ({ onClick }) => {
       className="hidden md:block absolute -right-8 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
       onClick={onClick}
     >
-      <FaArrowRight className="text-stride text-4xl bg-white rounded-full p-2 shadow-lg hover:bg-gray-200" />
+      <IoIosArrowForward className="text-secondary text-4xl bg-white rounded-full p-2 shadow-lg hover:bg-stride hover:text-white duration-200 transition-colors" />
     </div>
   );
 };
@@ -42,7 +43,7 @@ const PrevArrow = ({ onClick }) => {
       className="hidden md:block absolute -left-8 top-1/2 transform -translate-y-1/2 cursor-pointer z-10"
       onClick={onClick}
     >
-      <FaArrowLeft className="text-stride text-4xl bg-white rounded-full p-2 shadow-lg hover:bg-gray-200" />
+      <IoIosArrowBack className="text-secondary text-4xl bg-white rounded-full p-2 shadow-lg hover:bg-stride hover:text-white duration-200 transition-colors" />
     </div>
   );
 };
@@ -84,10 +85,20 @@ const PeopleSay = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="px-4 flex flex-col items-center w-[50%]  "
+              className="px-4 flex flex-col items-center w-[50%] py-10  "
             >
-              <h2 className=" text-stride mb-4 font-bold md:w-[80%] mx-auto border border-secondary">
+              <h2 className=" text-stride mb-10 font-bold md:w-[85%] mx-auto  relative">
                 {testimonial.text}
+                <img
+                  src={Comma}
+                  alt=""
+                  className="absolute -top-8 -left-4 h-8 overflow-hidden"
+                />
+                <img
+                  src={Comma}
+                  alt=""
+                  className="absolute -scale-y-100 -scale-x-100  -bottom-8 -right-4 h-8"
+                />
               </h2>
               <p className="font-bold">{testimonial.name}</p>
               <hr className="w-1/2 my-2 border-gray-300 mx-auto" />
@@ -98,7 +109,7 @@ const PeopleSay = () => {
       </div>
       <div className="absolute -top-16 lg:-top-20 left-1/2 -translate-x-1/2 border-[10px] border-white rounded-full">
         <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
-        
+
         {/* <CornerClip className="bg-"
           positions={[
             { bottom: 45, right: -24 },

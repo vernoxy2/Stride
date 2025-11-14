@@ -16,7 +16,7 @@ const Footer = ({ height = "600px", backgroundImage = FooterImg }) => {
       <h1 data-aos="fade-up" className="text-white text-center container mt-5">
         Where your dream home <br className="hidden md:block" /> becomes reality
       </h1>
-      <p data-aos="fade-up" className="container text-center text-white lowercase tracking-wide">
+      <p data-aos="fade-up" className="container text-center text-white camlecase tracking-wide">
         Discover a place where comfort, style, and dreams
          unite{" "} <br className="hidden md:block " /> turning
         your ideal home into reality.

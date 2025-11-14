@@ -5,10 +5,10 @@ import StrideRealty from "../../../assets/HomePage/PNG/StrideRealty.png"
 
 const SelectProject = () => {
   return (
-    <section className=" ">
-      <div className=" grid grid-cols-1 md:grid-cols-2 min-w-[screen]">
+    <section className="overflow-hidden ">
+      <div className=" grid grid-cols-2 min-w-[screen]">
         <div className="flex w-full bg-secondary">
-          <div className="py-12 px-24 ml-auto bg-secondary flex flex-col justify-between">
+          <div className="py-12 lg:px-24 ml-auto bg-secondary flex flex-col justify-between">
             <div className="space-y-8">
               <TitleBox title="Our Project" className="border-[#D9D9D9]" />
               <h1 className="text-white">

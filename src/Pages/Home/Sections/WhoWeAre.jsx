@@ -18,7 +18,7 @@ const WhoWeAre = () => {
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-5">
-                <h2 className="text-stride flex items-center gap-2">
+                <h2 className="text-stride font-bold flex items-center gap-2">
                   <span>
                     <img src={Vision} alt="" className="h-8" />
                   </span>
@@ -30,7 +30,7 @@ const WhoWeAre = () => {
                 </p>
               </div>
               <div className="space-y-5">
-                <h2 className="text-stride flex items-center gap-2">
+                <h2 className="text-stride font-bold flex items-center gap-2">
                   <span>
                     <img src={Mission} alt="" className="h-8" />
                   </span>

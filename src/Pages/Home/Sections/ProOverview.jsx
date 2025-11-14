@@ -27,7 +27,7 @@ const ProOverview = () => {
       {ProjectsList.map((item) => (
         <div
           key={item.id}
-          className="bg-white rounded-3xl px-6 py-4 pb-14 flex flex-col justify-around gap-2 lg:gap-4 group hover:border-secondary duration-300 transition-colors group"
+          className="bg-white rounded-3xl px-6 py-4 pb-14 flex flex-col justify-around gap-2 lg:gap-4 group hover:border-secondary duration-300 transition-colors group shadow-lg"
         >
           <div className="w-full h-16 flex items-center justify-start ">
             <img src={item.img} alt="" className="object-cover" />

@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex items-center gap-8 lg:gap-20 ">
           {/* Logo */}
           <div>
-            <img src={nevlogo} alt="logo" className="ml-4" />
+            <img src={nevlogo} alt="logo" className="ml-4 h-10" />
           </div>
 
           {/* Desktop Links */}

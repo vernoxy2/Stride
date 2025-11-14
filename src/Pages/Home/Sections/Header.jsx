@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <section
       style={style}
-      className="pt-56 bg-secondary flex items-center justify-center"
+      className="pt-56 bg-secondary flex items-center justify-center -mb-56"
     >
       <section className=" w-full container pb-0 ">
         <h1 className="text-center text-white">

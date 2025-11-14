@@ -39,12 +39,12 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 600,
       easing: 'ease-in-out',
       once: true,
       mirror: true,
-      delay: 200,
-      offset: 200
+      delay: 100,
+      offset: 300
     });
   }, []);
 

@@ -37,7 +37,7 @@ export default {
       },
       animation: {
         scroll: "scroll 30s linear infinite", // make it slower/smoother
-        scrollReverse: "scrollReverse 30s linear infinite",
+        scrollReverse: "scrollReverse 5s linear infinite",
         fadeInUp: "fadeInUp 0.5s ease-in-out forwards",
       },
     },

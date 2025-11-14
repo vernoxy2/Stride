@@ -71,12 +71,12 @@ const FooterData = () => {
           {/* 2nd column */}
           <div className="hidden xl:block border-x-2 border-stride/20"></div>
           {/* 3rd column */}
-          <div className="flex flex-col gap-3 lg:px-4">
-            <h2 className=" text-stride font-bold">Contact Us</h2>
+          <div className="flex flex-col items-start gap-3 lg:px-4">
+            <h2 className=" text-stride font-bold ps-1.5">Contact Us</h2>
             <ul>
               {contactdata.map((item) => (
-                <li key={item.id} className="flex items-start gap-3 py-1">
-                  <div className="text-stride text-4xl lg:text-5xl">{item.icon}</div>
+                <li key={item.id} className="flex items-start gap-3 py-1 ">
+                  <div className="text-stride text-4xl lg:text-5xl text-start">{item.icon}</div>
                   <div className="-space-y-1">
                     <p className="text-stride camlecase ">{item.title}</p>
                     <p>{item.info}</p>
