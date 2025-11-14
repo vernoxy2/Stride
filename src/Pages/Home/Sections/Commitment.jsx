@@ -32,9 +32,9 @@ const commitmentItems = [
 const Commitment = () => {
   return (
     <section>
-      <div className="container grid grid-cols-1 xl:grid-cols-2 items-center gap-8 space-y-36">
+      <div  className="container grid grid-cols-1 xl:grid-cols-2 items-center gap-8 space-y-36">
         {/* 1st column */}
-        <div className="relative min-h-[600px] h-full w-full  ">
+        <div data-aos="fade-up" className="relative min-h-[600px]  h-full w-full  ">
           {/* Video background */}
           <video
             src={video}
@@ -76,14 +76,15 @@ const Commitment = () => {
 
         <div className="space-y-4 ml-auto xl:ps-7 2xl:ps-16">
           <TitleBox title="Our Commitment" />
-          <h1 className="">Why we stand out</h1>
-          <p>
+          <h1 data-aos="fade-up" className="">Why we stand out</h1>
+          <p data-aos="fade-up">
             We combine innovation, quality, and passion to deliver unique
             solutions that stand out, creating lasting value for every customer.
           </p>
           <ul>
             {commitmentItems.map((item) => (
               <li
+              data-aos="fade-up"
                 key={item.id}
                 className="flex flex-row items-start text-start justify-start gap-2 md:gap-5 py-4 border-t border-[#D9d9d9]"
               >

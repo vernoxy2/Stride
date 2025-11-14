@@ -6,8 +6,9 @@ import { CornerClip } from "../../../Components/CornerClip";
 const countdown = () => {
   return (
     <div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="w-full bg-secondary h-full rounded-3xl relative">
+      <div  data-aos="zoom-in" className="w-full bg-bg h-full rounded-3xl relative">
         <img
+        
           src={weare}
           alt=""
           className="w-full h-full object-contain rounded-3xl"
@@ -41,7 +42,7 @@ const countdown = () => {
           />
         </div> */}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-3xl">
+      <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-3xl">
         <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
         <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
         <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>

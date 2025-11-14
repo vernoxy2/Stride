@@ -12,7 +12,7 @@ const WhoWeAre = () => {
           <div className="md:w-[50%] py-5">
             <TitleBox title="Who We Are" />
           </div>
-          <div className="md:w-[50%] space-y-10">
+          <div data-aos="fade-up" className="md:w-[50%] space-y-10">
             <h1 className="lg:text-7xl">
               Leading global private real estate investors
             </h1>
