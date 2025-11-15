@@ -6,22 +6,32 @@ import Commitment from "./Sections/Commitment";
 import PeopalSay from "./Sections/PeopalSay";
 import Enquiry from "./Sections/Enquiry";
 import Footer from "../../Components/Footer";
-import PrimaryHeader from "../../Components/PrimaryHeader";
-import Head from "../../assets/HomePage/PNG/Head.png";
-import ProOverview from "./Sections/ProOverview";
+import { projects } from "../../Data/Projects";
+
 
 const Home = () => {
   return (
     <div>
-      {/* Home Page */}
       <Header />
-      <div className=" px-0 rounded-[70px]  bg-bg -my-14 py-28">
+
+      <div className="px-0 rounded-[70px] bg-bg -my-14 py-28">
         <WhoWeAre />
-        <SelectProject />
+
+        {projects.map((project, index) => (
+          <SelectProject
+            key={index}
+            Display={project.Display}
+            DisplayText={project.DisplayText}
+            Maintext={project.Maintext}
+            address={project.address}
+          />
+        ))}
+
         <Commitment />
         <PeopalSay />
         <Enquiry />
       </div>
+
       <Footer />
     </div>
   );
