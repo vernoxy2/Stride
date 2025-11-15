@@ -1,5 +1,5 @@
 import React from "react";
-import Stride from "../../../assets/NavLogo1.svg";
+import Stride from "../../../assets/Navlogo1.svg";
 import Mannat from "../../../assets/MannatLogo1.svg";
 import Orange from "../../../assets/OrangeLogo1.svg";
 
@@ -34,7 +34,7 @@ const ProOverview = () => {
             <img src={item.img} alt="" className="object-cover h-24" />
           </div>
           <div className="space-y-4">
-            <div className="relative w-full rounded-3xl h-[2px] bg-[#d9d9d9] before:content-[''] before:absolute before:top-0 before:left-0 before:w-[20%] before:h-full before:bg-stride before:transition-all before:duration-1000 before:ease-in-out group-hover:before:w-full before:rounded-3xl"></div>
+            <div className="relative w-full rounded-3xl h-[2px] bg-[#d9d9d9] before:content-[''] before:absolute before:top-0 before:left-0 before:w-[20%] before:h-full before:bg-stride before:transition-all before:duration-500 before:ease-in-out group-hover:before:w-full before:rounded-3xl"></div>
 
             <p className="camlecase text-secondary">{item.text}</p>
             <div className="relative w-[25%] h-[2px] bg-stride"></div>
