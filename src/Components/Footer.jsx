@@ -27,3 +27,4 @@ const Footer = ({ height = "600px", backgroundImage = FooterImg }) => {
 };
 
 export default Footer;
+  
