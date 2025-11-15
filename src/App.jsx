@@ -43,8 +43,8 @@ const App = () => {
       easing: 'ease-in-out',
       once: true,
       mirror: true,
-      delay: 100,
-      offset: 300
+      delay: 400,
+      offset: 180
     });
   }, []);
 

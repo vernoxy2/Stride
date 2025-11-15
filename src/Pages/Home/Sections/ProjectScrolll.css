@@ -1,0 +1,15 @@
+/* ProjectScroll.css */
+.scroll-container {
+  height: 100vh; /* full viewport height */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.project-section {
+  height: 100vh; /* full viewport height */
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}

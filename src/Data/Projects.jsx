@@ -1,4 +1,4 @@
-import DisplayAura from "../assets/HomePage/PNG/DisplayAura.png";
+   import DisplayAura from "../assets/HomePage/PNG/DisplayAura.png";
 import DisplayMannat from "../assets/HomePage/PNG/DisplayMannat.png";
 import DisplayOrange from "../assets/HomePage/PNG/DisplayOrange.png";
 import DisplayTextAura from "../assets/HomePage/SVG/AuraText.svg";
