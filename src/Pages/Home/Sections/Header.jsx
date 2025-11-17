@@ -14,7 +14,7 @@ const Header = () => {
     <section
     
       style={style}
-      className="pt-52 bg-secondary flex items-center justify-center -mb-52"
+      className="pt-44 md:pt-60 bg-secondary flex items-center justify-center -mb-44 md:-mb-60"
     >
       <section className=" w-full container px-4 2xl:px-24 pb-0  ">
         <h1 data-aos="fade-up" className="text-center text-white">

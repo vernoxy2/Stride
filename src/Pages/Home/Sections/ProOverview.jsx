@@ -1,7 +1,7 @@
 import React from "react";
-import Stride from "../../../assets/Navlogo1.svg";
-import Mannat from "../../../assets/MannatLogo1.svg";
-import Orange from "../../../assets/OrangeLogo1.svg";
+import Stride from "../../../assets/Navlogo2.svg";
+import Mannat from "../../../assets/MannatLogo2.svg";
+import Orange from "../../../assets/OrangeLogo2.svg";
 
 const ProjectsList = [
   {
@@ -31,7 +31,7 @@ const ProOverview = () => {
           className="bg-white rounded-3xl px-6 py-4 lg:pb-14 flex flex-col justify-start gap-2 lg:gap-4 group hover:border-secondary duration-300 transition-colors group shadow-lg"
         >
           <div className="  flex items-center justify-start ">
-            <img src={item.img} alt="" className="object-cover h-24" />
+            <img src={item.img} alt="" className="object-cover h-20" />
           </div>
           <div className="space-y-4">
             <div className="relative w-full rounded-3xl h-[2px] bg-[#d9d9d9] before:content-[''] before:absolute before:top-0 before:left-0 before:w-[20%] before:h-full before:bg-stride before:transition-all before:duration-500 before:ease-in-out group-hover:before:w-full before:rounded-3xl"></div>

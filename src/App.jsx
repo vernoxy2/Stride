@@ -27,7 +27,7 @@ const navLinks = [
     url: "/projects/stride_reality",
     component: <StrideReality />,
     submenu: [
-      { id: 31, title: "Stride Reality", url: "/projects/stride_reality", component: <StrideReality /> },
+      { id: 31, title: "Aura", url: "/projects/aura-redefine_living", component: <StrideReality /> },
       { id: 32, title: "Orange City", url: "/projects/orange_city", component: <OrangeCity /> },
       { id: 33, title: "Mannat Residency", url: "/projects/mannat_residency", component: <MannatResidency /> },
     ],
