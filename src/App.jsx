@@ -9,7 +9,7 @@ import Navbar from "./Components/Navbar";
 // Define all pages for project sub-routes
 import MannatResidency from "./Pages/Projects/Mannat Residency/MannatResidency";
 import OrangeCity from "./Pages/Projects/Orange City/OrangeCity";
-import StrideReality from "./Pages/Projects/Stride Reality/StrideReality";
+import StrideReality from "./Pages/Projects/Aura/Aura";
 
 // Animation Library
 import AOS from 'aos';

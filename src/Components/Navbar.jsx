@@ -11,7 +11,7 @@ const navLinks = [
     title: "Projects", 
     url: "/projects/orange_city",
     submenu: [
-      { id: 31, title: "Stride Reality", url: "/projects/stride_reality" },
+      { id: 31, title: "Aura", url: "/projects/aura-redefine_living" },
       { id: 32, title: "Orange City", url: "/projects/orange_city" },
       { id: 33, title: "Mannat Residency", url: "/projects/mannat_residency" },
     ],
@@ -78,11 +78,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Button */}
-        <div className="hidden md:block">
+        <Link to="/contact" className="hidden md:block">
           <button className="bg-secondary text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
             Get In Touch
           </button>
-        </div>
+        </Link>
 
         {/* Mobile Menu Toggle */}
         <button
@@ -140,11 +140,11 @@ const Navbar = () => {
               );
             })}
 
-            <li>
+            <Link to="/contact" >
               <button className="bg-secondary text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
                 Get In Touch
               </button>
-            </li>
+            </Link>
           </ul>
         </div>
       )}

@@ -9,10 +9,10 @@ import { CornerClip } from "../../../Components/CornerClip";
 const Enquiry = () => {
   return (
     <section
-      className="m-2 md:m-3 rounded-3xl bg-cover bg-center bg-no-repeat relative py-24 md:py-48"
+      className="m-2 md:m-3 rounded-3xl bg-cover bg-center bg-no-repeat relative py-24 md:py-40"
       style={{ backgroundImage: `url(${EnquiryBg})` }}
     >
-      <section data-aos="zoom-in" className="bg-white w-11/12 md:w-10/12 py-8 pb-44 container rounded-xl relative z-0">
+      <section data-aos="zoom-in" className="bg-white w-11/12 md:w-10/12 py-8 pb-40 container rounded-xl relative z-0">
         <TitleBox title="Quick Enquiry" className="mx-auto" />
         <h1 data-aos="fade-up" data-aos-delay="300" className="text-center">
           Specialist Property <br /> Support

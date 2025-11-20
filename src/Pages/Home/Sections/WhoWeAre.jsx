@@ -20,7 +20,7 @@ const WhoWeAre = () => {
               <div className="space-y-5">
                 <h2 className="text-stride font-bold flex items-center gap-2">
                   <span>
-                    <img src={Vision} alt="" className="h-8" />
+                    <img src={Vision} alt="" className="h-9" />
                   </span>
                   Our Vision
                 </h2>
@@ -32,7 +32,7 @@ const WhoWeAre = () => {
               <div className="space-y-5">
                 <h2 className="text-stride font-bold flex items-center gap-2">
                   <span>
-                    <img src={Mission} alt="" className="h-8" />
+                    <img src={Mission} alt="" className="h-9" />
                   </span>
                   Our Mission
                 </h2>

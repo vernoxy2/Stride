@@ -15,6 +15,9 @@ import Head from "../../../assets/ProjectPage/Mannat/PNG/MannatHead.png";
 import Foot from "../../../assets/ProjectPage/Mannat/PNG/MannatFoot.png";
 import Hoding from "../../../assets/ProjectPage/Mannat/PNG/HodingImg.png";
 
+// PDF 
+import brochure from "../../../assets/ProjectPage/Mannat/MannatBrochure.pdf";
+
 // Data
 import { MannatMedia } from "../../../Data/MannatData/MannatMedia";
 import { MannatAmenitiesList } from "../../../Data/MannatData/MannatAmenitiesList";
@@ -37,11 +40,15 @@ const MannatResidency = () => {
                    after:absolute after:h-12 after:w-full after:bg-bg after:-bottom-12 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >
         <PrimaryFeatures
+          ProjectTitle="Mannat Residency"
+          brochure={brochure}
+          PDFName="Mannat Brochure.pdf"
           data={MannatFeaturesList}
           projectName="Mannat Residency"
           address={
             <>
-              Behind Decent Hotel, <br /> Nr. GIDC Bus Station, Ankleshwar, Gujarat.
+              Behind Decent Hotel, <br /> Nr. GIDC Bus Station, Ankleshwar,
+              Gujarat.
             </>
           }
           image={Hoding}
@@ -60,9 +67,10 @@ const MannatResidency = () => {
           logo={Logo}
           locationDetails={
             <>
-              <span className="text-stride font-bold">Mannat Residency,</span> <br />
+              <span className="text-stride font-bold">Mannat Residency,</span>{" "}
+              <br />
               Behind Decent Hotel, <br className="sm:hidden lg:block" />
-              Nr. GIDC Bus Station, <br  className="hidden lg:block" />
+              Nr. GIDC Bus Station, <br className="hidden lg:block" />
               Ankleshwar, Gujarat.
             </>
           }

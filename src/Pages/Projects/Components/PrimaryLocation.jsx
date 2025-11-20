@@ -6,15 +6,24 @@ import Architect from "../../../assets/ProjectPage/SVG/Architect.svg";
 
 const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
   return (
-    <div className="container space-y-5 md:space-y-10">
+    <div className="container space-y-5 md:space-y-10 overflow-hidden">
       {/* Location Map heading */}
       <div className="flex items-center justify-between">
         <div data-aos="fade" className="flex items-center gap-3">
-          <img  src={Compass} alt="Compass Icon" className="pointer-events-none hidden sm:block" />
+          <img
+            src={Compass}
+            alt="Compass Icon"
+            className="pointer-events-none hidden sm:block"
+          />
           <h1>Location Map</h1>
         </div>
         <div>
-          <img data-aos="zoom-in" src={logo} alt="Logo" className="sm:h-28 pointer-events-none" />
+          <img
+            data-aos="zoom-in"
+            src={logo}
+            alt="Logo"
+            className="sm:h-28 pointer-events-none"
+          />
         </div>
       </div>
 
@@ -47,7 +56,8 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
             {/* Right Section */}
             <div className="flex flex-col items-start space-y-2">
               <p className="text-stride">
-                Architect & Structure :<br className="sm:hidden" /> MEP Consultant
+                Architect & Structure :<br className="sm:hidden" /> MEP
+                Consultant
               </p>
               <img
                 src={Architect}

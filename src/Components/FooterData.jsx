@@ -2,7 +2,11 @@ import React from "react";
 import Logo from "../assets/NavLogo.svg";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
-import { FaSquareFacebook, FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
+import {
+  FaSquareFacebook,
+  FaSquareInstagram,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const contactdata = [
@@ -12,7 +16,6 @@ const contactdata = [
     title: "Location",
     info: "Survey No-612, Opposite Garden City, Ankleshwar.",
     link: "https://www.google.com/maps/place/Stride+Reality/@22.9823253,73.0878417,17z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d22.9823253!4d73.0878417",
-
   },
   {
     id: 2,
@@ -38,8 +41,7 @@ const Socialdata = [
   },
   {
     id: 2,
-    icon: <FaSquareFacebook />
-,
+    icon: <FaSquareFacebook />,
     link: "www.facebook.com",
   },
   {
@@ -54,6 +56,37 @@ const Socialdata = [
   },
 ];
 
+const Links = [
+  {
+    id: 1,
+    title: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "About Us",
+    link: "/about",
+  },
+];
+
+const ProjectLinks = [
+  {
+    id: 1,
+    title: "Aura",
+    link: "/projects/aura-redefine_living",
+  },
+  {
+    id: 2,
+    title: "Orange City",
+    link: "/projects/orange_city",
+  },
+  {
+    id: 3,
+    title: "Mannat Residency",
+    link: "/projects/mannat_residency",
+  },
+];
+
 const FooterData = () => {
   return (
     <section data-aos="fade-up" className="container py-0 overflow-hidden">
@@ -61,22 +94,52 @@ const FooterData = () => {
         {/* 1st row */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-2">
           {/* 1st column */}
-          <div className="flex flex-col justify-between gap-5">
+          <div className="flex flex-col  gap-5">
             <img src={Logo} alt="Logo" className="w-3/6" />
             <p>
               Building timeless environments that inspire, empower, and redefine
               modern living.
             </p>
+            <hr className="h-1 w-[40%] bg-stride" />
           </div>
           {/* 2nd column */}
-          <div className="hidden xl:block border-x-2 border-stride/20"></div>
+          <div className=" md:border-l-2 xl:border-x-2 border-stride/20 md:px-8">
+            <h2 className=" text-stride font-bold ">Our Projects</h2>
+            <ul>
+              {ProjectLinks.map((item) => (
+                <li key={item.id} className="flex items-start gap-3 py-1">
+                  <a
+                    href={item.link}
+                    className="text-stride text-4xl lg:text-5xl text-start"
+                  >
+                    <p>{item.title}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h2 className=" text-stride font-bold  mt-3">All Pages</h2>
+            <ul className="mb-3">
+              {Links.map((item) => (
+                <li key={item.id} className="flex items-start gap-3 py-1 ">
+                  <a
+                    href={item.link}
+                    className="text-stride text-4xl lg:text-5xl text-start"
+                  >
+                    <p>{item.title}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* 3rd column */}
           <div className="flex flex-col items-start gap-3 lg:px-4">
             <h2 className=" text-stride font-bold ps-1.5">Contact Us</h2>
             <ul>
               {contactdata.map((item) => (
                 <li key={item.id} className="flex items-start gap-3 py-1 ">
-                  <div className="text-stride text-4xl lg:text-5xl text-start">{item.icon}</div>
+                  <div className="text-stride text-4xl lg:text-5xl text-start">
+                    {item.icon}
+                  </div>
                   <div className="-space-y-1">
                     <p className="text-stride camlecase ">{item.title}</p>
                     <p>{item.info}</p>

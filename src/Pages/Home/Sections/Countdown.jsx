@@ -1,7 +1,11 @@
 import React from "react";
 import weare from "../../../assets/HomePage/PNG/WeAre.png";
-import { CornerClip } from "../../../Components/CornerClip";
-// import weare1 from "../../../assets/HomePage/PNG/WeAre1.png";
+import weare1 from "../../../assets/HomePage/PNG/WeAre1.Webp";
+import weare2 from "../../../assets/HomePage/PNG/WeAre2.Webp";
+import weare3 from "../../../assets/HomePage/PNG/WeAre3.Webp";
+import weare4 from "../../../assets/HomePage/PNG/WeAre4.Webp";
+
+const Images = [weare1, weare2, weare3, weare4];
 
 const countdown = () => {
   return (
@@ -43,16 +47,14 @@ const countdown = () => {
         </div> */}
       </div>
       <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-3xl">
-        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
-        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
-        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full"></div>
-        <div className="bg-secondary/20 rounded-3xl min-h-20 h-full">
-          {/* <img
-            src={weare1}
+        {Images.map((img, idx) => (
+          <img
+            key={idx}
+            src={img}
             alt=""
-            className=" rounded-3xl"
-          /> */}
-        </div>
+            className="w-full h-full object-contain rounded-3xl"
+          />
+        ))}
       </div>
     </div>
   );

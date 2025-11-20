@@ -15,6 +15,9 @@ import Foot from "../../../assets/ProjectPage/OrangeCity/PNG/OrangeCityFooter.pn
 import Hoding from "../../../assets/ProjectPage/OrangeCity/PNG/HodingImg.png";
 import Logo from "../../../assets/OrangeLogo.svg";
 
+// PDF 
+import brochure from "../../../assets/ProjectPage/OrangeCity/orangeCity.pdf";
+
 // Data
 import { OrangeFeaturesList } from "../../../Data/OrangeData/OrangeFeaturesList";
 import { OrangeKeyDetailsList } from "../../../Data/OrangeData/OrangeKeyDetailsList";
@@ -37,6 +40,9 @@ const MapSrc =
           after:absolute after:h-12 after:w-full after:bg-bg after:-bottom-12 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >
         <PrimaryFeatures
+        brochure={brochure}
+        PDFName="Orange Brochure.pdf"
+        ProjectTitle="Orange City"
           data={OrangeFeaturesList}
           projectName="Orange City"
           address={
