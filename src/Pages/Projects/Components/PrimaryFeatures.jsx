@@ -33,7 +33,7 @@ const PrimaryFeatures = ({
       >
         <CiLocationOn className="text-stride mt-1" />
         <p>
-          <span className="text-stride">{projectName}</span>
+          <span className="text-stride">{projectName} <br /></span>
           {address && <>, {address}</>}
         </p>
       </div>
