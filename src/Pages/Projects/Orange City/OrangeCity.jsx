@@ -16,7 +16,7 @@ import Hoding from "../../../assets/ProjectPage/OrangeCity/PNG/HodingImg.png";
 import Logo from "../../../assets/OrangeLogo.svg";
 
 // PDF 
-import brochure from "../../../assets/ProjectPage/OrangeCity/orangeCity.pdf";
+import brochure from "../../../assets/ProjectPage/OrangeCity/OrangeCity.pdf";
 
 // Data
 import { OrangeFeaturesList } from "../../../Data/OrangeData/OrangeFeaturesList";
