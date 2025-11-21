@@ -1,6 +1,6 @@
 import React from "react";
 import weare from "../../../assets/HomePage/PNG/WeAre.png";
-import weare1 from "../../../assets/HomePage/PNG/WeAre1.Webp";
+import weare1 from "../../../assets/HomePage/PNG/WeAre1.webp";
 import weare2 from "../../../assets/HomePage/PNG/WeAre2.Webp";
 import weare3 from "../../../assets/HomePage/PNG/WeAre3.Webp";
 import weare4 from "../../../assets/HomePage/PNG/WeAre4.Webp";
