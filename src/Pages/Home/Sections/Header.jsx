@@ -1,31 +1,17 @@
 import React from "react";
-import backgroundImage from "../../../assets/HomePage/PNG/Head.png";
+import backgroundImage from "../../../assets/HomePage/PNG/OrangeHead.png";
 import ProOverview from "./ProOverview";
 
 const Header = () => {
-  const style = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    minHeight: 400,
-  };
+ 
   return (
-    <section
-    
-      style={style}
-      className="pt-44 md:pt-60 bg-secondary flex items-center justify-center -mb-44 md:-mb-60"
-    >
-      <section className=" w-full container px-4 2xl:px-24 pb-0  ">
-        <h1 data-aos="fade-up" className="text-center text-white">
-          Building a Brighter Future <br /> Through Quality
+    <section style={{backgroundImage: `url(${backgroundImage})`}} className="flex items-center justify-start pt-32 bg-no-repeat bg-cover bg-center-start min-h-[550px] 2xl:min-h-[780px] ">
+      <section className="container mt-auto py-6 pb-10 lg:pb-6 space-y-3 md:space-y-5 ">
+        <h1 className="text-white font-semibold flex gap-4 md:gap-8"><span><hr className="bg-white h-full p-[0.5px]"/></span>
+          Building a Brighter Future <br className="hidden md:block" />
+          Through Quality
         </h1>
-        <hr data-aos="fade-up" className="bg-white" />
-        <h2 data-aos="fade-up" className="text-white leading-8 text-center md:text-start">
-          Delivering excellence today <br /> to shape a brighter <br />{" "}
-          tomorrow.
-        </h2>
-        <ProOverview/>  
+        <p className="font-poppins font-extralight text-white uppercase ml-5 md:ml-9">Delivering excellence today to shape <br className="hidden md:block" /> a brighter tomorrow. </p>
       </section>
     </section>
   );

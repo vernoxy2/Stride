@@ -1,5 +1,5 @@
 import React from "react";
-import weare from "../../../assets/HomePage/PNG/WeAre.png";
+import weare from "../../../assets/HomePage/PNG/WhoWeAre.webp";
 import weare1 from "../../../assets/HomePage/PNG/WeAre1.webp";
 import weare2 from "../../../assets/HomePage/PNG/WeAre2.Webp";
 import weare3 from "../../../assets/HomePage/PNG/WeAre3.Webp";

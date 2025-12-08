@@ -1,3 +1,5 @@
+import { p } from 'framer-motion/client';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -20,6 +22,9 @@ export default {
       },
       fontFamily: {
         helvetica: ["HelveticaNeue", "sans-serif"],
+        redhat: ["Red Hat Text", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        
       },
       keyframes: {
         scroll: {

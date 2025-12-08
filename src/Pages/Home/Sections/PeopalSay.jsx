@@ -107,7 +107,7 @@ const PeopleSay = () => {
           ))}
         </Slider>
       </div>
-      <div className="absolute -top-16 lg:-top-20 left-1/2 -translate-x-1/2 border-[10px] border-white rounded-full">
+      <div className="absolute -top-16 lg:-top-20 left-1/2 -translate-x-1/2 border-[10px] border-bg rounded-full">
         <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
 
         {/* <CornerClip className="bg-"

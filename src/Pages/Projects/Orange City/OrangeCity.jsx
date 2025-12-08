@@ -15,7 +15,7 @@ import Foot from "../../../assets/ProjectPage/OrangeCity/PNG/OrangeCityFooter.pn
 import Hoding from "../../../assets/ProjectPage/OrangeCity/PNG/HodingImg.png";
 import Logo from "../../../assets/OrangeLogo.svg";
 
-// PDF 
+// PDF
 import brochure from "../../../assets/ProjectPage/OrangeCity/OrangeCity.pdf";
 
 // Data
@@ -29,7 +29,7 @@ const projectDescription = `Located opposite Vastu Vila on Hasot Road, Ankleshwa
 const MapSrc =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099.7535702140315!2d72.98515565285153!3d21.644421604227073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be027e62440c351%3A0x7aa3c296a4bc6ec2!2sOrange%20City!5e1!3m2!1sen!2sin!4v1762839645198!5m2!1sen!2sin";
 
-  const OrangeCity = () => {
+const OrangeCity = () => {
   return (
     <div>
       <PrimaryHeader title="Orange City" backgroundImage={Head} />
@@ -40,9 +40,9 @@ const MapSrc =
           after:absolute after:h-12 after:w-full after:bg-bg after:-bottom-12 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >
         <PrimaryFeatures
-        brochure={brochure}
-        PDFName="Orange Brochure.pdf"
-        ProjectTitle="Orange City"
+          brochure={brochure}
+          PDFName="Orange Brochure.pdf"
+          ProjectTitle="Orange City"
           data={OrangeFeaturesList}
           projectName="Orange City"
           address={
@@ -67,14 +67,30 @@ const MapSrc =
           logo={Logo}
           locationDetails={
             <>
-              <span className="text-stride font-bold">Orange City</span> opposite Vastu
-              Vila, <br className="hidden xl:block" /> Hasot Road, Ankleshwar
+              <span className="text-stride font-bold">Orange City</span>{" "}
+              opposite Vastu Vila, <br className="hidden xl:block" /> Hasot
+              Road, Ankleshwar
             </>
           }
         />
       </section>
 
-      <Footer backgroundImage={Foot} />
+      <Footer
+        backgroundImage={Foot}
+        BoldText={
+          <>
+            Welcome to the home <br className="hidden md:block" /> of your
+            dreams.
+          </>
+        }
+        text={
+          <>
+            discover your dream home-modern, spacious, and inviting{" "}
+            <br className="hidden md:block" /> designed for comfort, style, and
+            unforgettable memories.
+          </>
+        }
+      />
     </div>
   );
 };

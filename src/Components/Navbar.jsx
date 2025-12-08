@@ -25,13 +25,14 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="md:absolute top-5 left-0 w-full z-50">
-      <div className="container p-1.5 w-11/12 flex justify-between items-center bg-white rounded-full h-full">
+    <nav className="md:absolute md:left-1/2 md:-translate-x-1/2 top-5 w-full z-50 container">
+
+      <div className=" flex justify-between items-center bg-white rounded-full h-full p-1">
         <div className="flex items-center gap-8 lg:gap-20 ">
           {/* Logo */}
-          <div>
+          <Link to="/"  className="flex items-center ">
             <img src={nevlogo} alt="logo" className="ml-4 h-10" />
-          </div>
+          </Link>
 
           {/* Desktop Links */}
           <ul className="hidden md:flex space-x-6 lg:space-x-8 relative h-full">
@@ -99,7 +100,7 @@ const Navbar = () => {
           <ul className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.url;
-              const hasSubmenu = !!link.submenu;
+              const hasSubmenu =  link.submenu;
               return (
                 <li key={link.id} className="w-full text-center">
                   <button

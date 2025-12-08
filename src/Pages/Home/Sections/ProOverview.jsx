@@ -23,7 +23,7 @@ const ProjectsList = [
 
 const ProOverview = () => {
   return (
-    <div className="container px-0 2xl:px-12 xl:w-11/12 grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-8 pt-24">
+    <div className="container xl:w-10/12 grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-8 ">
       {ProjectsList.map((item) => (
         <div
           data-aos="fade-up"

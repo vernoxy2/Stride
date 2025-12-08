@@ -15,7 +15,7 @@ import Head from "../../../assets/ProjectPage/Mannat/PNG/MannatHead.png";
 import Foot from "../../../assets/ProjectPage/Mannat/PNG/MannatFoot.png";
 import Hoding from "../../../assets/ProjectPage/Mannat/PNG/HodingImg.png";
 
-// PDF 
+// PDF
 import brochure from "../../../assets/ProjectPage/Mannat/MannatBrochure.pdf";
 
 // Data
@@ -78,7 +78,23 @@ const MannatResidency = () => {
         />
       </section>
 
-      <Footer backgroundImage={Foot} />
+      <Footer
+        backgroundImage={Foot}
+        BoldText={
+          <>
+            Elegance meets comfort <br className="hidden md:block" /> in every
+            room.{" "}
+          </>
+        }
+        text={
+          <>
+            {" "}
+            Where elegance meets comfort, every room invites warmth, style,{" "}
+            <br className="hidden md:block" /> and effortless living for you and
+            family.{" "}
+          </>
+        }
+      />
     </div>
   );
 };

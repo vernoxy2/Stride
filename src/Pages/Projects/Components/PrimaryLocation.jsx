@@ -39,14 +39,14 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
 
           <PrimaryButton>Get Directions</PrimaryButton>
 
-          <div className="flex justify-around items-center p-4 w-[110%] sm:w-[100%]">
+          <div className="flex justify- gap-x-6 items-center p-4 w-[110%] sm:w-[100%]">
             {/* Left Section */}
             <div className="flex flex-col items-start space-y-2">
               <p className="text-stride">A Project By</p>
               <img
                 src={AProjectBy}
                 alt="A Project By"
-                className="object-cover h-12 sm:h-28"
+                className="object-cover h-12 sm:h-20"
               />
             </div>
 

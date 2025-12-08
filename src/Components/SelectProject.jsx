@@ -3,13 +3,13 @@ import { CiLocationOn } from "react-icons/ci";
 
 const SelectProject = ({ Display, DisplayText, Maintext, address }) => {
   return (
-    <div className="bg-secondary">
+    <div className="bg-secondary sticky top-0 max-h-screen">
       <div className="flex justify-end relative">
         <div
           style={{ backgroundImage: `url(${Display})` }}
-          className="w-1/2 max-h-[1000px] bg-cover min-h-[600px] lg:h-screen bg-center"
+          className="w-1/2 max-h-[1000px] bg-cover min-h-[600px] lg:h-screen bg-center pointer-events-none"
         />
-        <div className="container grid grid-cols-2 absolute inset-0">
+        <div className="container grid grid-cols-2 gap-8 absolute inset-0">
           <div className="py-12 xl:py-16 flex flex-col gap-10 items-start justify-between">
             {/* Headline */}
             <div className="space-y-4">
@@ -26,7 +26,7 @@ const SelectProject = ({ Display, DisplayText, Maintext, address }) => {
             <img
               src={DisplayText}
               alt="Display Project Name"
-              className="w-[90%]"
+              className="w-[90%] pointer-events-none"
             />
 
             {/* Location */}
