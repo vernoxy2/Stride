@@ -32,7 +32,7 @@ const MapSrc =
 const OrangeCity = () => {
   return (
     <div>
-      <PrimaryHeader title="Orange City" backgroundImage={Head} />
+      <PrimaryHeader backgroundImage={Head} />
 
       <section
         className="bg-bg relative

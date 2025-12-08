@@ -32,7 +32,7 @@ const mapSrc =
 const MannatResidency = () => {
   return (
     <div>
-      <PrimaryHeader title="Mannat Residency" backgroundImage={Head} />
+      <PrimaryHeader  backgroundImage={Head} />
 
       <section
         className="bg-bg relative

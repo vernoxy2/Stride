@@ -8,6 +8,7 @@ import {
   FaSquareXTwitter,
 } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const contactdata = [
   {
@@ -15,7 +16,7 @@ const contactdata = [
     icon: <CiLocationOn />,
     title: "Location",
     info: "Survey No-612, Opposite Garden City, Ankleshwar.",
-    link: "https://www.google.com/maps/place/Stride+Reality/@22.9823253,73.0878417,17z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d22.9823253!4d73.0878417",
+    link: "https://maps.app.goo.gl/Sqxhzve5pVLM7r9D6",
   },
   {
     id: 2,
@@ -140,10 +141,10 @@ const FooterData = () => {
                   <div className="text-stride text-4xl lg:text-5xl text-start">
                     {item.icon}
                   </div>
-                  <div className="-space-y-1">
+                  <a href={item.link} target="_blank" className="-space-y-1">
                     <p className="text-stride camlecase ">{item.title}</p>
                     <p>{item.info}</p>
-                  </div>
+                  </a>
                 </li>
               ))}
             </ul>
