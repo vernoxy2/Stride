@@ -7,6 +7,7 @@ import DisplayTextOrange from "../assets/HomePage/SVG/OrangeText.svg";
 
 export const projects = [
   {
+    id: 1,
     Display: DisplayAura,
     DisplayText: DisplayTextAura,
     Maintext: (
@@ -21,6 +22,7 @@ export const projects = [
     ),
   },
   {
+    id: 2,
     Display: DisplayMannat,
     DisplayText: DisplayTextMannat,
     Maintext: (
@@ -35,6 +37,7 @@ export const projects = [
     ),
   },
   {
+    id: 3,
     Display: DisplayOrange,
     DisplayText: DisplayTextOrange,
     Maintext: (
