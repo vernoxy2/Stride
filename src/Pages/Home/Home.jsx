@@ -8,12 +8,10 @@ import Footer from "../../Components/Footer";
 import Animation from "../../hooks/Animation";
 import ProOverview from "./Sections/ProOverview";
 
-
-
 const Home = () => {
   return (
     <div>
-     <Header />
+      <Header />
       <section
         className=" relative space-y-20 py-10 md:py-14 lg:py-20 bg-bg
                    before:absolute before:h-12 before:w-full before:bg-bg before:-top-12 before:content-[''] before:rounded-t-[33px] before:md:rounded-t-[66px]

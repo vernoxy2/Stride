@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative -z-[1] min-h-[340px] md:min-h-[550px] 2xl:min-h-[780px]">
+    <div className="relative -z-[1] h-screen">
       {headersData.map((header, index) => (
         <section
           key={index}

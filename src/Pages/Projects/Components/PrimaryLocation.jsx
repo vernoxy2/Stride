@@ -37,10 +37,11 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
 
           <hr className="bg-[#D9D9D9] h-[2px]" />
 
-          <PrimaryButton>Get Directions</PrimaryButton>
+          <a href="https://maps.app.goo.gl/xDzStF8r3YKuF4mP6" target="_blank" >
+            <PrimaryButton>Get Directions</PrimaryButton>
+          </a>
 
-          <div className="flex justify- gap-x-6 items-center p-4 w-[110%] sm:w-[100%]">
-            {/* Left Section */}
+          {/* <div className="flex justify- gap-x-6 items-center p-4 w-[110%] sm:w-[100%]">
             <div className="flex flex-col items-start space-y-2">
               <p className="text-stride">A Project By</p>
               <img
@@ -50,10 +51,8 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
               />
             </div>
 
-            {/* Divider */}
             <div className="w-px bg-stride h-32 sm:h-48"></div>
 
-            {/* Right Section */}
             <div className="flex flex-col items-start space-y-2">
               <p className="text-stride">
                 Architect & Structure :<br className="sm:hidden" /> MEP
@@ -65,7 +64,7 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
                 className="object-cover h-12 sm:h-28"
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Google Map */}
