@@ -25,7 +25,7 @@ import AutoScroll from "../Components/function";
 const projectDescription = `Located opposite Vastu Vila on Hasot Road, Ankleshwar, Orange City offers thoughtfully designed residential spaces with modern constructionstandards and premium finishes. The project features earthquake-resistant RCC frame structures, ensuring safety and durability.`;
 
 const MapSrc =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099.7535702140315!2d72.98515565285153!3d21.644421604227073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be027e62440c351%3A0x7aa3c296a4bc6ec2!2sOrange%20City!5e1!3m2!1sen!2sin!4v1762839645198!5m2!1sen!2sin";
+  "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d925.0860124923506!2d73.03802368308857!3d21.596411349776336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSurvey%20No-612%2C%20Opposite%20Garden%20City%2C%20Ankleshwar.!5e1!3m2!1sen!2sin!4v1762333372166!5m2!1sen!2sin";
 
 const Aura = () => {
   return (
@@ -61,6 +61,7 @@ const Aura = () => {
         <PrimaryMedia data={AuraMedia} />
 
         <PrimaryLocation
+          MapLink={"https://maps.app.goo.gl/VDJaoPAkutk4nAx5A"}
           mapSrc={MapSrc}
           logo={Logo}
           locationDetails={

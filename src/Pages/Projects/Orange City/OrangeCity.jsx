@@ -63,6 +63,7 @@ const OrangeCity = () => {
         <PrimaryMedia data={OrangeMedia} />
 
         <PrimaryLocation
+          MapLink={"https://maps.app.goo.gl/ft2g2KmnscFzJ7S38"}
           mapSrc={MapSrc}
           logo={Logo}
           locationDetails={

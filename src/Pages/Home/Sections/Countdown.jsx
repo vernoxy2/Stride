@@ -1,9 +1,9 @@
 import React from "react";
-import weare from "../../../assets/HomePage/PNG/WhoWeAre.webp";
-import weare1 from "../../../assets/HomePage/PNG/WeAre1.webp";
-import weare2 from "../../../assets/HomePage/PNG/WeAre2.webp";
-import weare3 from "../../../assets/HomePage/PNG/WeAre3.webp";
-import weare4 from "../../../assets/HomePage/PNG/WeAre4.webp";
+import weare from "../../../assets/HomePage/PNG/WhoWeAree.png";
+import weare1 from "../../../assets/HomePage/PNG/WeAre1.png";
+import weare2 from "../../../assets/HomePage/PNG/WeAre2.png";
+import weare3 from "../../../assets/HomePage/PNG/WeAre3.png";
+import weare4 from "../../../assets/HomePage/PNG/WeAre4.png";
 
 const Images = [weare1, weare2, weare3, weare4];
 
@@ -15,6 +15,7 @@ const countdown = () => {
         
           src={weare}
           alt=""
+          loading="lazy"
           className="w-full h-full object-contain rounded-3xl"
         />
         <div className="absolute top-0 w-fit bg-bg px-20 lg:px-28 h-20 rounded-ee-3xl">
@@ -35,16 +36,7 @@ const countdown = () => {
             />
           ))}
         </div>
-        {/* Overlay with rounded corners */}
-        {/* <div className="absolute top-0 w-fit bg-bg px-20 lg:px-28 h-20 rounded-ee-3xl">
-          <CornerClip
-            className="rotate-90"
-            positions={[
-              { top: 0, right: -24 },
-            { bottom: -24, left: 0 },
-            ]}
-          />
-        </div> */}
+       
       </div>
       <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-3xl">
         {Images.map((img, idx) => (
@@ -52,6 +44,7 @@ const countdown = () => {
             key={idx}
             src={img}
             alt=""
+            loading="lazy"
             className="w-full h-full object-contain rounded-3xl"
           />
         ))}

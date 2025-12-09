@@ -4,7 +4,7 @@ import PrimaryButton from "../../../Components/PrimaryButton";
 import AProjectBy from "../../../assets/ProjectPage/SVG/AProjectBy.svg";
 import Architect from "../../../assets/ProjectPage/SVG/Architect.svg";
 
-const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
+const PrimaryComponent = ({ logo, locationDetails, mapSrc, MapLink }) => {
   return (
     <div className="container space-y-5 md:space-y-10 overflow-hidden">
       {/* Location Map heading */}
@@ -35,36 +35,18 @@ const PrimaryComponent = ({ logo, locationDetails, mapSrc }) => {
             <h2 className="whitespace-pre-line">{locationDetails}</h2>
           </div>
 
-          <hr className="bg-[#D9D9D9] h-[2px]" />
+          <hr className="border-0 bg-[#D9D9D9] h-[2px]" />
 
-          <a href="https://maps.app.goo.gl/xDzStF8r3YKuF4mP6" target="_blank" >
+          <a
+            href={MapLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block"
+          >
             <PrimaryButton>Get Directions</PrimaryButton>
           </a>
 
-          {/* <div className="flex justify- gap-x-6 items-center p-4 w-[110%] sm:w-[100%]">
-            <div className="flex flex-col items-start space-y-2">
-              <p className="text-stride">A Project By</p>
-              <img
-                src={AProjectBy}
-                alt="A Project By"
-                className="object-cover h-12 sm:h-20"
-              />
-            </div>
-
-            <div className="w-px bg-stride h-32 sm:h-48"></div>
-
-            <div className="flex flex-col items-start space-y-2">
-              <p className="text-stride">
-                Architect & Structure :<br className="sm:hidden" /> MEP
-                Consultant
-              </p>
-              <img
-                src={Architect}
-                alt="Architect"
-                className="object-cover h-12 sm:h-28"
-              />
-            </div>
-          </div> */}
+          {/* Commented-out project info section */}
         </div>
 
         {/* Google Map */}

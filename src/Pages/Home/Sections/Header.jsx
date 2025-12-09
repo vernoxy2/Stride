@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative -z-[1] h-screen">
+    <div className="relative z-10 min-h-[60vh] md:h-screen">
       {headersData.map((header, index) => (
         <section
           key={index}

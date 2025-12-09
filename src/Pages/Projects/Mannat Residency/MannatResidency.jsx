@@ -64,6 +64,7 @@ const MannatResidency = () => {
         <PrimaryMedia data={MannatMedia} />
 
         <PrimaryLocation
+        MapLink={"https://maps.app.goo.gl/v71h3R8JMPFQU9Nj9"}
           logo={Logo}
           locationDetails={
             <>

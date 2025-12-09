@@ -6,7 +6,6 @@ import Countdown from "./Countdown";
 
 const WhoWeAre = () => {
   return (
-    <section>
       <section>
         <div className="container md:flex justify-start gap-6">
           <div className="md:w-[50%] py-5">
@@ -46,7 +45,6 @@ const WhoWeAre = () => {
         </div>
         <Countdown />
       </section>
-    </section>
   );
 };
 
