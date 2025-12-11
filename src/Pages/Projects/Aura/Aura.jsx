@@ -13,7 +13,11 @@ import PrimaryLocation from "../Components/PrimaryLocation";
 import Head from "../../../assets/ProjectPage/Aura/AuraHead.png";
 import Foot from "../../../assets/ProjectPage/Aura/AuraFooter.webp";
 import Hoding from "../../../assets/ProjectPage/Aura/HodingImg.png";
-import Logo from "../../../assets/OrangeLogo.svg";
+import Logo from "../../../assets/Navlogo2.svg";
+import PopupImg from "../../../assets/ProjectPage/Aura/AuraPopup.png";
+
+// PDF
+import brochure from "../../../assets/ProjectPage/Aura/AuraBrochure.pdf";
 
 // Data
 import { OrangeFeaturesList } from "../../../Data/OrangeData/OrangeFeaturesList";
@@ -40,10 +44,13 @@ const Aura = () => {
         <PrimaryFeatures
           ProjectTitle="Aura "
           data={OrangeFeaturesList}
+          brochure={brochure}
+          PopupImg={PopupImg}
           projectName="Aura - Redefine Living"
           address={
             <>
-              Survey no-612, <br /> opposite gardencity, Ankleshwar
+              Survey no-612, <br className="hidden md:block" /> opposite
+              gardencity, Ankleshwar
             </>
           }
           image={Hoding}
@@ -66,8 +73,9 @@ const Aura = () => {
           logo={Logo}
           locationDetails={
             <>
-              <span className="text-stride">Orange City</span> opposite Vastu
-              Vila, <br className="hidden xl:block" /> Hasot Road, Ankleshwar
+              <span className="text-stride">Stride Reality, </span>{" "}
+              <br className="hidden xl:block" /> Survey no-612, opposite{" "}
+              <br className="hidden xl:block" /> gardencity, Ankleshwar
             </>
           }
         />

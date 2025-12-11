@@ -50,16 +50,12 @@ const About = () => {
             Creating the <br className="sm:hidden lg:block" /> future, one idea <br className="sm:hidden xl:block" /> at a time.
           </h1>
 
-          <div className=" flex flex-col gap-2 justify-between ">
-            <p className="font-bold">
-              Fill out the form, and our team will contact you soon with more
-              information.
+          <div className=" flex flex-col gap-4 justify-between ">
+            <p className="font-bold w-[80%]">
+              A Lifestyle Enriched With Play, Comfort & <br className="hidden md:block lg:hidden xl:block" /> Nature
             </p>
-            <p className="text-lg">
-              From clean energy to cutting-edge healthcare, from stadiums to
-              data centers, our mission is to design and build environments that
-              uplift communities and stand the test of time. Together, we make
-              your vision a reality and beyond.
+            <p className="text-lg w-[95%]">
+              We create modern, nature-inspired living spaces designed for comfort, wellness, and active lifestyles. With lush greenery, family-friendly amenities, and a dedicated basketball zone, we offer a refreshing, joyful, and elevated way of living.
             </p>
           </div>
         </div>

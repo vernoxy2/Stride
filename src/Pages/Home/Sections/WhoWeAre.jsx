@@ -5,46 +5,48 @@ import TitleBox from "../../../Components/TitleBox";
 import Countdown from "./Countdown";
 
 const WhoWeAre = () => {
+  const items = [
+    {
+      icon: Vision,
+      title: "Our Vision",
+      text: "To build a future where technology and creativity unite to shape a better world.",
+    },
+    {
+      icon: Mission,
+      title: "Our Mission",
+      text: "Creating impact through excellence, integrity, and collaborative client growth.",
+    },
+  ];
+
   return (
-      <section>
-        <div className="container md:flex justify-start gap-6">
-          <div className="md:w-[50%] py-5">
-            <TitleBox title="Who We Are" />
-          </div>
-          <div data-aos="fade-up" className="md:w-[50%] space-y-10">
-            <h1 className="lg:text-7xl">
-              Leading global private real estate investors
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-5">
-                <h2 className="text-stride font-bold flex items-center gap-2">
-                  <span>
-                    <img src={Vision} alt="" className="h-9" />
-                  </span>
-                  Our Vision
-                </h2>
-                <p className="lg:text-xl">
-                  To build a future where technology and creativity unite to
-                  shape a better world.
-                </p>
-              </div>
-              <div className="space-y-5">
-                <h2 className="text-stride font-bold flex items-center gap-2">
-                  <span>
-                    <img src={Mission} alt="" className="h-9" />
-                  </span>
-                  Our Mission
-                </h2>
-                <p className="lg:text-xl">
-                  Creating impact through excellence, integrity, and
-                  collaborative client growth.
-                </p>
-              </div>
+    <section className="container">
+      <TitleBox title="Who We Are" />
+
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-1 xl:grid-cols-2 gap-4 2xl:gap-4"
+      >
+        <h1 className="lg:text-7xl font-semibold">
+          Leading global private real estate investors
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:w-[80%] xl:w-full">
+          {items.map((item, index) => (
+            <div key={index} className="space-y-5">
+              <h2 className="text-stride font-bold flex items-center gap-2">
+                <span>
+                  <img src={item.icon} alt={item.title} className="h-10" />
+                </span>
+                {item.title}
+              </h2>
+              <p className="lg:text-xl">{item.text}</p>
             </div>
-          </div>
+          ))}
         </div>
-        <Countdown />
-      </section>
+      </div>
+
+      <Countdown />
+    </section>
   );
 };
 

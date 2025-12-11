@@ -41,10 +41,31 @@
   }
 
   input {
-    @apply text-secondary bg-[#f0f0f0] md:text-lg rounded-full p-5 px-6 w-full focus:ring-2 focus:ring-stride focus:outline-none;
+    @apply text-secondary bg-[#f0f0f0] md:text-lg rounded-full p-5 px-6 w-full focus:ring-1 focus:ring-stride focus:outline-none;
   }
 
   textarea {
     @apply text-secondary bg-[#f0f0f0] md:text-lg rounded-3xl p-5 px-6 w-full focus:ring-2 focus:ring-stride focus:outline-none;
+  }
+}
+
+/* Slow zoom-in animation */
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.slow-zoom {
+  animation: slowZoom 12s ease-in-out forwards;
+}
+
+@layer utilities {
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 0.5px #ffffff;
   }
 }

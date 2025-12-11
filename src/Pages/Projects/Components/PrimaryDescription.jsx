@@ -24,7 +24,9 @@ const PrimaryDescription = ({data = [], description = "Description"}) => {
         ))}
       </ul>
 
-      <hr className="h-[1.5px] bg-[#D9D9D9]" />
+      <div className="py-12 ">
+        <hr className="h-[1.5px] bg-[#D9D9D9] " />
+      </div>
     </div>
   )
 }

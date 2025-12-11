@@ -5,6 +5,7 @@ import grass from "../../assets/ProjectPage/Mannat/Amenities/grass.svg";
 import trimming from "../../assets/ProjectPage/Mannat/Amenities/trimming.svg";
 import bench from "../../assets/ProjectPage/Mannat/Amenities/bench.svg";
 import playground from "../../assets/ProjectPage/Mannat/Amenities/playground.svg";
+import parking from "../../assets/ProjectPage/Mannat/Amenities/parking.svg";
 
 export const MannatAmenitiesList = [
   {
@@ -44,8 +45,8 @@ export const MannatAmenitiesList = [
   },
   {
     id: 8,
-    img: playground,
-    title: "Kids Play Area",
+    img: parking,
+    title: "Separate Parking",
   },
  
 ];

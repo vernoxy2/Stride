@@ -1,5 +1,5 @@
 import React from "react";
-import weare from "../../../assets/HomePage/PNG/WhoWeAree.png";
+import weare from "../../../assets/HomePage/PNG/WhoWeAre.png";
 import weare1 from "../../../assets/HomePage/PNG/WeAre1.png";
 import weare2 from "../../../assets/HomePage/PNG/WeAre2.png";
 import weare3 from "../../../assets/HomePage/PNG/WeAre3.png";
@@ -9,7 +9,7 @@ const Images = [weare1, weare2, weare3, weare4];
 
 const countdown = () => {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
       <div  data-aos="zoom-in" className="w-full bg-bg h-full rounded-3xl relative">
         <img
         

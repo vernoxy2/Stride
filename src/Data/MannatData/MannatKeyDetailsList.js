@@ -2,7 +2,7 @@ export const MannatKeyDetailsList = [
   {
     id: 1,
     title: "Prime Location:",
-    info: "Opposite Vastu Vila, Hasot Road, Ankleshwar.",
+    info: "Behind Decent Hotel, Nr. GIDC Bus Station, Ankleshwar, Gujarat.",
   },
   {
     id: 2,

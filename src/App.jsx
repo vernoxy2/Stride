@@ -13,6 +13,7 @@ import StrideReality from "./Pages/Projects/Aura/Aura";
 // Animation Library
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "./Pages/Projects/Components/ScrollToTop";
 
 const App = () => {
   useEffect(() => {
@@ -28,13 +29,13 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
 
-        {/* Parent Route for Projects */}
         <Route path="/projects">
           <Route path="orange_city" element={<OrangeCity />} />
           <Route path="mannat_residency" element={<MannatResidency />} />

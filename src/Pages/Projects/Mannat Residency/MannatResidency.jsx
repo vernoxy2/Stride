@@ -14,6 +14,7 @@ import Logo from "../../../assets/MannatLogo.svg";
 import Head from "../../../assets/ProjectPage/Mannat/PNG/MannatHead.png";
 import Foot from "../../../assets/ProjectPage/Mannat/PNG/MannatFoot.png";
 import Hoding from "../../../assets/ProjectPage/Mannat/PNG/HodingImg.png";
+import PopupImg from "../../../assets/ProjectPage/Mannat/PNG/MannatPopupImg.png";
 
 // PDF
 import brochure from "../../../assets/ProjectPage/Mannat/MannatBrochure.pdf";
@@ -42,17 +43,19 @@ const MannatResidency = () => {
         <PrimaryFeatures
           ProjectTitle="Mannat Residency"
           brochure={brochure}
+          PopupImg={PopupImg}
           PDFName="Mannat Brochure.pdf"
           data={MannatFeaturesList}
           projectName="Mannat Residency"
           address={
             <>
-              Behind Decent Hotel, <br /> Nr. GIDC Bus Station, Ankleshwar,
+              Behind Decent Hotel, <br className="hidden md:block" /> Nr. GIDC Bus Station, Ankleshwar,
               Gujarat.
             </>
           }
           image={Hoding}
         />
+        
 
         <PrimaryDescription
           data={MannatKeyDetailsList}

@@ -14,6 +14,7 @@ import Head from "../../../assets/ProjectPage/OrangeCity/PNG/OrangeCityHead.png"
 import Foot from "../../../assets/ProjectPage/OrangeCity/PNG/OrangeCityFooter.png";
 import Hoding from "../../../assets/ProjectPage/OrangeCity/PNG/HodingImg.png";
 import Logo from "../../../assets/OrangeLogo.svg";
+import PopupImg from "../../../assets/ProjectPage/OrangeCity/PNG/OrangePopupImg.png";
 
 // PDF
 import brochure from "../../../assets/ProjectPage/OrangeCity/OrangeCity.pdf";
@@ -41,13 +42,14 @@ const OrangeCity = () => {
       >
         <PrimaryFeatures
           brochure={brochure}
+          PopupImg={PopupImg}
           PDFName="Orange Brochure.pdf"
           ProjectTitle="Orange City"
           data={OrangeFeaturesList}
           projectName="Orange City"
           address={
             <>
-              Opposite Vastu Vila, <br /> Hasot Road, Ankleshwar, Gujarat.
+              Opposite Vastu Vila, <br className="hidden xl:block" /> Hasot Road, Ankleshwar, Gujarat.
             </>
           }
           image={Hoding}

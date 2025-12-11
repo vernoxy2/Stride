@@ -25,6 +25,10 @@ const [currentSlide, setCurrentSlide] = useState(0);
   };
   return (
     <div className="space-y-4 md:space-y-8">
+      <div className="py-12 container">
+        <hr className="h-[1.5px] bg-[#D9D9D9] " />
+      </div>
+
       <h1 data-aos="fade-up" className="container">Media</h1>
       <div className="container px-0">
         <Slider {...settings}>

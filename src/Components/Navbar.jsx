@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* Desktop CTA */}
         <Link to="/contact" className="hidden md:block">
-          <button className="bg-secondary text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
+          <button className="bg-secondary  text-white px-5 py-2 rounded-full hover:bg-stride transition-colors">
             Get In Touch
           </button>
         </Link>

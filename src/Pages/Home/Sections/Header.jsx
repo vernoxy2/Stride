@@ -3,25 +3,25 @@ import { headersData } from "../../../Data/headersData";
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const delay = 4000; // 5 seconds per slide
+  const delay = 4000; // 4 seconds per slide
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === headersData.length - 1 ? 0   : prevIndex + 1
+        prevIndex === headersData.length - 1 ? 0 : prevIndex + 1
       );
     }, delay);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [delay]);
 
   return (
-    <div className="relative z-10 min-h-[60vh] md:h-screen">
+    <div className="relative z-[1] min-h-[60vh] md:h-screen overflow-hidden">
       {headersData.map((header, index) => (
         <section
           key={index}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in ${
+            index === currentIndex ? "opacity-100 z-10 slow-zoom" : "opacity-0 z-0"
           }`}
           style={{
             backgroundImage: `url(${header.backgroundImage})`,

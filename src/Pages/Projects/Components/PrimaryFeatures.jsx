@@ -1,6 +1,7 @@
 import React from "react";
 import { BiSolidDownload } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
+import Popup from "../../../Components/Popup";
 
 const PrimaryFeatures = ({
   projectName = "",
@@ -10,12 +11,20 @@ const PrimaryFeatures = ({
   ProjectTitle = "",
   brochure = "",
   PDFName = "",
+  PopupImg = null,
 }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = brochure;
     link.download = PDFName; // Name of the downloaded file
     link.click();
+  };
+
+  const [ShowPopup, setShowPopup] = React.useState(false);
+
+  const handleDownloadClick = () => {
+    setShowPopup(true); // Open popup form
+    console.log("btn click");
   };
 
   return (
@@ -31,7 +40,7 @@ const PrimaryFeatures = ({
         data-aos="fade"
         className="container flex gap-3 items-start text-xl md:text-5xl"
       >
-        <CiLocationOn className="text-stride mt-1" />
+        <CiLocationOn className="text-stride mt-1 text-6xl" />
         <p>
           <span className="text-stride">{projectName} </span>
           {address && <>, {address}</>}
@@ -44,8 +53,9 @@ const PrimaryFeatures = ({
           <div className=" space-y-4 md:flex justify-between items-center">
             {" "}
             <h1>Specifications</h1>
+            {/* Download btn */}
             <button
-              onClick={handleDownload}
+              onClick={handleDownloadClick}
               className="flex items-center gap-3 bg-secondary text-secondary p-1.5 pr-5  rounded-full active:bg-stride"
             >
               <BiSolidDownload className="bg-white p-2 text-3xl md:text-4xl lg:text-5xl rounded-full" />
@@ -95,6 +105,15 @@ const PrimaryFeatures = ({
             className="w-full object-cover rounded-xl shadow-md"
           />
         </div>
+      )}
+      {/* 👉 SHOW POPUP WHEN BUTTON IS CLICKED */}
+      {ShowPopup && (
+        <Popup
+        PopupImg={PopupImg}
+        BtnText={"Download Brochure"}
+          closePopup={() => setShowPopup(false)}
+          onSubmit={handleDownload} // after submit, download brochure
+        />
       )}
     </div>
   );

@@ -2,7 +2,7 @@ export const AuraKeyDetailsList = [
   {
     id: 1,
     title: "Prime Location:",
-    info: "Opposite Vastu Vila, Hasot Road, Ankleshwar.",
+    info: "Survey no-612, opposite gardencity, Ankleshwar",
   },
   {
     id: 2,

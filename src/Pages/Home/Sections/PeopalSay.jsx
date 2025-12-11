@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import Title from "../../../assets/HomePage/PNG/Says.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -49,6 +49,18 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const PeopleSay = () => {
+  const texts = ["What", "People", "Says"];
+  const flipDuration = 700; // flip animation duration in ms
+  const displayDuration = 2000; // how long each word stays visible
+  const [index, setIndex] = React.useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % texts.length);
+    }, 500); // change text every 2 seconds
+    return () => clearInterval(interval);
+  }, [displayDuration]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -108,15 +120,26 @@ const PeopleSay = () => {
         </Slider>
       </div>
       <div className="absolute -top-16 lg:-top-20 left-1/2 -translate-x-1/2 border-[10px] border-bg rounded-full">
-        <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
+      <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
 
-        {/* <CornerClip className="bg-"
-          positions={[
-            { bottom: 45, right: -24 },
-            { bottom: 18, left: -43 },
-          ]}
-        /> */}
+      <div className="h-full w-full flex items-center justify-center absolute inset-0 rounded-full overflow-hidden">
+        <div className="relative h-10 w-full perspective-1000"> {/* perspective for 3D flip */}
+          {texts.map((text, i) => (
+             <p
+              key={i}
+              className={`absolute w-full text-center text-white font-bold font-helvetica transform transition-transform ease-in duration-${flipDuration}`}
+              style={{
+                transform: i === index ? "translateY(0)" : "translateY(5%)",
+                opacity: i === index ? 1 : 0,
+                transitionDuration: `${flipDuration}ms`,
+              }}
+            >
+              {text}
+            </p>
+          ))}
+        </div>
       </div>
+    </div>
     </div>
   );
 };
