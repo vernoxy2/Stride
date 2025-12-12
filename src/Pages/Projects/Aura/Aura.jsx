@@ -26,7 +26,7 @@ import { AuraMedia } from "../../../Data/AuraData/AuraMedia";
 import { AuraKeyDetailsList } from "../../../Data/AuraData/AuraKeyDetailsList";
 import AutoScroll from "../Components/function";
 
-const projectDescription = `Located opposite Vastu Vila on Hasot Road, Ankleshwar, Orange City offers thoughtfully designed residential spaces with modern constructionstandards and premium finishes. The project features earthquake-resistant RCC frame structures, ensuring safety and durability.`;
+const projectDescription = `Experience elevated living at Aura Ankleshwar, where modern architecture meets greenery. Enjoy spacious layouts, refreshing ventilation, grand arrival zones, and tranquil open spaces designed for comfort, privacy, and community harmony.`;
 
 const MapSrc =
   "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d925.0860124923506!2d73.03802368308857!3d21.596411349776336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSurvey%20No-612%2C%20Opposite%20Garden%20City%2C%20Ankleshwar.!5e1!3m2!1sen!2sin!4v1762333372166!5m2!1sen!2sin";

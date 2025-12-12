@@ -25,7 +25,7 @@ import { MannatAmenitiesList } from "../../../Data/MannatData/MannatAmenitiesLis
 import { MannatKeyDetailsList } from "../../../Data/MannatData/MannatKeyDetailsList";
 import { MannatFeaturesList } from "../../../Data/MannatData/MannatFeaturesList";
 
-const projectDescription = `Located opposite Vastu Vila on Hasot Road, Ankleshwar, Orange City offers thoughtfully designed residential spaces with modern construction standards and premium finishes. The project features earthquake-resistant RCC frame structures, ensuring safety and durability.`;
+const projectDescription = `Mannat Residency Ankleshwar delivers vibrant living with modern design, iconic elevation, and joyful amenities, offering a refreshing lifestyle where quality homes elevate comfort, fulfillment, and memorable moments in a welcoming community.`;
 
 const mapSrc =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1532.4935549157722!2d73.00077447576817!3d21.621094103448577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be023003a25ed0b%3A0x671dffce73280a66!2sMannat%20Residency!5e1!3m2!1sen!2sin!4v1762840068368!5m2!1sen!2sin";

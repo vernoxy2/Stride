@@ -86,7 +86,7 @@ const Commitment = () => {
               <li
               data-aos="fade-up"
                 key={item.id}
-                className="flex flex-row items-start text-start justify-start gap-2 md:gap-5 py-4 border-t border-[#D9d9d9]"
+                className="flex flex-col md:flex-row items-center md:items-start text-center md:text-start justify-start gap-2 md:gap-5 py-4 px-7 xl:px-0 border-t border-[#D9d9d9]"
               >
                 <img
                   src={item.img}
