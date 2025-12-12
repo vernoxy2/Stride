@@ -135,7 +135,7 @@ const Popup = ({
           {!isSubmitted && (
             <IoCloseCircle
               onClick={closePopup}
-              className="absolute -top-3 md:top-0 right-2 bg-white text-stride hover:text-secondary duration-300 transition-colors rounded-full text-3xl cursor-pointer"
+              className="absolute -top-3 right-2 bg-white text-stride hover:text-secondary duration-300 transition-colors rounded-full text-3xl cursor-pointer"
             />
           )}
         </div>
