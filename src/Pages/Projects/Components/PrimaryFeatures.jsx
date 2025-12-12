@@ -109,8 +109,9 @@ const PrimaryFeatures = ({
       {/* 👉 SHOW POPUP WHEN BUTTON IS CLICKED */}
       {ShowPopup && (
         <Popup
-        PopupImg={PopupImg}
-        BtnText={"Download Brochure"}
+          HeadText={"Download the Project Brochure"}
+          PopupImg={PopupImg}
+          BtnText={"Download Brochure"}
           closePopup={() => setShowPopup(false)}
           onSubmit={handleDownload} // after submit, download brochure
         />

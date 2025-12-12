@@ -68,14 +68,14 @@ const About = () => {
         >
           <div className=" rounded-3xl grid grid-cols-1 md:grid-cols-2  w-full">
             {/* Gradient */}
-            <div className="relative w-fit bg-white px-20 lg:px-28 h-20 rounded-ee-3xl">
+            <div className="relative w-fit bg-bg px-20 lg:px-28 h-20 rounded-ee-3xl">
               {[
                 { top: 0, right: -24 },
                 { bottom: -24, left: 0 },
               ].map((pos, idx) => (
                 <div
                   key={idx}
-                  className="absolute w-[24px] h-[24px] bg-white rotate-90"
+                  className="absolute w-[24px] h-[24px] bg-bg rotate-90"
                   style={{
                     top: pos.top,
                     right: pos.right,

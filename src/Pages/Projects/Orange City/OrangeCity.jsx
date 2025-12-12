@@ -41,6 +41,7 @@ const OrangeCity = () => {
           after:absolute after:h-12 after:w-full after:bg-bg after:-bottom-12 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >
         <PrimaryFeatures
+        
           brochure={brochure}
           PopupImg={PopupImg}
           PDFName="Orange Brochure.pdf"

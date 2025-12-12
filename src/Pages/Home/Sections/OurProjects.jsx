@@ -10,16 +10,16 @@ const OurProjects = () => {
     <section className="container py-0">
       <TitleBox title="Our Projects" className="mx-auto" />
 
-      <h1 className="font-semibold text-center">
+      <h1 data-aos="fade-up" className="font-semibold text-center">
         Creative brilliance, <br /> lasting effect.
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((item) => (
-          <div key={item.id} className="flex flex-col gap-5 group">
+          <div  key={item.id} className="flex flex-col gap-5 group">
             {/* Entire card clickable but valid structure */}
-            <Link to={item.link} className="block">
-              <div className="overflow-hidden relative">
+            <Link data-aos="fade-up" data-aos-delay="500" to={item.link} className="block">
+              <div  className="overflow-hidden relative">
                 <img
                   src={item.Display}
                   alt={item.Maintext}

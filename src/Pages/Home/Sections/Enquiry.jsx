@@ -68,7 +68,7 @@ const Enquiry = () => {
         </div>
       </section>
       {/* Overlay with rounded corners */}
-      <div className="absolute left-0 bottom-0 bg-bg px-20 lg:px-32 h-20 rounded-se-3xl">
+      {/* <div className="absolute left-0 bottom-0 bg-bg px-20 lg:px-32 h-20 rounded-se-3xl">
         <CornerClip
           className="rotate-0"
           positions={[
@@ -76,7 +76,7 @@ const Enquiry = () => {
             { bottom: 0, right: -24 },
           ]}
         />
-      </div>
+      </div> */}
     </section>
   );
 };

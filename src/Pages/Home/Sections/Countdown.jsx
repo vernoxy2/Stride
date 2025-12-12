@@ -9,7 +9,7 @@ const Images = [weare1, weare2, weare3, weare4];
 
 const countdown = () => {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
       <div  data-aos="zoom-in" className="w-full bg-bg h-full rounded-3xl relative">
         <img
         
@@ -38,7 +38,7 @@ const countdown = () => {
         </div>
        
       </div>
-      <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-2 gap-8 rounded-3xl">
+      <div data-aos="zoom-in" className="grid grid-cols-2 gap-4 md:gap-8 rounded-3xl">
         {Images.map((img, idx) => (
           <img
             key={idx}

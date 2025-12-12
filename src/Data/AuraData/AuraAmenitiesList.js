@@ -28,7 +28,7 @@ export const AuraAmenitiesList = [
   {
     id: 2,
     img: Flower,
-    title: "Flower & Fragrance Gerden",
+    title: "Flower & Fragrance Garden",
   },
   {
     id: 3,
@@ -104,7 +104,7 @@ export const AuraAmenitiesList = [
   {
     id: 17,
     img: PoolDeck,
-    title: "Pool Deck",
+    title: "Reception & Leisure",
   },
   {
     id: 18,

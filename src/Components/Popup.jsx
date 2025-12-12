@@ -1,7 +1,19 @@
 import React from "react";
 import { IoCloseCircle } from "react-icons/io5";
 
-const Popup = ({ closePopup, PopupImg, BtnText, onSubmit }) => {
+const Popup = ({
+  closePopup,
+  PopupImg,
+  BtnText,
+  onSubmit,
+  HeadText = (
+    <>
+      Explore Luxury, Comfort <br />
+      & Convenience Across <br />
+      Our Projects
+    </>
+  ),
+}) => {
   const [formData, setFormData] = React.useState({
     firstname: "",
     lastname: "",
@@ -26,26 +38,25 @@ const Popup = ({ closePopup, PopupImg, BtnText, onSubmit }) => {
   //     closePopup();
   //   }, 2000);
   // };
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log("Form Submitted:", formData);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted:", formData);
 
-  setIsSubmitted(true);
+    setIsSubmitted(true);
 
-  // ⬇️ ADD THIS LINE — triggers the PDF download
-  onSubmit(formData);  
+    // ⬇️ ADD THIS LINE — triggers the PDF download
+    onSubmit(formData);
 
-  setTimeout(() => {
-    closePopup();
-  }, 2000);
-};
-      
+    setTimeout(() => {
+      closePopup();
+    }, 2000);
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
       <div className="bg-white p-2 rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full relative">
-        
         {/* IMAGE */}
-        <div>
+        <div className="hidden md:block">
           <img
             src={PopupImg}
             alt="Popup"
@@ -54,8 +65,7 @@ const handleSubmit = (e) => {
         </div>
 
         {/* CONTENT */}
-        <div className="pe-2 relative flex flex-col justify-center">
-
+        <div className="p-4 py-6 md:p-0 md:pe-2  flex flex-col justify-center space-y-4">
           {/* IF SUBMITTED → SHOW THANK YOU MESSAGE */}
           {isSubmitted ? (
             <div className="text-center space-y-3">
@@ -65,17 +75,19 @@ const handleSubmit = (e) => {
               <p className="text-lg text-secondary">
                 Your details have been submitted successfully.
               </p>
-              <p className="text-base text-gray-500">
+              {/* <p className="text-base text-gray-500">
                 Closing popup...
-              </p>
+              </p> */}
             </div>
           ) : (
             <>
-              <h2 className="text-3xl font-redhat font-semibold text-stride leading-snug">
-                Explore Luxury, Comfort <br />
-                & Convenience Across <br />
-                Our Projects
+              <h2 className="text-2xl md:text-3xl font-redhat font-semibold text-stride leading-snug">
+                {HeadText}
               </h2>
+
+              <div className=" ">
+                <hr className="h-[1.5px] bg-[#D9D9D9] " />
+              </div>
 
               {/* FORM */}
               <form className="mt-4 space-y-3" onSubmit={handleSubmit}>
@@ -123,7 +135,7 @@ const handleSubmit = (e) => {
           {!isSubmitted && (
             <IoCloseCircle
               onClick={closePopup}
-              className="absolute top-0 right-0.5 bg-white text-stride hover:text-secondary duration-300 transition-colors rounded-full text-3xl cursor-pointer"
+              className="absolute -top-3 md:top-0 right-2 bg-white text-stride hover:text-secondary duration-300 transition-colors rounded-full text-3xl cursor-pointer"
             />
           )}
         </div>
