@@ -37,7 +37,7 @@ const Aura = () => {
       <PrimaryHeader title="" backgroundImage={Head} />
 
       <section
-        className="bg-bg relative
+        className="bg-bg relative space-y-0
           before:absolute before:h-10 before:w-full before:bg-bg before:-top-10 before:content-[''] before:rounded-t-[66px]
           after:absolute after:h-10 after:w-full after:bg-bg after:-bottom-10 after:content-[''] after:rounded-b-[66px] after:z-[1]"
       >

@@ -26,7 +26,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="absolute left-1/2 -translate-x-1/2 top-3 md:top-5 w-full z-50 container">
+    <nav className=" fixed left-1/2 -translate-x-1/2 top-3 md:top-5 w-full z-50 container">
       <div className="flex justify-between items-center bg-white rounded-full h-full py-2 md:p-1">
         {/* Left side */}
         <div className="flex items-center gap-8 lg:gap-20">

@@ -16,17 +16,22 @@ const OurProjects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((item) => (
-          <div  key={item.id} className="flex flex-col gap-5 group">
+          <div key={item.id} className="flex flex-col gap-5 group">
             {/* Entire card clickable but valid structure */}
-            <Link data-aos="fade-up" data-aos-delay="500" to={item.link} className="block">
-              <div  className="overflow-hidden relative">
+            <Link
+              data-aos="fade-up"
+              data-aos-delay="500"
+              to={item.link}
+              className="block"
+            >
+              <div className="overflow-hidden relative">
                 <img
                   src={item.Display}
                   alt={item.Maintext}
                   className="object-cover group-hover:scale-105 duration-300"
                 />
 
-                <div className="p-4 gap-5 bg-stride flex items-center absolute bottom-0 right-0 left-0 w-full opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-full duration-300">
+                <div className="p-4 gap-5 bg-stride flex items-center absolute bottom-0 right-0 left-0 w-full">
                   <h1 className="text-outline font-helvetica">{item.id}</h1>
                   <p className="text-white font-poppins">{item.Maintext}</p>
                 </div>
