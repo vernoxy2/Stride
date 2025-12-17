@@ -69,24 +69,24 @@ const PrimaryFeatures = ({
       )}
 
       {/* try */}
-      <div className="overflow-hidden container px-2 md:px-0">
-        <div className="flex flex-nowrap items-center animate-scroll">
+      <div className="overflow-hidden container md:px-0">
+        <div style={{ animationDuration: '70s' }} className="flex animate-scroll w-fit">
           {[...data, ...data].map((item, index) => (
             <div
               key={item.id + "-" + index}
-              className="p-1 mx-1 flex-shrink-0 w-[80%] sm:w-[80%] md:w-[50%] lg:w-[40%] xl:w-[30%]"
+              className=" mx-1 flex-shrink-0 w-80  lg:w-96 "
             >
               <div className="flex items-center gap-4">
                 <div className="rounded-full border border-[#d9d9d9] p-6 flex-shrink-0">
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-6 md:w-12"
+                    className="w-4 md:w-8 lg:w-12"
                   />
                 </div>
-                <div>
-                  <p className="text-stride text-lg md:text-xl">{item.title}</p>
-                  <p className="text-gray-700 text-xs md:text-lg">
+                <div className="min-w-0">
+                  <p className="text-stride text-lg md:text-xl truncate">{item.title}</p>
+                  <p className="text-gray-700 text-xs md:text-base lg:text-lg line-clamp-2">
                     {item.desc}
                   </p>
                 </div>
@@ -98,7 +98,7 @@ const PrimaryFeatures = ({
 
       {/* Project Image */}
       {image && (
-        <div data-aos="fade" className="container">
+        <div data-aos="fade" className="container pb-4 md:pb-8">
           <img
             src={image}
             alt={projectName}
