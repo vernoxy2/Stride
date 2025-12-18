@@ -24,6 +24,8 @@ import { OrangeFeaturesList } from "../../../Data/OrangeData/OrangeFeaturesList"
 import { OrangeKeyDetailsList } from "../../../Data/OrangeData/OrangeKeyDetailsList";
 import { OrangeAmenitiesList } from "../../../Data/OrangeData/OrangeAmenitiesList";
 import { OrangeMedia } from "../../../Data/OrangeData/OrangeMedia";
+import Slider from "../Components/SliderMedia";
+import SliderMedia from "../Components/SliderMedia";
 
 const projectDescription = `Experience refined luxury in Ankleshwar, surrounded by lush greenery, lively play areas, and a dedicated basketball court. A thoughtfully crafted haven offering modern amenities, serene landscapes, and joyful living for every family.`;
 
@@ -64,6 +66,7 @@ const OrangeCity = () => {
         <PrimaryAmenities data={OrangeAmenitiesList} />
 
         <PrimaryMedia data={OrangeMedia} />
+        {/* <SliderMedia/> */}
 
         <PrimaryLocation
           MapLink={"https://maps.app.goo.gl/ft2g2KmnscFzJ7S38"}

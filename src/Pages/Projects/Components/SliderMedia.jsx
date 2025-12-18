@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import { OrangeMedia } from "../../../Data/OrangeData/OrangeMedia";
-import { motion, AnimatePresence } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
 const SliderMedia = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   return (
-    <div className="container mx-auto md:px-0">
+    <div className="container mx-auto px-4">
       <Swiper
         modules={[EffectCoverflow, Autoplay]}
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={1}
-        loop={true} // <-- enable infinite loop
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -35,32 +31,21 @@ const SliderMedia = () => {
           640: { slidesPerView: 2, spaceBetween: 20 },
           768: { slidesPerView: 3, spaceBetween: 30 },
           1024: { slidesPerView: 3, spaceBetween: 40 },
-          1280: { slidesPerView: 3, spaceBetween: 60 },
+          1280: { slidesPerView: 3, spaceBetween: 40 },
         }}
         className="mySwiper"
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)} // use realIndex with loop
       >
         {OrangeMedia.map((item, index) => (
           <SwiperSlide
             key={index}
             className="flex justify-center items-center"
+            // style={{ width: "200px", height: "200px" }}
           >
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={index}
-                src={item} // Make sure OrangeMedia is an array of objects with src
-                alt={item.alt || `Slide ${index + 1}`}
-                className="w-full h-full object-cover rounded-2xl px-0"
-                initial={{ opacity: 0.5, scale: 0.9 }}
-                animate={
-                  index === activeIndex
-                    ? { opacity: 1, scale: 1 }
-                    : { opacity: 0.5, scale: 0.9 } // smooth transition for inactive
-                }
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.5 }}
-              />
-            </AnimatePresence>
+            <img
+              src={item} // assuming each item in OrangeMedia has a `src` property
+              alt={item.alt || `Slide ${index + 1}`} // optional alt text
+              className="w-full h-full object-cover rounded-lg"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

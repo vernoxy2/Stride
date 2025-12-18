@@ -1,4 +1,4 @@
-import { p } from 'framer-motion/client';
+// import { p } from 'framer-motion/client';
 
 /** @type {import('tailwindcss').Config} */
 export default {

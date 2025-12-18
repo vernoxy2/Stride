@@ -37,12 +37,14 @@ const Commitment = () => {
         <div data-aos="fade-up" className="relative min-h-[600px]  h-full w-full  ">
           {/* Video background */}
           <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            className="absolute inset-0 w-full h-full rounded-3xl object-cover"
-          />
+  src={video}
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="absolute inset-0 w-full h-full rounded-3xl object-cover"
+/>
+
 
           {/* Overlay div */}
           <div className="absolute -bottom-28 left-1/2 -translate-x-1/2 lg:translate-x-0  p-5  lg:-left-14 h-52 w-52 md:h-60 md:w-60 lg:h-72 lg:w-72 rounded-full backdrop-blur bg-white/50 flex items-center justify-center text-center flex-col gap-1.5 md:gap-3 shadow-lg">

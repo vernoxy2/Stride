@@ -11,7 +11,7 @@ import Popup from "../../Components/Popup";
 import PopupImg from "../../assets/HomePage/PNG/HomePopup.png"
 
 const Home = () => {
- const [showPopup, setShowPopup] = useState(true);
+ const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     // Check if popup has been shown in this session
