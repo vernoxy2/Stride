@@ -6,7 +6,7 @@ import Architect from "../../../assets/ProjectPage/SVG/Architect.svg";
 
 const PrimaryComponent = ({ logo, locationDetails, mapSrc, MapLink }) => {
   return (
-    <div className="container space-y-5 md:space-y-10 overflow-hidden">
+    <div className="container space-y-5 md:space-y-10 overflow-hidden pt-5">
       {/* Location Map heading */}
       <div className="flex items-center justify-between">
         <div data-aos="fade" className="flex items-center gap-3">
