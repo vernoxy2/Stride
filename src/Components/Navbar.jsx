@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import nevlogo from "../assets/NavLogo.svg";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -22,8 +22,26 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [desktopDropdown, setDesktopDropdown] = useState(null);
   const [mobileDropdown, setMobileDropdown] = useState(null);
-
   const location = useLocation();
+
+  // Ref to store the timeout ID
+  const dropdownTimeoutRef = useRef(null);
+
+  const handleMouseEnter = (id) => {
+    // Clear any existing timeout to prevent premature closing
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setDesktopDropdown(id);
+  };
+
+  const handleMouseLeave = () => {
+    // Delay closing the dropdown by 300ms
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setDesktopDropdown(null);
+    }, 300);
+  };
 
   return (
     <nav className=" fixed left-1/2 -translate-x-1/2 top-3 md:top-5 w-full z-50 container">
@@ -47,8 +65,8 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className="relative group"
-                  onMouseEnter={() => hasSubmenu && setDesktopDropdown(link.id)}
-                  onMouseLeave={() => hasSubmenu && setDesktopDropdown(null)}
+                  onMouseEnter={() => hasSubmenu && handleMouseEnter(link.id)}
+                  onMouseLeave={() => hasSubmenu && handleMouseLeave()}
                 >
                   <Link
                     to={link.url}
@@ -64,7 +82,7 @@ const Navbar = () => {
 
                   {/* Desktop Dropdown */}
                   {hasSubmenu && desktopDropdown === link.id && (
-                    <ul className="absolute left-0 top-full m-1 bg-white shadow-lg rounded-xl w-48 py-2">
+                    <ul className="absolute left-0 top-full my-3 bg-white shadow-lg rounded-xl w-48 py-2">
                       {link.submenu.map((sub) => (
                         <li key={sub.id}>
                           <Link
@@ -105,16 +123,13 @@ const Navbar = () => {
           <ul className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) => {
               const hasSubmenu = link.submenu;
-
-              // FIXED isActive logic
               const isActive = hasSubmenu
-                ? location.pathname.startsWith(link.url) // e.g. "/projects"
+                ? location.pathname.startsWith(link.url)
                 : location.pathname === link.url;
 
               return (
                 <li key={link.id} className="w-full text-center">
                   {hasSubmenu ? (
-                    // Toggle submenu
                     <button
                       className={`w-full flex justify-center items-center gap-2 text-lg transition-colors duration-200 ${
                         isActive
@@ -131,7 +146,6 @@ const Navbar = () => {
                       <ChevronDown size={18} />
                     </button>
                   ) : (
-                    // Normal navigation
                     <Link
                       to={link.url}
                       className={`w-full flex justify-center items-center gap-1 text-lg transition-colors duration-200 ${
@@ -145,7 +159,6 @@ const Navbar = () => {
                     </Link>
                   )}
 
-                  {/* Submenu (only opens on click — NOT based on pathname) */}
                   {hasSubmenu && mobileDropdown === link.id && (
                     <ul className="flex flex-col items-center mt-2 space-y-2">
                       {link.submenu.map((sub) => (
@@ -172,4 +185,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

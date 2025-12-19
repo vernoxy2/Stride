@@ -29,7 +29,7 @@ const Header = () => {
           }}
         />
       ))}
-      <div className="relative z-20 container flex flex-col justify-end h-full space-y-3 md:space-y-5 pb-12 text-slide-x mt-auto">
+      <div className="relative z-20 container flex flex-col justify-end min-h-[60vh] h-full space-y-3 md:space-y-5 pb-12 text-slide-x mt-auto">
         <h1 className="text-white font-semibold flex gap-4 md:gap-8">
           <span>
             <hr className="bg-white h-full p-[0.5px]" />
