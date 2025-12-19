@@ -5,4 +5,10 @@ import Media4 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media4.png
 import Media5 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media5.png";
 import Media6 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media6.png";
 import Media7 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media7.png";
-export const OrangeMedia = [Media1, Media2, Media3, Media4, Media5, Media6, Media7];
+import Media8 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media8.png";
+import Media9 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media9.png";
+import Media10 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media10.png";
+import Media11 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media11.png";
+import Media12 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media12.png";
+import Media13 from "../../assets/ProjectPage/OrangeCity/PNG/MediaImgs/Media13.png";
+export const OrangeMedia = [Media1, Media2, Media3, Media4, Media5, Media6, Media7, Media8, Media9, Media10, Media11, Media12, Media13];

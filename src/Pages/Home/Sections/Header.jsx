@@ -3,46 +3,44 @@ import { headersData } from "../../../Data/headersData";
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const delay = 4000; // 4 seconds per slide
+  const delay = 8000; // 8 seconds per slide
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === headersData.length - 1 ? 0 : prevIndex + 1
-      );
+      setCurrentIndex((prev) => (prev + 1) % headersData.length);
     }, delay);
-
     return () => clearInterval(interval);
   }, [delay]);
 
+  const currentHeader = headersData[currentIndex];
+
   return (
-    <div className="relative z-[1] min-h-[60vh] md:h-screen overflow-hidden">
+    <div className="relative z-[1] min-h-[60vh] md:h-screen overflow-hidden bg-black">
       {headersData.map((header, index) => (
         <section
           key={index}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in ${
-            index === currentIndex ? "opacity-100 z-10 slow-zoom" : "opacity-0 z-0"
+          className={`absolute inset-0 bg-cover bg-no-repeat bg-top transition-opacity duration-75 ease-linear   ${
+            index === currentIndex
+              ? " slow-zoom z-10 opacity-100"
+              : "opacity-50 z-0"
           }`}
           style={{
             backgroundImage: `url(${header.backgroundImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
           }}
-        >
-          <div className="container flex flex-col justify-end h-full space-y-3 md:space-y-5 pb-6">
-            <h1 className="text-white font-semibold flex gap-4 md:gap-8">
-              <span>
-                <hr className="bg-white h-full p-[0.5px]" />
-              </span>
-              {header.mainText}
-            </h1>
-            <p className="font-poppins font-extralight text-white uppercase ml-5 md:ml-9">
-              {header.subText}
-            </p>
-          </div>
-        </section>
+        />
       ))}
+      <div className="relative z-20 container flex flex-col justify-end h-full space-y-3 md:space-y-5 pb-12 text-slide-x mt-auto">
+        <h1 className="text-white font-semibold flex gap-4 md:gap-8">
+          <span>
+            <hr className="bg-white h-full p-[0.5px]" />
+          </span>
+          {currentHeader.mainText}
+        </h1>
+
+        <p data-aos="fade-up" className="font-poppins font-extralight text-white uppercase ml-5 md:ml-9">
+          {currentHeader.subText}
+        </p>
+      </div>
     </div>
   );
 };

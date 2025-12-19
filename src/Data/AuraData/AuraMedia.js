@@ -13,6 +13,9 @@ import Media12 from "../../assets/ProjectPage/Aura/Media/Media12.png";
 import Media13 from "../../assets/ProjectPage/Aura/Media/Media13.png";
 import Media14 from "../../assets/ProjectPage/Aura/Media/Media14.png";
 import Media15 from "../../assets/ProjectPage/Aura/Media/Media15.png";
+import Media16 from "../../assets/ProjectPage/Aura/Media/Media16.png";
+import Media17 from "../../assets/ProjectPage/Aura/Media/Media17.png";
+import Media18 from "../../assets/ProjectPage/Aura/Media/Media18.png";
 export const AuraMedia = [
   Media1,
   Media2,
@@ -29,4 +32,7 @@ export const AuraMedia = [
   Media13,
   Media14,
   Media15,
+  Media16,
+  Media17,
+  Media18,
 ];

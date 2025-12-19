@@ -57,7 +57,7 @@ const SliderMedia = ({ data = [] }) => {
               480: { slidesPerView: 1, spaceBetween: 10 },
               640: { slidesPerView: 2, spaceBetween: 20 },
               768: { slidesPerView: 3, spaceBetween: 30 },
-              1024: { slidesPerView: 3, spaceBetween: 40 },
+              1024: { slidesPerView: 3, spaceBetween: 50 },
               1280: { slidesPerView: 3, spaceBetween: 50 },
             }}
             className="mySwiper"
@@ -65,14 +65,15 @@ const SliderMedia = ({ data = [] }) => {
           >
             {data.map((item, index) => (
               <SwiperSlide
+              
                 key={index}
-                className="flex justify-center items-center cursor-pointer"
+                className="flex justify-center items-center cursor-pointer "
                 onClick={() => openModal(index)}
               >
                 <motion.img
                   src={item.src || item} // handle array of strings or objects
                   alt={item.alt || `Slide ${index + 1}`}
-                  className="w-full h-full object-cover rounded-2xl px-0"
+                  className=" h-[250px] md:h-auto object-cover rounded-2xl w-full mx-auto"
                   initial={{ opacity: 0.5, scale: 0.9,}}
                   animate={
                     index === activeIndex

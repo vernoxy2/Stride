@@ -26,7 +26,7 @@ const App = () => {
       once: true,
       mirror: true,
       delay: 400,
-      offset: 150,
+      offset: 80,
     });
   }, []);
 
