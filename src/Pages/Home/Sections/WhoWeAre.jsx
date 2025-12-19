@@ -19,7 +19,9 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section className="container">
+    <section className="bg-[#F8EFE6]">
+      <div className="container space-y-10 pb-12">
+
       <TitleBox title="Who We Are" />
 
       <div
@@ -45,7 +47,7 @@ const WhoWeAre = () => {
         </div>
       </div>
 
-      <Countdown />
+          </div>
     </section>
   );
 };
