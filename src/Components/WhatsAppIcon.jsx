@@ -11,19 +11,20 @@ const WhatsAppIcon = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="
-        fixed bottom-24 right-10
-        bg-green-500 text-white
-        p-2 rounded-full
+        fixed bottom-4 md:bottom-10 right-4 md:right-10
+        bg-[#C09D78] text-white
+        p-3 rounded-full
         shadow-lg
-        hover:bg-green-600
+        hover:bg-secondary
+        active:scale-95
         hover:scale-110
         transition-transform duration-300
-        z-50
+        z-40
         flex items-center justify-center
       "
       aria-label="Chat on WhatsApp"
     >
-      <FaWhatsapp size={32} />
+      <FaWhatsapp size={28} />
     </a>
   );
 };

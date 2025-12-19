@@ -31,7 +31,7 @@ const GoToTop = () => {
         <button
           onClick={scrollToTop}
           className="
-            fixed bottom-10 right-10
+            fixed bottom-[70px]  md:bottom-24 right-4 md:right-10
             bg-[#C09D78]
             p-2 rounded-full
             shadow-lg
