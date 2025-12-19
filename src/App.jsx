@@ -14,6 +14,8 @@ import StrideReality from "./Pages/Projects/Aura/Aura";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./Pages/Projects/Components/ScrollToTop";
+import GoToTop from "./Components/GoToTop";
+import WhatsAppIcon from "./Components/WhatsAppIcon";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -47,6 +49,10 @@ const App = () => {
 
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
+
+      {/* float button */}
+      <WhatsAppIcon/>
+      <GoToTop/>
     </BrowserRouter>
   );
 };
