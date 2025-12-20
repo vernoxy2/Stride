@@ -41,7 +41,7 @@ const Enquiry = () => {
             <p className="md:font-light">
               We’re happy to connect! Required fields are marked
             </p>
-            <div className="flex justify-end h-fit">
+            <div className="flex md:justify-end h-fit">
               <PrimaryButton> Get a Call Back</PrimaryButton>
             </div>
           </div>

@@ -76,13 +76,18 @@ const PeopleSay = () => {
 
   const testimonials = [
     {
-      text: "Loved working with your team on our basement remodel! Looking forward to partnering again on future projects.",
-      name: "Manish Patel",
-      role: "Service Provider",
+      text: "Very satisfied with the overall journey. The execution was well-managed, communication was clear, and everything was delivered as promised.",
+      name: "Kishan Parmar",
+      role: "Homeowner",
     },
     {
-      text: "The team was amazing to work with on our basement remodel! I’m really happy with the results and will absolutely be using them again for future projects!",
-      name: "Sarah Lee",
+      text: "Highly professional experience with Stride Realty in Ankleshwar. As an investor, I found them transparent, reliable, and the project offers excellent growth potential.",
+      name: "Divyesh Patel",
+      role: "investor",
+    },
+    {
+      text: "Highly recommend Stride Realty for their integrity and high-quality, safe investment environment that is perfect for any woman looking to own property.",
+      name: "Manisha Patel",
       role: "Homeowner",
     },
   ];
@@ -120,26 +125,28 @@ const PeopleSay = () => {
         </Slider>
       </div>
       <div className="absolute -top-16 lg:-top-20 left-1/2 -translate-x-1/2 border-[10px] border-bg rounded-full">
-      <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
+        <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
 
-      <div className="h-full w-full flex items-center justify-center absolute inset-0 rounded-full overflow-hidden">
-        <div className="relative h-10 w-full perspective-1000"> {/* perspective for 3D flip */}
-          {texts.map((text, i) => (
-             <p
-              key={i}
-              className={`absolute w-full text-center text-white font-bold font-helvetica transform transition-transform ease-in duration-${flipDuration}`}
-              style={{
-                transform: i === index ? "translateY(0)" : "translateY(5%)",
-                opacity: i === index ? 1 : 0,
-                transitionDuration: `${flipDuration}ms`,
-              }}
-            >
-              {text}
-            </p>
-          ))}
+        <div className="h-full w-full flex items-center justify-center absolute inset-0 rounded-full overflow-hidden">
+          <div className="relative h-10 w-full perspective-1000">
+            {" "}
+            {/* perspective for 3D flip */}
+            {texts.map((text, i) => (
+              <p
+                key={i}
+                className={`absolute w-full text-center text-white font-bold font-helvetica transform transition-transform ease-in duration-${flipDuration}`}
+                style={{
+                  transform: i === index ? "translateY(0)" : "translateY(5%)",
+                  opacity: i === index ? 1 : 0,
+                  transitionDuration: `${flipDuration}ms`,
+                }}
+              >
+                {text}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

@@ -22,15 +22,15 @@ const contactdata = [
     id: 2,
     icon: <IoCallOutline />,
     title: "Phone",
-    info: "+91 81550 04443",
-    link: "tel:+918155004443",
+    info: "+91 98790 11576",
+    link: "tel:+919879011576",
   },
   {
     id: 3,
     icon: <CiMail />,
     title: "Email",
-    info: "k2T0o@example.com",
-    link: "mailto:k2T0o@example.com",
+    info: "striderealty1@gmail.com",
+    link: "mailto:striderealty1@gmail.com",
   },
 ];
 
@@ -43,17 +43,17 @@ const Socialdata = [
   {
     id: 2,
     icon: <FaSquareFacebook />,
-    link: "www.facebook.com",
+    link: "https://www.facebook.com/profile.php?id=61577804857599",
   },
   {
     id: 3,
     icon: <FaSquareInstagram />,
-    link: "www.instagram.com",
+    link: "https://www.instagram.com/striderealty/",
   },
   {
     id: 4,
     icon: <FaWhatsappSquare />,
-    link: "www.whatsapp.com",
+    link: "https://wa.me/919879011576",
   },
 ];
 
@@ -155,9 +155,9 @@ const FooterData = () => {
           {/* <h2 className="font-bold text-stride">Follow Us</h2> */}
           <ul className="flex items-center gap-2 py-2">
             {Socialdata.map((item) => (
-              <li key={item.id} className="text-stride text-4xl">
+              <a href={item.link} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" key={item.id} className="text-stride text-4xl">
                 {item.icon}
-              </li>
+              </a>
             ))}
           </ul>
         </div>
