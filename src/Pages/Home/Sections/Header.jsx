@@ -3,14 +3,29 @@ import { headersData } from "../../../Data/headersData";
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animate, setAnimate] = useState(false);
   const delay = 8000; // 8 seconds per slide
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % headersData.length);
+      // Trigger exit animation
+      setAnimate(false);
+      
+      // Change content and trigger enter animation
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % headersData.length);
+        setTimeout(() => setAnimate(true), 50);
+      }, 500); // wait for exit animation
     }, delay);
+
     return () => clearInterval(interval);
-  }, [delay]);
+  }, []);
+
+  // Animate text on first render
+  useEffect(() => {
+    const timer = setTimeout(() => setAnimate(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   const currentHeader = headersData[currentIndex];
 
@@ -28,19 +43,48 @@ const Header = () => {
             backgroundImage: `url(${header.backgroundImage})`,
           }}
         />
-      ))}
-      <div className="relative z-20 container flex flex-col justify-end min-h-[60vh] h-full space-y-3 md:space-y-5 pb-12 text-slide-x mt-auto">
-        <h1 className="text-white font-semibold flex gap-4 md:gap-8">
-          <span>
-            <hr className="bg-white h-full p-[0.5px]" />
-          </span>
-          {currentHeader.mainText}
-        </h1>
+      ))}<div className="absolute inset-0 z-[15]" />
 
-        <p data-aos="fade-up" className="font-poppins font-extralight text-white uppercase ml-5 md:ml-9">
+      {/* Content */}
+      <div className="relative z-20 container mx-auto px-4 flex flex-col justify-end min-h-[60vh] md:h-screen pb-12 md:pb-20">
+        {/* Main Text with Line */}
+        <div className="flex items-center gap-4 md:gap-6 mb-3 md:mb-5 overflow-hidden">
+          <span
+            className={`block h-12 md:h-20 w-[2px] bg-white transition-all duration-700 ease-in ${
+              animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          />
+          <h1
+            className={`text-3xl md:text-5xl lg:text-6xl text-white font-semibold transition-all duration-700 ease-in py-1 ${
+              animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+            }`}
+            style={{ transitionDelay: "100ms" }}
+          >
+            {currentHeader.mainText}
+          </h1>
+        </div>
+
+        {/* Subtext */}
+        <p
+          className={`text-sm md:text-base font-light text-white uppercase ml-7 tracking-wider transition-all duration-700 ease-out ${
+            animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+          }`}
+          style={{ transitionDelay: "300ms" }}
+        >
           {currentHeader.subText}
         </p>
       </div>
+
+      <style jsx>{`
+        @keyframes slowZoom {
+          from {
+            transform: scale(1);
+          }
+          to {
+            transform: scale(1.1);
+          }
+        }
+      `}</style>
     </div>
   );
 };

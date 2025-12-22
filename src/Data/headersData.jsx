@@ -37,8 +37,8 @@ export const headersData = [
     backgroundImage: mannatbackground,
     mainText: (
       <>
-        Building Dreams, One Step <br className="hidden md:block" />
-        at a Time
+        Shaping Communities Through  <br className="hidden md:block" />
+        Innovation
       </>
     ),
     subText: (
