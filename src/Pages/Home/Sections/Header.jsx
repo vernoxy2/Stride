@@ -66,7 +66,7 @@ const Header = () => {
 
         {/* Subtext */}
         <p
-          className={`text-sm md:text-base font-light text-white uppercase ml-7 tracking-wider transition-all duration-700 ease-out ${
+          className={`text-sm md:text-base font-light text-white uppercase ml- tracking-wider transition-all duration-700 ease-out ${
             animate ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
           }`}
           style={{ transitionDelay: "300ms" }}

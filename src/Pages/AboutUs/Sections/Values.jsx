@@ -75,7 +75,7 @@ const Values = () => {
             <div
               key={item.id}
               data-aos="fade-up"
-              className="pb-14 flex flex-col justify-around gap-2 lg:gap-4 "
+              className="pb-14 flex flex-col justify-start gap-2 lg:gap-4 "
             >
               <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="w-fit h-16 flex items-center justify-start ">
                 <img src={item.img} alt="" className="object-cover" />

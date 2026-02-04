@@ -28,7 +28,8 @@ const OurProjects = () => {
                 <img
                   src={item.Display}
                   alt={item.Maintext}
-                  className="object-cover group-hover:scale-105 duration-300"
+                  loading="lazy"
+                  className="object-cover group-hover:scale-105 duration-300 pointer-events-none"
                 />
 
                 <div className="p-4 gap-5 bg-stride flex items-center absolute bottom-0 right-0 left-0 w-full">

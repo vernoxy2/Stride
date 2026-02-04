@@ -52,9 +52,10 @@ const Enquiry = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="600"
+            loading="lazy"
             src={EnquiryBgImg}
             alt=""
-            className="h-full hidden lg:block"
+            className="h-full hidden lg:block pointer-events-none"
           />
 
           <img
@@ -63,7 +64,8 @@ const Enquiry = () => {
             data-aos-delay="600"
             src={EnquiryBgImgg}
             alt=""
-            className="h-full scale-x-[-1]"
+            loading="lazy"
+            className="h-full scale-x-[-1] pointer-events-none"
           />
         </div>
       </section>

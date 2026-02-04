@@ -109,12 +109,12 @@ const PeopleSay = () => {
                 <img
                   src={Comma}
                   alt=""
-                  className="absolute -top-8 -left-4 h-8 overflow-hidden"
+                  className="absolute -top-8 -left-4 h-8 overflow-hidden pointer-events-none"
                 />
                 <img
                   src={Comma}
                   alt=""
-                  className="absolute -scale-y-100 -scale-x-100  -bottom-8 -right-4 h-8"
+                  className="absolute -scale-y-100 -scale-x-100  -bottom-8 -right-4 h-8 pointer-events-none"
                 />
               </h2>
               <p className="font-bold">{testimonial.name}</p>
@@ -125,7 +125,7 @@ const PeopleSay = () => {
         </Slider>
       </div>
       <div className="absolute -top-16 lg:-top-20 left-1/2 -translate-x-1/2 border-[10px] border-bg rounded-full">
-        <img src={Title} alt="" className="mx-auto h-28 lg:h-32" />
+        <img src={Title} alt="" loading="lazy" className="mx-auto h-28 lg:h-32" />
 
         <div className="h-full w-full flex items-center justify-center absolute inset-0 rounded-full overflow-hidden">
           <div className="relative h-10 w-full perspective-1000">

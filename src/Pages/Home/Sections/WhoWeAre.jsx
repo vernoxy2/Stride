@@ -37,7 +37,7 @@ const WhoWeAre = () => {
             <div key={index} className="space-y-5">
               <h2 className="text-stride font-bold flex items-center gap-2">
                 <span>
-                  <img src={item.icon} alt={item.title} className="h-10" />
+                  <img src={item.icon} alt={item.title} className="h-10 pointer-events-none" />
                 </span>
                 {item.title}
               </h2>

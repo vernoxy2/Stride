@@ -32,25 +32,28 @@ const commitmentItems = [
 const Commitment = () => {
   return (
     <section>
-      <div  className="container grid grid-cols-1 xl:grid-cols-2 items-center gap-8 space-y-36">
+      <div className="container grid grid-cols-1 xl:grid-cols-2 items-center gap-8 space-y-36">
         {/* 1st column */}
-        <div data-aos="fade-up" className="relative min-h-[600px]  h-full w-full  ">
+        <div
+          data-aos="fade-up"
+          className="relative min-h-[600px]  h-full w-full  "
+        >
           {/* Video background */}
           <video
-  src={video}
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="absolute inset-0 w-full h-full rounded-3xl object-cover"
-/>
-
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full rounded-3xl object-cover"
+          />
 
           {/* Overlay div */}
           <div className="absolute -bottom-28 left-1/2 -translate-x-1/2 lg:translate-x-0  p-5  lg:-left-14 h-52 w-52 md:h-60 md:w-60 lg:h-72 lg:w-72 rounded-full backdrop-blur bg-white/50 flex items-center justify-center text-center flex-col gap-1.5 md:gap-3 shadow-lg">
             <h1 className="text-secondary font-bold mb-1">4.9</h1>
 
-            <img src={People} alt="" />
+            <img src={People} alt="" loading="lazy pointer-events-none" />
 
             {/* Stars */}
             <div className="flex gap-1">
@@ -78,7 +81,9 @@ const Commitment = () => {
 
         <div className="space-y-4 ml-auto xl:ps-7 2xl:ps-16">
           <TitleBox title="Our Commitment" />
-          <h1 data-aos="fade-up" className="">Why we stand out</h1>
+          <h1 data-aos="fade-up" className="">
+            Why we stand out
+          </h1>
           <p data-aos="fade-up">
             We combine innovation, quality, and passion to deliver unique
             solutions that stand out, creating lasting value for every customer.
@@ -86,7 +91,7 @@ const Commitment = () => {
           <ul>
             {commitmentItems.map((item) => (
               <li
-              data-aos="fade-up"
+                data-aos="fade-up"
                 key={item.id}
                 className="flex flex-col md:flex-row items-center md:items-start text-center md:text-start justify-start gap-2 md:gap-5 py-4 px-7 xl:px-0 border-t border-[#D9d9d9]"
               >

@@ -91,12 +91,12 @@ const ProjectLinks = [
 const FooterData = () => {
   return (
     <section data-aos="fade-up" className="container py-0 overflow-hidden">
-      <div className="bg-bg container p-8 md:p-12 rounded-[35px] space-y-2">
+      <div className="bg-bg container p-8 pb-4 md:p-12 md:pb-3 rounded-[35px] space-y-2">
         {/* 1st row */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-2">
           {/* 1st column */}
           <div className="flex flex-col  gap-5">
-            <img src={Logo} alt="Logo" className="w-3/6" />
+            <img src={Logo} alt="Logo" loading="lazy" className="w-3/6 pointer-events-none" />
             <p>
               Building timeless environments that inspire, empower, and redefine
               modern living.
@@ -162,6 +162,9 @@ const FooterData = () => {
           </ul>
         </div>
         <hr className="bg-stride/20 h-0.5" />
+        <p className="text-center text-primary  mt-auto text-sm">
+            © {new Date().getFullYear()} Developed by @Vernoxy
+          </p>
       </div>
     </section>
   );
