@@ -163,7 +163,7 @@ const FooterData = () => {
         </div>
         <hr className="bg-stride/20 h-0.5" />
         <p className="text-center text-primary  mt-auto text-sm">
-            © {new Date().getFullYear()} Developed by @Vernoxy
+            © {new Date().getFullYear()} Developed by <a href="https://www.vernoxy.com/" target="_blank">@Vernoxy</a>
           </p>
       </div>
     </section>
