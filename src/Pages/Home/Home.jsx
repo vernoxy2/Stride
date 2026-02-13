@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     // Simulate loading
-    const timer = setTimeout(() => setLoading(false), 200);
+    const timer = setTimeout(() => setLoading(false), 0);
 
     // Show popup only once per session
     if (!sessionStorage.getItem("hasSeenPopup")) {

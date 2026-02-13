@@ -1,24 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import AboutUs from "./Pages/AboutUs/AboutUs";
-import ContactUs from "./Pages/ContactUs/ContactUs";
 import Navbar from "./Components/Navbar";
+import Logo from "./assets/Logo.svg";
 
-// Define all pages for project sub-routes
-import MannatResidency from "./Pages/Projects/Mannat Residency/MannatResidency";
-import OrangeCity from "./Pages/Projects/Orange City/OrangeCity";
-import StrideReality from "./Pages/Projects/Aura/Aura";
 
-// Animation Library
+// Lazy load pages
+const Home = lazy(() => import("./Pages/Home/Home"));
+const AboutUs = lazy(() => import("./Pages/AboutUs/AboutUs"));
+const ContactUs = lazy(() => import("./Pages/ContactUs/ContactUs"));
+
+const MannatResidency = lazy(() =>
+  import("./Pages/Projects/Mannat Residency/MannatResidency")
+);
+const OrangeCity = lazy(() =>
+  import("./Pages/Projects/Orange City/OrangeCity")
+);
+const StrideReality = lazy(() =>
+  import("./Pages/Projects/Aura/Aura")
+);
+
+// Other components
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./Pages/Projects/Components/ScrollToTop";
 import GoToTop from "./Components/GoToTop";
 import WhatsAppIcon from "./Components/WhatsAppIcon";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
 
 const App = () => {
   useEffect(() => {
@@ -35,24 +41,39 @@ const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      {/* Wrap Routes with Suspense */}
+      <Suspense
+        fallback={
+            <div className="flex flex-col justify-center items-center h-screen text-xl space-y-5">
+
+              <img src={Logo} alt="" loading="lazy" className="animate-pulse h-1/6"/>
+              <p>Loading...</p>
+
+            </div>
+          }
+      >
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
 
-        <Route path="/projects">
-          <Route path="orange_city" element={<OrangeCity />} />
-          <Route path="mannat_residency" element={<MannatResidency />} />
-          <Route path="aura-redefine_living" element={<StrideReality />} />
-        </Route>
+          <Route path="/projects">
+            <Route path="orange_city" element={<OrangeCity />} />
+            <Route path="mannat_residency" element={<MannatResidency />} />
+            <Route
+              path="aura-redefine_living"
+              element={<StrideReality />}
+            />
+          </Route>
 
-        <Route path="/contact" element={<ContactUs />} />
-      </Routes>
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
+      </Suspense>
 
-      {/* float button */}
-      <WhatsAppIcon/>
-      <GoToTop/>
+      {/* Floating Buttons */}
+      <WhatsAppIcon />
+      <GoToTop />
     </BrowserRouter>
   );
 };
