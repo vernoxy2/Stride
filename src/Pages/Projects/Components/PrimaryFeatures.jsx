@@ -2,6 +2,7 @@ import React from "react";
 import { BiSolidDownload } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import Popup from "../../../Components/Popup";
+import LazyImage from "../../../Components/LazyImage";
 
 const PrimaryFeatures = ({
   projectName = "",
@@ -78,7 +79,7 @@ const PrimaryFeatures = ({
             >
               <div className="flex items-center gap-4">
                 <div className="rounded-full border border-[#d9d9d9] p-6 flex-shrink-0">
-                  <img
+                  <LazyImage
                     src={item.img}
                     alt={item.title}
                     className="w-4 md:w-8 lg:w-12"

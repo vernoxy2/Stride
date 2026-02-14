@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import LazyImage from "./LazyImage";
 
 const contactdata = [
   {
@@ -96,7 +97,7 @@ const FooterData = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-6 gap-2">
           {/* 1st column */}
           <div className="flex flex-col  gap-5">
-            <img src={Logo} alt="Logo" loading="lazy" className="w-3/6 pointer-events-none" />
+            <LazyImage src={Logo} alt="Logo" loading="lazy" className="w-3/6 pointer-events-none" />
             <p>
               Building timeless environments that inspire, empower, and redefine
               modern living.

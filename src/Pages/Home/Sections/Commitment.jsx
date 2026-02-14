@@ -7,6 +7,7 @@ import video from "../../../assets/HomePage/Video/6615304-uhd_3840_2160_25fps.mp
 import { CornerClip } from "../../../Components/CornerClip";
 import People from "../../../assets/HomePage/SVG/People.svg";
 import { Star } from "lucide-react";
+import LazyImage from "../../../Components/LazyImage";
 
 const commitmentItems = [
   {
@@ -53,7 +54,7 @@ const Commitment = () => {
           <div className="absolute -bottom-28 left-1/2 -translate-x-1/2 lg:translate-x-0  p-5  lg:-left-14 h-52 w-52 md:h-60 md:w-60 lg:h-72 lg:w-72 rounded-full backdrop-blur bg-white/50 flex items-center justify-center text-center flex-col gap-1.5 md:gap-3 shadow-lg">
             <h1 className="text-secondary font-bold mb-1">4.9</h1>
 
-            <img src={People} alt="" loading="lazy pointer-events-none" />
+            <LazyImage src={People} alt="" loading="lazy pointer-events-none" />
 
             {/* Stars */}
             <div className="flex gap-1">
@@ -95,7 +96,7 @@ const Commitment = () => {
                 key={item.id}
                 className="flex flex-col md:flex-row items-center md:items-start text-center md:text-start justify-start gap-2 md:gap-5 py-4 px-7 xl:px-0 border-t border-[#D9d9d9]"
               >
-                <img
+                <LazyImage
                   src={item.img}
                   alt=""
                   className="object-cover pointer-events-none"

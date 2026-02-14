@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from "../../../Components/LazyImage";
 
 const PrimaryAmenities = ({ data = [] }) => {
   return (
@@ -14,7 +15,7 @@ const PrimaryAmenities = ({ data = [] }) => {
             className=" flex flex-col items-center  rounded-t-3xl pb-16 gap-2 group "
           >
             <div className=" w-fit p-4 rounded-full ">
-              <img src={item.img} alt={item.title} className="mx-auto" />
+              <LazyImage src={item.img} alt={item.title} className="mx-auto" />
             </div>
 
             <p className="text-secondary  w-[90%] text-center">

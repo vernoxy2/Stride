@@ -3,6 +3,7 @@ import Vision from "../../../assets/HomePage/SVG/money.svg";
 import Mission from "../../../assets/HomePage/SVG/mission.svg";
 import TitleBox from "../../../Components/TitleBox";
 import Countdown from "./Countdown";
+import LazyImage from "../../../Components/LazyImage";
 
 const WhoWeAre = () => {
   const items = [
@@ -37,7 +38,7 @@ const WhoWeAre = () => {
             <div key={index} className="space-y-5">
               <h2 className="text-stride font-bold flex items-center gap-2">
                 <span>
-                  <img src={item.icon} alt={item.title} className="h-10 pointer-events-none" />
+                  <LazyImage src={item.icon} alt={item.title} className="h-10 pointer-events-none" />
                 </span>
                 {item.title}
               </h2>

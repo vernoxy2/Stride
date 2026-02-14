@@ -8,6 +8,7 @@ import TimelineImg from "../../../assets/AboutPage/SVG/Timeline.svg";
 import FreeConsultationImg from "../../../assets/AboutPage/SVG/FreeConsultation.svg";
 import IntegrityFairnessImg from "../../../assets/AboutPage/SVG/IntegrityFairness.svg";
 import RealPartnershipimg from "../../../assets/AboutPage/SVG/RealPartnership.svg";
+import LazyImage from "../../../Components/LazyImage";
 
 
 const valuesList = [
@@ -78,7 +79,7 @@ const Values = () => {
               className="pb-14 flex flex-col justify-start gap-2 lg:gap-4 "
             >
               <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="w-fit h-16 flex items-center justify-start ">
-                <img src={item.img} alt="" className="object-cover" />
+                <LazyImage src={item.img} alt="" className="object-cover" />
               </div>
               <div className="space-y-4">
                 <hr className="bg-[#B7B7B7] h-[2px] rounded-2xl"/>

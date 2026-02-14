@@ -5,6 +5,7 @@ import EnquiryBgImgg from "../../../assets/HomePage/SVG/EnquiryBgImgg.svg";
 import TitleBox from "../../../Components/TitleBox";
 import PrimaryButton from "../../../Components/PrimaryButton";
 import { CornerClip } from "../../../Components/CornerClip";
+import LazyImage from "../../../Components/LazyImage";
 
 const Enquiry = () => {
   return (
@@ -48,7 +49,7 @@ const Enquiry = () => {
         </form>
         {/* Background */}
         <div className="absolute inset-0 rounded-xl -z-10 flex lg:justify-between justify-end overflow-hidden">
-          <img
+          <LazyImage
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="600"
@@ -58,7 +59,7 @@ const Enquiry = () => {
             className="h-full hidden lg:block pointer-events-none"
           />
 
-          <img
+          <LazyImage
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="600"

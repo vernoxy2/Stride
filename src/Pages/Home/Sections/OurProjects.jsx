@@ -4,6 +4,7 @@ import { projects } from "../../../Data/Projects";
 import { CiLocationOn } from "react-icons/ci";
 import { BsArrowRightShort } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import LazyImage from "../../../Components/LazyImage";
 
 const OurProjects = () => {
   return (
@@ -25,7 +26,7 @@ const OurProjects = () => {
               className="block"
             >
               <div className="overflow-hidden relative">
-                <img
+                <LazyImage
                   src={item.Display}
                   alt={item.Maintext}
                   loading="lazy"

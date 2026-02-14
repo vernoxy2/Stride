@@ -6,6 +6,7 @@ import icon2 from "../../../assets/AboutPage/SVG/Property.svg";
 import icon3 from "../../../assets/AboutPage/SVG/Cost.svg";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import LazyImage from "../../../Components/LazyImage";
 
 const AboutCounter = [
   {
@@ -100,7 +101,7 @@ const About = () => {
                   className="flex flex-col p-4 xl:py-8 xl:px-10 rounded-3xl justify-center gap-2 md:gap-10 bg-white"
                 >
                   <div className="w-full flex justify-end">
-                    <img src={item.img} alt="" />
+                    <LazyImage src={item.img} alt="about" loading="lazy" />
                   </div>
                   <div>
                     <h1 className="text-6xl md:text-5xl xl:text-6xl font-bold">
