@@ -8,6 +8,9 @@ import Footer from "../../Components/Footer";
 import OurProjects from "./Sections/OurProjects";
 import Popup from "../../Components/Popup";
 import PopupImg from "../../assets/HomePage/PNG/HomePopup.png";
+import Logo from "../../assets/Logo.svg";
+import LazyImage from "../../Components/LazyImage";
+
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -42,9 +45,14 @@ const Home = () => {
       <Footer />
 
       {loading && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm z-50">
-          <div className="animate-spin rounded-full h-20 w-20 border-t-4 border-blue-500 border-b-4 border-gray-200"></div>
-        </div>
+       
+            <div className="flex flex-col justify-center items-center h-screen text-xl space-y-5">
+
+              <LazyImage src={Logo} alt="" loading="lazy" className="animate-pulse h-1/6"/>
+              <p>Loading...</p>
+
+            </div>
+          
       )}
 
       {!loading && showPopup && (

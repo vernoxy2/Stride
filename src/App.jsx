@@ -25,6 +25,7 @@ import "aos/dist/aos.css";
 import ScrollToTop from "./Pages/Projects/Components/ScrollToTop";
 import GoToTop from "./Components/GoToTop";
 import WhatsAppIcon from "./Components/WhatsAppIcon";
+import LazyImage from "./Components/LazyImage";
 
 const App = () => {
   useEffect(() => {
@@ -46,7 +47,7 @@ const App = () => {
         fallback={
             <div className="flex flex-col justify-center items-center h-screen text-xl space-y-5">
 
-              <img src={Logo} alt="" loading="lazy" className="animate-pulse h-1/6"/>
+              <LazyImage src={Logo} alt="" loading="lazy" className="animate-pulse h-1/6"/>
               <p>Loading...</p>
 
             </div>
