@@ -24,6 +24,7 @@ import { MannatMedia } from "../../../Data/MannatData/MannatMedia";
 import { MannatAmenitiesList } from "../../../Data/MannatData/MannatAmenitiesList";
 import { MannatKeyDetailsList } from "../../../Data/MannatData/MannatKeyDetailsList";
 import { MannatFeaturesList } from "../../../Data/MannatData/MannatFeaturesList";
+import { useMetaTags } from "../../../hooks/useMetaTags";
 
 const projectDescription = `Mannat Residency Ankleshwar delivers vibrant living with modern design, iconic elevation, and joyful amenities, offering a refreshing lifestyle where quality homes elevate comfort, fulfillment, and memorable moments in a welcoming community.`;
 
@@ -31,6 +32,13 @@ const mapSrc =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1532.4935549157722!2d73.00077447576817!3d21.621094103448577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be023003a25ed0b%3A0x671dffce73280a66!2sMannat%20Residency!5e1!3m2!1sen!2sin!4v1762840068368!5m2!1sen!2sin";
 
 const MannatResidency = () => {
+  useMetaTags({
+    title: "Mannat Residency | Modern Apartments in Ankleshwar by Stride Realty",
+    description: "Mannat Residency Ankleshwar offers vibrant modern apartments with iconic elevation, serene surroundings, and lifestyle amenities near GIDC Bus Station.",
+    keywords: "Mannat Residency Ankleshwar, Stride Realty Mannat, apartments near GIDC Ankleshwar, residential project Ankleshwar",
+    url: "https://www.striderealty.com/projects/mannat_residency"
+  });
+
   return (
     <div>
       <PrimaryHeader  backgroundImage={Head} />
