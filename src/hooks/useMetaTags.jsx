@@ -4,7 +4,7 @@ export const useMetaTags = ({
   title,
   description,
   keywords,
-  image = 'https://www.striderealty.com/Logo.svg',
+  image = 'https://striderealty.in/Logo.svg',
   url,
   type = 'website',
   robots = 'index, follow' // Default value for SEO

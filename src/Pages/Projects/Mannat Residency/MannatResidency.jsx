@@ -36,7 +36,7 @@ const MannatResidency = () => {
     title: "Mannat Residency | Modern Apartments in Ankleshwar by Stride Realty",
     description: "Mannat Residency Ankleshwar offers vibrant modern apartments with iconic elevation, serene surroundings, and lifestyle amenities near GIDC Bus Station.",
     keywords: "Mannat Residency Ankleshwar, Stride Realty Mannat, apartments near GIDC Ankleshwar, residential project Ankleshwar",
-    url: "https://www.striderealty.com/projects/mannat_residency"
+    url: "https://striderealty.in/projects/mannat_residency"
   });
 
   return (

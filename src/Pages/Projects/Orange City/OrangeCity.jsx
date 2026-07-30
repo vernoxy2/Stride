@@ -38,7 +38,7 @@ const OrangeCity = () => {
     title: "Orange City | Premium Living Spaces in Ankleshwar by Stride Realty",
     description: "Experience refined luxury at Orange City Ankleshwar. Surrounded by lush greenery, modern amenities, play areas, and serene landscapes for comfortable family living.",
     keywords: "Orange City Ankleshwar, Orange City Stride Realty, luxury homes Hasot Road, flats in Ankleshwar",
-    url: "https://www.striderealty.com/projects/orange_city"
+    url: "https://striderealty.in/projects/orange_city"
   });
 
   return (

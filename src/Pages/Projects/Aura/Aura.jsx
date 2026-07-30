@@ -37,7 +37,7 @@ const Aura = () => {
     title: "Aura - Redefine Living | Luxury Apartments in Ankleshwar by Stride Realty",
     description: "Discover Aura Ankleshwar - Redefining luxury living with modern architecture, spacious layouts, lush greenery, and premium amenities opposite Garden City.",
     keywords: "Aura Ankleshwar, Aura Stride Realty, redefine living Ankleshwar, luxury apartments opposite Garden City",
-    url: "https://www.striderealty.com/projects/aura-redefine_living"
+    url: "https://striderealty.in/projects/aura-redefine_living"
   });
 
   return (

@@ -18,7 +18,7 @@ const Home = () => {
     title: "Stride Realty | Modern Nature-Inspired Living Spaces in Ankleshwar",
     description: "Discover premium Garden City living in Ankleshwar with Stride Realty. Enjoy modern homes surrounded by greenery, family-friendly amenities, wellness spaces, and an active lifestyle in Ankleshwar’s most refreshing residential destination.",
     keywords: "Stride Realty, Ankleshwar real estate, luxury apartments Ankleshwar, Garden City living, nature-inspired homes, residential projects",
-    url: "https://www.striderealty.com/"
+    url: "https://striderealty.in/"
   });
 
   const [showPopup, setShowPopup] = useState(false);

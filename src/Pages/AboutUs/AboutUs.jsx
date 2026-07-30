@@ -13,7 +13,7 @@ const AboutUs = () => {
     title: "About Us | Stride Realty Ankleshwar",
     description: "Learn about Stride Realty - Ankleshwar's premier real estate developer focused on quality construction, modern design, green living, and customer satisfaction.",
     keywords: "About Stride Realty, real estate developer Ankleshwar, builders in Ankleshwar, property developers Gujarat",
-    url: "https://www.striderealty.com/about"
+    url: "https://striderealty.in/about"
   });
 
   return (

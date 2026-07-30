@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.striderealty.com/sitemap.xml
+Sitemap: https://striderealty.in/sitemap.xml

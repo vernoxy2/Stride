@@ -90,7 +90,7 @@ const Sitemap = () => {
     title: "Sitemap | Stride Realty Ankleshwar",
     description: "Explore the complete visual sitemap of Stride Realty. Easily navigate through our residential projects in Ankleshwar, company information, and contact details.",
     keywords: "Sitemap Stride Realty, Ankleshwar real estate links, site navigation Stride Realty, project index Ankleshwar",
-    url: "https://www.striderealty.com/sitemap",
+    url: "https://striderealty.in/sitemap",
   });
 
   return (
