@@ -8,6 +8,7 @@ import Logo from "./assets/Logo.svg";
 const Home = lazy(() => import("./Pages/Home/Home"));
 const AboutUs = lazy(() => import("./Pages/AboutUs/AboutUs"));
 const ContactUs = lazy(() => import("./Pages/ContactUs/ContactUs"));
+const Sitemap = lazy(() => import("./Pages/Sitemap/Sitemap"));
 
 const MannatResidency = lazy(() =>
   import("./Pages/Projects/Mannat Residency/MannatResidency")
@@ -69,6 +70,7 @@ const App = () => {
           </Route>
 
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/sitemap" element={<Sitemap />} />
         </Routes>
       </Suspense>
 

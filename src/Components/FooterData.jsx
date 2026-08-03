@@ -69,6 +69,16 @@ const Links = [
     title: "About Us",
     link: "/about",
   },
+  {
+    id: 3,
+    title: "Contact Us",
+    link: "/contact",
+  },
+  {
+    id: 4,
+    title: "Sitemap",
+    link: "/sitemap",
+  },
 ];
 
 const ProjectLinks = [
@@ -110,25 +120,25 @@ const FooterData = () => {
             <ul>
               {ProjectLinks.map((item) => (
                 <li key={item.id} className="flex items-start gap-3 py-1">
-                  <a
-                    href={item.link}
-                    className="text-stride text-4xl lg:text-5xl text-start"
+                  <Link
+                    to={item.link}
+                    className="text-stride text-4xl lg:text-5xl text-start hover:opacity-80 transition-opacity"
                   >
                     <p>{item.title}</p>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
-            <h2 className=" text-stride font-bold  mt-3">All Pages</h2>
+            <h2 className=" text-stride font-bold mt-3">All Pages</h2>
             <ul className="mb-3">
               {Links.map((item) => (
-                <li key={item.id} className="flex items-start gap-3 py-1 ">
-                  <a
-                    href={item.link}
-                    className="text-stride text-4xl lg:text-5xl text-start"
+                <li key={item.id} className="flex items-start gap-3 py-1">
+                  <Link
+                    to={item.link}
+                    className="text-stride text-4xl lg:text-5xl text-start hover:opacity-80 transition-opacity"
                   >
                     <p>{item.title}</p>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -163,9 +173,15 @@ const FooterData = () => {
           </ul>
         </div>
         <hr className="bg-stride/20 h-0.5" />
-        <p className="text-center text-primary  mt-auto text-sm">
-            © {new Date().getFullYear()} Developed by <a href="https://www.vernoxy.com/" target="_blank">@Vernoxy</a>
-          </p>
+        <p className="text-center text-primary mt-auto text-sm flex items-center justify-center gap-3 flex-wrap">
+          <span>© {new Date().getFullYear()} Stride Realty</span>
+          <span>•</span>
+          <Link to="/sitemap" className="text-stride font-medium hover:underline">
+            Sitemap
+          </Link>
+          <span>•</span>
+          <span>Developed by <a href="https://www.vernoxy.com/" target="_blank" rel="noopener noreferrer" className="hover:underline font-medium">@Vernoxy</a></span>
+        </p>
       </div>
     </section>
   );

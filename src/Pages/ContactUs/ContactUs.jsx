@@ -7,8 +7,16 @@ import ContactData from "./Sections/ContactData";
 import Touch from "./Sections/Touch";
 // Assets
 import Head from "../../assets/Contactpage/PNG/ContactHead.png";
+import { useMetaTags } from "../../hooks/useMetaTags";
 
 const ContactUs = () => {
+  useMetaTags({
+    title: "Contact Us | Stride Realty Ankleshwar",
+    description: "Get in touch with Stride Realty for inquiries on modern residential homes and luxury apartments in Ankleshwar. Call us or visit our site office today.",
+    keywords: "Contact Stride Realty, Stride Realty phone number, Stride Realty site office Ankleshwar, real estate inquiry",
+    url: "https://striderealty.in/contact"
+  });
+
   return (
     <div>
       <PrimaryHeader title="Contact Us" backgroundImage={Head} />
